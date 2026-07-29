@@ -1,0 +1,39 @@
+site_name: CSCI 435 - Software Engineering Project Course
+site_description: William & Mary CSCI 435 - Software Engineering Project Course
+site_url: https://csci-435-se.github.io/
+repo_url: https://github.com/CSCI-435-SE
+repo_name: CSCI-435-SE
+
+nav:
+  - Home: index.md
+  - Schedule: schedule.md
+  - Projects: projects.md
+
+theme:
+  name: material
+  font:
+    text: Nunito Sans
+    code: Roboto Mono
+  palette:
+    - scheme: default
+      primary: custom
+      accent: custom
+  features:
+    - navigation.tabs
+    - navigation.top
+    - navigation.instant
+    - search.suggest
+    - content.code.copy
+  logo: assets/wm-mark.svg
+  favicon: assets/wm-mark.svg
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - tables
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences

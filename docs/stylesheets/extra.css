@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&family=Nunito+Sans:wght@400;600;700&display=swap');
+
+/* W&M Primary Palette -- https://www.wm.edu/brand/visual-brand/color-palette/ */
+[data-md-color-primary="custom"] {
+  --md-primary-fg-color:        #004E38; /* W&M Green */
+  --md-primary-fg-color--light: #28463D; /* Griffin Green */
+  --md-primary-fg-color--dark:  #00231B; /* Dark Green */
+  --md-primary-bg-color:        #FFFFFF;
+  --md-primary-bg-color--light: #FFFFFF;
+}
+
+[data-md-color-accent="custom"] {
+  --md-accent-fg-color:               #866f45; /* Accessible Gold (WCAG-safe variant of W&M Gold #B79257) */
+  --md-accent-fg-color--transparent:  #866f4526;
+  --md-accent-bg-color:               #FFFFFF;
+  --md-accent-bg-color--light:        #FFFFFF;
+}
+
+:root {
+  --wm-green: #004E38;
+  --wm-gold: #B79257;
+  --wm-gold-accessible: #866f45;
+  --wm-silver: #D8DCDB;
+  --wm-sage: #B8DDB1;
+  --wm-patina: #76A190;
+}
+
+/* Headings get a nod to W&M's Baskerville heading style (Avenir/Baskerville require a paid license,
+   so we use the free alternatives recommended by W&M Libraries: Nunito Sans for body, Libre Baskerville for headings) */
+h1, h2, h3, .md-typeset h1 {
+  font-family: "Libre Baskerville", Georgia, serif;
+  color: var(--wm-green);
+}
+
+.md-typeset a {
+  color: var(--wm-green);
+}
+.md-typeset a:hover {
+  color: var(--wm-gold-accessible);
+}
+
+/* Table styling with W&M silver/sage accents */
+.md-typeset table:not([class]) th {
+  background-color: var(--wm-green);
+  color: #ffffff;
+  font-family: "Nunito Sans", sans-serif;
+}
+.md-typeset table:not([class]) tr:nth-child(even) {
+  background-color: #f4f6f5;
+}
+.md-typeset table:not([class]) tr:hover {
+  background-color: var(--wm-sage);
+}
+
+/* Card grid for the Projects page */
+.wm-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+.wm-card {
+  border: 1px solid var(--wm-silver);
+  border-top: 4px solid var(--wm-gold);
+  border-radius: 6px;
+  padding: 1rem 1.2rem;
+  background: #ffffff;
+}
+.wm-card h3 {
+  margin-top: 0;
+  font-size: 1.1rem;
+}
+.wm-card .wm-meta {
+  font-size: 0.8rem;
+  color: var(--wm-patina);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-bottom: 0.4rem;
+}
