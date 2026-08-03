@@ -1,3 +1,8 @@
+---
+hide:
+  - navigation
+---
+
 # Syllabus
 
 Tuesdays & Thursdays, 12:30&ndash;1:50 PM &middot; Integrated Science Center (ISC) 1353

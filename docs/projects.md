@@ -1,3 +1,8 @@
+---
+hide:
+  - navigation
+---
+
 # Projects
 
 Each team works on one of eight established open-source projects, forked into the

@@ -1,3 +1,8 @@
+---
+hide:
+  - navigation
+---
+
 # Resources
 
 ## Reading list / bibliography

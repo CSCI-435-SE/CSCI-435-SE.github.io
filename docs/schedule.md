@@ -1,3 +1,8 @@
+---
+hide:
+  - navigation
+---
+
 # Schedule
 
 This schedule is subject to change with notice &mdash; check back periodically. Full syllabus policies are on the [Syllabus](syllabus.md) page.

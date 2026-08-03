@@ -1,3 +1,8 @@
+---
+hide:
+  - navigation
+---
+
 # Presentations
 
 This page covers the two kinds of in-class presentations teams give throughout the semester: **project presentations** (lightning talks and the final presentation) and **new-tech showcases**. See the [Schedule](schedule.md) page for exact dates and the [Syllabus](syllabus.md#9-project-structure-sprints-presentations-and-showcases) for a brief overview.

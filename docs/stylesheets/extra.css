@@ -39,6 +39,7 @@ h1, h2, h3, .md-typeset h1 {
 
 .md-typeset a {
   color: var(--wm-green);
+  font-weight: 700;
 }
 .md-typeset a:hover {
   color: var(--wm-gold-accessible);
@@ -83,7 +84,6 @@ h1, h2, h3, .md-typeset h1 {
   margin-bottom: 0.25rem;
 }
 .wm-card p, .wm-card {
-  font-size: 0.88rem;
   line-height: 1.4;
 }
 
