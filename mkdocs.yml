@@ -34,7 +34,7 @@ theme:
     - toc.follow
 
 extra_css:
-  - stylesheets/extra.css
+  - stylesheets/extra.css?v=3
 
 markdown_extensions:
   - attr_list

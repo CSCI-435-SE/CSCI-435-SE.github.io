@@ -5,7 +5,7 @@ hide:
 
 # Presentations
 
-This page covers the two kinds of in-class presentations teams give throughout the semester: **project presentations** (lightning talks and the final presentation) and **new-tech showcases**. See the [Schedule](schedule.md) page for exact dates and the [Syllabus](syllabus.md#9-project-structure-sprints-presentations-and-showcases) for a brief overview.
+The teams will give two kinds of in-class presentations throughout the semester: **project presentations** (lightning talks and the final presentation) and **new-tech showcases**. See the [Schedule](schedule.md) page for exact dates and the [Syllabus](syllabus.md#9-project-structure-sprints-presentations-and-showcases) for a brief overview.
 
 !!! info "Detailed requirements coming soon"
     Detailed requirements for each presentation type (format, timing, what to prepare, grading criteria) will be posted here.

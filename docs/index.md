@@ -15,14 +15,14 @@ software engineering workflow: agile sprints, code review, CI, testing, and real
 <div class="wm-announcements" markdown>
 
 <div class="wm-announcement">
-<div class="wm-announcement-date">August 25, 2026</div>
+<div class="wm-announcement-date">August 3, 2026</div>
 <div class="wm-announcement-content" markdown>Welcome to the course! Take a look at the [Syllabus](syllabus/) and [Schedule](schedule/) before our first class on August 27.</div>
-</div>
+<!-- </div>
 
 <div class="wm-announcement">
 <div class="wm-announcement-date">August 20, 2026</div>
 <div class="wm-announcement-content" markdown>Sample announcement &mdash; this box is a placeholder so you can see the style. Replace or remove before the site goes live.</div>
-</div>
+</div> -->
 
 </div>
 
@@ -61,7 +61,6 @@ Suggested readings and campus support resources.
 </div>
 
 <div class="wm-card">
-<div class="wm-meta">Org</div>
 <h3><a href="https://github.com/CSCI-435-SE">GitHub Organization</a></h3>
 All official team repositories live here.
 </div>

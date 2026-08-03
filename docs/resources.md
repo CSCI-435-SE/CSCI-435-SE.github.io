@@ -7,7 +7,7 @@ hide:
 
 ## Reading list / bibliography
 
-Readings assigned for specific classes will be posted on the [Schedule](schedule.md) page as the semester progresses. Full citations for readings referenced throughout the course, linked to a source where a reliable public page is available:
+Readings assigned for specific classes will be posted on the [Schedule](schedule.md) page as the semester progresses. Full citations for readings referenced throughout the course:
 
 - Brooks, Frederick P. ["No Silver Bullet: Essence and accidents of software engineering."](https://www.researchgate.net/profile/Frederick_Brooks_Jr/publication/30868224_Essence_and_Accidents_of_Software_Engineering/links/0fcfd50d5e8c4aaf8a000000.pdf) *IEEE computer* 20, no. 4 (1987): 10-19.
 - Sommerville, Ian. *Software Engineering*, 9th ed. (2011).
