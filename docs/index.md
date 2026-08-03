@@ -12,23 +12,12 @@ software engineering workflow: agile sprints, code review, CI, testing, and real
 
 ## Announcements
 
-<div class="wm-announcements" markdown>
-
-<div class="wm-announcement">
-<div class="wm-announcement-date">August 3, 2026</div>
-<div class="wm-announcement-content" markdown>Welcome to the course! Take a look at the [Syllabus](syllabus/) and [Schedule](schedule/) before our first class on August 27.</div>
-<!-- </div>
-
-<div class="wm-announcement">
-<div class="wm-announcement-date">August 20, 2026</div>
-<div class="wm-announcement-content" markdown>Sample announcement &mdash; this box is a placeholder so you can see the style. Replace or remove before the site goes live.</div>
-</div> -->
-
-</div>
+<span class="wm-announcement-date">August 3, 2026</span> &mdash; Welcome to the course! Take a look at the [Syllabus](syllabus/) and [Schedule](schedule/) before our first class on August 27.
+{: .wm-announcement }
 
 ## Quick Links
 
-<div class="wm-card-grid" markdown>
+<div class="wm-card-grid" markdown="1">
 
 <div class="wm-card">
 <h3><a href="syllabus/">Syllabus</a></h3>

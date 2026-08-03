@@ -8,7 +8,7 @@ hide:
 Each team works on one of eight open-source projects, forked into the
 [CSCI-435-SE](https://github.com/CSCI-435-SE) GitHub organization.
 
-<div class="wm-card-grid" markdown>
+<div class="wm-card-grid" markdown="1">
 
 <div class="wm-card">
 <div class="wm-meta">Personal Finance</div>

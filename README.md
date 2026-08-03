@@ -63,11 +63,12 @@ look unchanged right after you push. Two things to know:
 - **Page content (HTML):** the CDN cache is short-lived (on the order of minutes). If a page looks
   stale right after a deploy, wait a couple of minutes, then do a hard refresh
   (Cmd+Shift+R on Mac, Ctrl+Shift+R on Windows/Linux) to bypass your browser's own cache.
-- **The stylesheet (`extra.css`):** browsers tend to cache this more aggressively since its filename
-  never changes. It's referenced in `mkdocs.yml` as `stylesheets/extra.css?v=3` -- whenever you edit
-  `extra.css` and want to guarantee everyone sees the update immediately, bump that version number
-  (`?v=4`, `?v=5`, ...) in `mkdocs.yml`. Changing the URL forces browsers to treat it as a new file
-  instead of serving a cached copy.
+- **The stylesheet (`extra.css`) and script (`extra.js`):** browsers tend to cache these more
+  aggressively since their filenames never change. They're referenced in `mkdocs.yml` as
+  `stylesheets/extra.css?v=3` and `javascripts/extra.js?v=1` -- whenever you edit either file and want
+  to guarantee everyone sees the update immediately, bump that file's version number (`?v=4`, `?v=5`,
+  ...) in `mkdocs.yml`. Changing the URL forces browsers to treat it as a new file instead of serving a
+  cached copy.
 
 GitHub Pages doesn't offer a setting to disable caching outright (it's a static host, no custom
 response headers) -- the version-query trick above is the standard workaround for CSS/JS, and a hard

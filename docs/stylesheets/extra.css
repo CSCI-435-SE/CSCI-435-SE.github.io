@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&family=Nunito+Sans:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Nunito+Sans:wght@400;600;700&display=swap');
 
 /* W&M Primary Palette -- https://www.wm.edu/brand/visual-brand/color-palette/ */
 [data-md-color-primary="custom"] {
@@ -32,8 +32,10 @@
 
 /* Headings get a nod to W&M's Baskerville heading style (Avenir/Baskerville require a paid license,
    so we use the free alternatives recommended by W&M Libraries: Nunito Sans for body, Libre Baskerville for headings) */
-h1, h2, h3, .md-typeset h1 {
+h1, h2, h3,
+.md-typeset h1, .md-typeset h2, .md-typeset h3 {
   font-family: "Libre Baskerville", Georgia, serif;
+  font-weight: 700;
   color: var(--wm-green);
 }
 
@@ -46,6 +48,9 @@ h1, h2, h3, .md-typeset h1 {
 }
 
 /* Table styling with W&M silver/sage accents */
+.md-typeset table:not([class]) {
+  font-size: 1em; /* Material shrinks tables by default; match regular body text instead */
+}
 .md-typeset table:not([class]) th {
   background-color: var(--wm-green);
   color: #ffffff;
@@ -74,7 +79,7 @@ h1, h2, h3, .md-typeset h1 {
 }
 .wm-card h3 {
   margin: 0 0 0.15rem;
-  font-size: 1.02rem;
+  font-size: 0.9rem;
 }
 .wm-card .wm-meta {
   font-size: 0.75rem;
@@ -106,29 +111,25 @@ h1, h2, h3, .md-typeset h1 {
   color: var(--wm-gold-accessible);
 }
 
-/* Announcement boxes on the Home page */
-.wm-announcements {
-  display: flex;
-  flex-direction: column;
-  gap: 0.8rem;
-  margin: 1.5rem 0;
-}
+/* Announcement boxes on the Home page (each is a plain markdown paragraph
+   tagged with {: .wm-announcement } via attr_list -- keeps link/markdown
+   processing simple and reliable, no raw nested HTML blocks involved) */
 .wm-announcement {
+  display: block;
   border: 1px solid var(--wm-silver);
   border-left: 4px solid var(--wm-green);
   border-radius: 6px;
   padding: 0.8rem 1.1rem;
+  margin: 1rem 0;
   background: #f9fbfa;
+  color: #1c1c1c;
 }
 .wm-announcement-date {
+  display: block;
   font-size: 0.75rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.04em;
   color: var(--wm-patina);
   margin-bottom: 0.25rem;
-}
-.wm-announcement-content {
-  font-size: 0.92rem;
-  color: #1c1c1c;
 }
