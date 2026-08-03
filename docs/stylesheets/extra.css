@@ -25,6 +25,11 @@
   --wm-patina: #76A190;
 }
 
+/* Widen the content column ~15% beyond Material's default (61rem -> 70rem) */
+.md-grid {
+  max-width: 70rem;
+}
+
 /* Headings get a nod to W&M's Baskerville heading style (Avenir/Baskerville require a paid license,
    so we use the free alternatives recommended by W&M Libraries: Nunito Sans for body, Libre Baskerville for headings) */
 h1, h2, h3, .md-typeset h1 {
@@ -63,17 +68,67 @@ h1, h2, h3, .md-typeset h1 {
   border: 1px solid var(--wm-silver);
   border-top: 4px solid var(--wm-gold);
   border-radius: 6px;
-  padding: 1rem 1.2rem;
+  padding: 0.65rem 0.9rem;
   background: #ffffff;
 }
 .wm-card h3 {
-  margin-top: 0;
-  font-size: 1.1rem;
+  margin: 0 0 0.15rem;
+  font-size: 1.02rem;
 }
 .wm-card .wm-meta {
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   color: var(--wm-patina);
   text-transform: uppercase;
   letter-spacing: 0.03em;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.25rem;
+}
+.wm-card p, .wm-card {
+  font-size: 0.88rem;
+  line-height: 1.4;
+}
+
+/* Secondary summary line under each Schedule topic */
+.wm-sched-sub {
+  display: inline-block;
+  margin-top: 0.15rem;
+  font-size: 0.82rem;
+  color: #55625c;
+}
+
+/* Inline slide/reading links next to a lecture title on the Schedule page */
+.wm-sched-links {
+  display: inline-block;
+  margin-left: 0.5rem;
+  font-size: 0.78rem;
+  font-weight: 400;
+}
+.wm-sched-links a {
+  color: var(--wm-gold-accessible);
+}
+
+/* Announcement boxes on the Home page */
+.wm-announcements {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin: 1.5rem 0;
+}
+.wm-announcement {
+  border: 1px solid var(--wm-silver);
+  border-left: 4px solid var(--wm-green);
+  border-radius: 6px;
+  padding: 0.8rem 1.1rem;
+  background: #f9fbfa;
+}
+.wm-announcement-date {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--wm-patina);
+  margin-bottom: 0.25rem;
+}
+.wm-announcement-content {
+  font-size: 0.92rem;
+  color: #1c1c1c;
 }

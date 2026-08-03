@@ -1,6 +1,6 @@
 # CSCI-435-SE.github.io
 
-Source for the CSCI 435 (Software Engineering Project Course) site, William & Mary, Fall 2026.
+Source for the CSCI 435/535 (Software Engineering) site, William & Mary, Fall 2026.
 
 Built with [MkDocs](https://www.mkdocs.org/) + [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/),
 themed with W&M's official brand colors and fonts.
@@ -23,10 +23,34 @@ and set the source to "GitHub Actions" (one-time setup).
 ## Structure
 
 ```
-mkdocs.yml              Site config, nav, W&M theme palette
-docs/index.md            Home page
-docs/schedule.md          Schedule page
-docs/projects.md          Projects page
-docs/stylesheets/extra.css   W&M color/font overrides
-docs/assets/               Logo/favicon
+mkdocs.yml                 Site config, nav, W&M theme palette, plugins
+docs/index.md               Home page
+docs/syllabus.md             Syllabus page
+docs/schedule.md              Schedule page
+docs/projects.md               Projects page
+docs/sprints.md                  Sprints page (placeholder -- fill in before Sprint 0)
+docs/presentations.md             Presentations page (placeholder -- fill in before first showcase)
+docs/resources.md                  Resources page
+docs/stylesheets/extra.css          W&M color/font overrides
+docs/assets/                         Logo/favicon
 ```
+
+## Password-protecting a page
+
+The [mkdocs-encryptcontent-plugin](https://github.com/vsalvino/mkdocs-encryptcontent) is installed and
+configured in `mkdocs.yml`, but no page is protected yet. To protect a page, add this to the top of its
+`.md` file:
+
+```yaml
+---
+encrypted: true
+password: your-password-here
+---
+```
+
+## Updating the site
+
+Every page is a plain markdown file under `docs/`. To update content, edit the relevant `.md` file,
+preview locally with `mkdocs serve`, then commit and push to `main` -- the site rebuilds and redeploys
+automatically. Adding a new page: create the `.md` file under `docs/`, then add it to the `nav:` list
+in `mkdocs.yml`.
