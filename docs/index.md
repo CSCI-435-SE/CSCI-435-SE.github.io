@@ -7,7 +7,7 @@ hide:
 # CSCI 435/535 &mdash; Software Engineering
 
 Welcome to CSCI 435/535. This semester, six teams will each work on a real, established open-source
-project &mdash; not a toy assignment &mdash; using modern agentic AI tooling as part of a genuine
+project using modern agentic AI tooling as part of their 
 software engineering workflow: agile sprints, code review, CI, testing, and real project management.
 
 ## Announcements
