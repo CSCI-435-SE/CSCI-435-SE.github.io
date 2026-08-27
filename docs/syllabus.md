@@ -115,7 +115,7 @@ No curves will be applied to any individual component or to the total score for 
 
 - Every team member is expected to make regular, visible contributions to the project throughout the semester (commits, code review, issue work, etc.) &mdash; not simply be carried by teammates. Individual project grades may be adjusted based on peer evaluation and GitHub contribution history when there is clear evidence of unequal contribution.
 - Bonus (up to 3%): awarded for things like a pull request merged upstream into the real open-source project (not just the team's fork), an exceptional new-tech showcase, or notable contribution to the broader project community beyond the team's own scope.
-- The internal breakdown of what's assessed within each sprint (e.g., code quality, engineering practice, AI ledger, etc.) will be detailed on the course site.
+- The internal breakdown of what's assessed within each sprint (e.g., code quality, engineering practice, AI logs, etc.) will be detailed on the course site.
 - Grading weights are the same for CSCI 435 and CSCI 535; graduate students are held to a higher bar within those same weights &mdash; see [Project structure](#11-project-structure-sprints-presentations-and-showcases) for specifics.
 
 **Grading scale** (based on total score S):
@@ -135,7 +135,7 @@ No curves will be applied to any individual component or to the total score for 
 The project unfolds across 5 sprints (S0&ndash;S4). Full detail on timing and exact expectations for each item below will be provided on the [Sprints](sprints.md) and [Presentations](presentations.md) pages. Briefly:
 
 - **Sprint 0 &mdash; team/project setup & system learning** &mdash; team formation, initial planning, and getting familiar with the codebase, small but meaningful change to the project that walks the team through most of the real software engineering steps (e.g., understanding the code, making the change, testing it, opening a pull request, getting it reviewed).
-- **Sprints 1&ndash;4 &mdash; project development & release** &mdash; each follows the same pattern: the team plans and prioritizes its backlog for the sprint, then builds, extends, fixes, or improves the system, producing a release with its full set of artifacts (issues, pull requests, code, tests, etc.), a short live demo, an updated AI ledger, a written report, and other relevant data.
+- **Sprints 1&ndash;4 &mdash; project development & release** &mdash; each follows the same pattern: the team plans and prioritizes its backlog for the sprint, then builds, extends, fixes, or improves the system, producing a release with its full set of artifacts (issues, pull requests, code, tests, etc.), a short live demo, AI logs, a written report, and other relevant data.
 - **Presentations** &mdash; short check-ins (2 rounds) where each team briefly reports on its project's status, decisions, and plans, plus one final presentation at the end of the semester where each team presents its finished project in full.
 - **New-tech showcases** &mdash; short demo sessions (2 rounds) where students present a modern software engineering tool or technology.
 - **Graduate students (CSCI 535):** each sprint specifies a minimum number of tasks/issues for graduate students that is at least 10% higher than for undergraduates (CSCI 435), and graduate students are expected to give exceptional presentations/showcases, showing greater technical depth, handling audience questions thoughtfully, and delivering a stronger overall presentation.
@@ -175,7 +175,7 @@ Team collaboration policy:
 - Collaboration across teams is fine at a conceptual level (e.g., sharing debugging tips), but must not involve sharing solutions or code that undermines the independent evaluation of each team's work.
 - If you're ever unsure whether something is acceptable collaboration, ask the instructor or the TA first.
 
-## 16. Policy on the use of AI tools (AI ledger)
+## 16. Policy on the use of AI tools (AI logs)
 
 Agentic AI coding tools are a required part of the standard project workflow, not just permitted.
 
@@ -185,10 +185,11 @@ Agentic AI coding tools are a required part of the standard project workflow, no
 - While AI tool use is unrestricted, the team must retain full ownership of the project &mdash; its code, design, artifacts, processes, and tools. Using AI output without reviewing and understanding it is not acceptable; every team member is expected to understand how the project works and how it has been developed.
 - AI tools may also be used for writing support (drafting, clarifying, editing reports), provided you remain the author of record and exercise critical judgment.
 
-**AI ledger requirement:**
+**AI logs requirement:**
 
-- For all project deliverables, teams must maintain an AI ledger documenting the prompts used, the AI-generated output received, and how that output was used, modified, or rejected.
-- The exact requirements and submission format/location will be announced on the course site.
+- An AI log is the record of an AI conversation with an AI tool &mdash; the prompts, responses, and tool used. Logs are pushed to the team's GitHub repository rather than submitted separately, and referenced from the related GitHub issue. Naming and structure conventions will be announced on the course site.
+- For each issue or sprint, include a short written rationale (in the pull request description or sprint report) explaining how AI output was used, especially when a suggestion was modified or rejected.
+- Submitting logs is required; missing logs may be penalized. Thin logs are not penalized.
 
 **Responsibility:**
 
