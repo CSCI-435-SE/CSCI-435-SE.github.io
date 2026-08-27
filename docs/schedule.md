@@ -9,7 +9,7 @@ This schedule is subject to change with notice &mdash; check back periodically. 
 
 | Date | Day | Topic | Notes |
 |---|---|---|---|
-| Aug 27 | Thu | **Course introduction and SE overview** <span class='wm-sched-links'>[Slides](#) &middot; [Reading](#)</span><br><span class='wm-sched-sub'>Syllabus, schedule, project; The software engineering landscape; Software properties and software types; Brief CS/SE history</span> |  |
+| Aug 27 | Thu | **Course introduction and SE overview** <span class='wm-sched-links'>[Slides: Course Introduction](assets/slides/1_Course_Introduction.pdf) &middot; [Slides: Study Presentation](assets/slides/1_Study_Presentation.pdf) &middot; [Reading: Brooks, "No Silver Bullet"](https://www.researchgate.net/profile/Frederick_Brooks_Jr/publication/30868224_Essence_and_Accidents_of_Software_Engineering/links/0fcfd50d5e8c4aaf8a000000.pdf)</span><br><span class='wm-sched-sub'>Syllabus, schedule, project; The software engineering landscape; Software properties and software types; Brief CS/SE history</span> |  |
 | Sep 1 | Tue | **Software processes and incremental change** <span class='wm-sched-links'>[Reading](#)</span><br><span class='wm-sched-sub'>Software lifespan and product economics; Staged model; Waterfall, iterative, agile methodologies; Incremental change</span> | Sprint 0 begins |
 | Sep 3 | Thu | **Introduction to agentic software engineering**<br><span class='wm-sched-sub'>AI-assisted SE workflows, tools, prompting; Context, memory, skills, harnesses, hooks; Benefits, limitations, risks; Specification and validation when using AI</span> |  |
 | Sep 4 | Fri | &mdash; | Last day to add/drop |

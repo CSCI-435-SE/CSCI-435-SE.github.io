@@ -12,7 +12,7 @@ Tuesdays & Thursdays, 12:30&ndash;1:50 PM &middot; Integrated Science Center (IS
 - [Oscar Chaparro, Ph.D.](https://ojcchar.github.io/) ([oscarch@wm.edu](mailto:oscarch@wm.edu)) &mdash; feel free to call me just Oscar
 - Office hours: Tuesdays & Thursdays, 10:45 AM&ndash;12:20 PM, ISC4 2325 (my office)
 - Teaching Assistant: Mustahid Hasan ([mhasan02@wm.edu](mailto:mhasan02@wm.edu))
-- TA office hours: Mondays & Wednesdays, 11:00 AM&ndash;12:00 PM, via [Zoom](https://cwm.zoom.us/j/83408037942) or in person (Room TBD) &mdash; no appointment needed.
+- TA office hours: Mondays & Wednesdays, 11:00 AM&ndash;12:00 PM, via [Zoom](https://cwm.zoom.us/j/83408037942) or in person (ISC4 2362) &mdash; no appointment needed.
 
 ## 2. Statement of purpose
 
