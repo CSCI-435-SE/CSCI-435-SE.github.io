@@ -19,6 +19,7 @@ nav:
     - AI Log Instructions: ai-logs.md
   - Presentations: presentations.md
   - Resources: resources.md
+  - Glossary: glossary.md
 
 theme:
   name: material

@@ -14,6 +14,35 @@ Sprint 0 is the onboarding sprint. Its purpose is to get every team member up an
 
 ---
 
+!!! tip "Unfamiliar with a term?"
+    Check the [Glossary](glossary.md) for definitions of pull requests, CI, sprints, agentic AI tools, and other concepts used throughout this page.
+
+
+### Before you begin
+
+Complete these two steps before working on any deliverable. They are prerequisites — you cannot clone the repo or submit anything without them.
+
+#### 1. Join Zulip
+
+Zulip is the course communication platform. All announcements, Q&A, and team coordination happen there.
+
+**→ Join the course Zulip organization:** *(link will be posted in Blackboard and emailed to you)*
+
+Once you join, introduce yourself in the `#general` stream and find your team's stream.
+
+#### 2. Join the GitHub organization
+
+All project repositories live in the [CSCI-435-SE](https://github.com/CSCI-435-SE) GitHub organization. You must be a member to clone, push branches, and open PRs.
+
+**→ Accept your GitHub organization invite:** *(invite will be sent to the email address on your GitHub account — check your inbox and spam)*
+
+The invite is also visible at `github.com/CSCI-435-SE` once it has been sent. Accept it before or as soon as Sprint 0 begins.
+
+!!! warning "Accept the invite promptly"
+    GitHub organization invites expire after **7 days**. If yours expires, post in Zulip and the TA will re-send it.
+
+---
+
 ### Deliverables
 
 #### D1 &mdash; Project Setup
@@ -22,7 +51,7 @@ Every team member must have the project running locally by the end of Sprint 0.
 
 **What to do:**
 
-1. Fork and clone your team's repository from the [CSCI-435-SE](https://github.com/CSCI-435-SE) GitHub organization.
+1. Clone your team's repository from the [CSCI-435-SE](https://github.com/CSCI-435-SE) GitHub organization. You have write access — no fork needed.
 2. Follow the `STUDENTS.md` guide at the root of the repo to install dependencies, run the app, and verify it works.
 3. Run the project's test suite and confirm the baseline passes (see `STUDENTS.md` for the expected baseline output).
 4. Read the project's architecture documentation and explore the codebase enough to answer these questions:
@@ -191,6 +220,46 @@ Coordinate early &mdash; decide who implements which issues before anyone starts
 3. **Then confirm with AI.** Once you have a hypothesis about where to make the change, ask an agentic tool to validate or extend your understanding. Let AI help you move faster, not substitute for your own reading.
 
 This order matters: developers who can locate and understand code independently are far more effective than those who rely on AI to navigate for them.
+
+**How to create your branch and PR:**
+
+All team members have write access to the team repo, so you use a **branch-based workflow** — one branch per issue, PR within the same repo. (See `STUDENTS.md` for full background on why this is the standard professional approach rather than forking.)
+
+```bash
+# One-time setup: clone the team repo (if you haven't already from D1)
+git clone https://github.com/CSCI-435-SE/<your-project>.git
+cd <your-project>
+
+# Before starting each issue: sync with main
+git checkout main
+git pull origin main
+
+# Create a branch named for the issue
+git checkout -b feat/issue-17-dark-mode    # new feature
+git checkout -b fix/issue-42-toast-dismiss  # bug fix
+
+# ... make your changes, run tests ...
+git add <the files you changed>
+git commit -m "feat: add dark mode toggle (#17)"
+git push origin feat/issue-17-dark-mode
+```
+
+After pushing, GitHub will show a **"Compare & pull request"** banner at the top of the repo page — click it to open the PR form. Select `main` as the base branch, write your description, and submit.
+
+!!! warning "main is branch-protected"
+    Direct pushes to `main` are blocked. If you accidentally commit to `main` locally, move the work to a branch before pushing:
+    ```bash
+    git checkout -b feat/issue-17-dark-mode   # creates branch from your current state
+    git push origin feat/issue-17-dark-mode   # push the branch
+    git checkout main && git reset --hard origin/main  # restore main locally
+    ```
+
+After your PR is merged, clean up:
+```bash
+git checkout main
+git pull origin main
+git branch -d feat/issue-17-dark-mode
+```
 
 **Requirements for each PR:**
 
