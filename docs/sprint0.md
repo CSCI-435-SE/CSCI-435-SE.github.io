@@ -26,7 +26,7 @@ Complete these two steps before working on any deliverable. They are prerequisit
 
 Zulip is the course communication platform. All announcements, Q&A, and team coordination happen there.
 
-**→ Join the course Zulip organization:** *(link will be posted in Blackboard and emailed to you)*
+**The Zulip invite link is posted on Blackboard and in the course Zulip — do not share it publicly.**
 
 Once you join, introduce yourself in the `#general` stream and find your team's stream.
 
@@ -34,9 +34,9 @@ Once you join, introduce yourself in the `#general` stream and find your team's 
 
 All project repositories live in the [CSCI-435-SE](https://github.com/CSCI-435-SE) GitHub organization. You must be a member to clone, push branches, and open PRs.
 
-**→ Accept your GitHub organization invite:** *(invite will be sent to the email address on your GitHub account — check your inbox and spam)*
+**The GitHub organization invite link is posted on Blackboard and in the course Zulip — do not share it publicly.** Click the link, sign in with your GitHub account, and accept the invitation.
 
-The invite is also visible at `github.com/CSCI-435-SE` once it has been sent. Accept it before or as soon as Sprint 0 begins.
+You will be able to see the organization at `github.com/CSCI-435-SE` immediately after accepting. Accept it before Sprint 0 begins.
 
 !!! warning "Accept the invite promptly"
     GitHub organization invites expire after **7 days**. If yours expires, post in Zulip and the TA will re-send it.
