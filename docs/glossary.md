@@ -65,7 +65,7 @@ A tag is a named pointer to a specific commit, used to mark a release. In this c
 
 ### GitHub Issue
 
-A GitHub Issue is a structured record in a repository's issue tracker representing a task, feature request, or bug. In this course, your feature backlog (D2) lives entirely as GitHub Issues — not in a separate document. Issues have a title, description, labels, and can be linked to PRs via `Closes #N`.
+A GitHub Issue is a structured record in a repository's issue tracker representing a task, feature request, or bug. In this course, the feature backlog lives entirely as GitHub Issues — not in a separate document. Issues have a title, description, labels, and can be linked to PRs via `Closes #N`.
 
 ### GitHub Organization
 
@@ -73,7 +73,7 @@ A shared GitHub account that groups repositories and members. All course project
 
 ### Pull Request (PR)
 
-A pull request is a proposal to merge changes from one branch into another (typically into `main`). Opening a PR starts a conversation: reviewers can comment on specific lines, request changes, or approve. Once approved and CI passes, the PR is merged. In this course, all code changes go through PRs — no direct commits to `main`. Each Sprint 0 PR must be linked to an issue, include a description, have tests, and receive at least one teammate approval.
+A pull request is a proposal to merge changes from one branch into another (typically into `main`). Opening a PR starts a conversation: reviewers can comment on specific lines, request changes, or approve. Once approved and CI passes, the PR is merged. In this course, all code changes go through PRs — no direct commits to `main`. Each PR must be linked to a GitHub issue, include a clear description, have tests, and receive at least one teammate approval before merging.
 
 → [About pull requests (GitHub Docs)](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
 
@@ -83,11 +83,11 @@ A pull request is a proposal to merge changes from one branch into another (typi
 
 ### Definition of Done (DoD)
 
-A shared checklist that defines when a piece of work is truly complete — not just "code written" but code reviewed, tests passing, CI green, and documentation updated. In D3, your team adopts the project's existing DoD (if one exists) and supplements it where the project is silent.
+A shared checklist that defines when a piece of work is truly complete — not just "code written" but code reviewed, tests passing, CI green, and documentation updated. Each sprint, your team adopts the project's existing DoD (if one exists) and supplements it where the project is silent.
 
 ### Feature backlog
 
-An ordered list of features and improvements a team wants to build. In this course, the backlog lives in your project's GitHub issue tracker (not a document). You create it in D2 and draw from it throughout the semester.
+An ordered list of features and improvements a team wants to build. In this course, the backlog lives in your project's GitHub issue tracker (not a document). You build it at the start of the course and draw from it throughout the semester.
 
 ### Issue scope (Small / Medium / Large / XL)
 
@@ -125,11 +125,11 @@ A tool that wraps agentic CLI sessions (Claude Code, Gemini CLI, Codex CLI) and 
 
 ### `CONTRIBUTING.md`
 
-A file at the root of many open-source repositories that explains how to contribute — coding style, commit conventions, PR format, review process, and the project's own Definition of Done. Reading this file is the first step in D3. Your standards document must be consistent with it.
+A file at the root of many open-source repositories that explains how to contribute — coding style, commit conventions, PR format, review process, and the project's own Definition of Done. Read this file before writing your team's standards document. Your standards must be consistent with it.
 
 ### `AGENTS.md` / `CLAUDE.md`
 
-Files that provide instructions to AI agents operating in the repository — what the codebase does, how to run tests, what conventions to follow, and any restrictions on AI-generated changes. Not all projects have them. If your project does, read them as part of D4 and decide as a team whether to use them as-is, adapt, or supplement.
+Files that provide instructions to AI agents operating in the repository — what the codebase does, how to run tests, what conventions to follow, and any restrictions on AI-generated changes. Not all projects have them. If your project does, read them before each sprint and decide as a team whether to use them as-is, adapt, or supplement.
 
 ### Linter / formatter
 
@@ -141,7 +141,7 @@ A single Git repository that contains multiple related packages or applications.
 
 ### Test suite
 
-The collection of automated tests for a project (unit tests, integration tests, end-to-end tests). In D1, you run the test suite to establish a passing baseline before making any changes. In D5, you write or update tests for every PR. "CI green" means the test suite (and other checks) pass on GitHub after your push.
+The collection of automated tests for a project (unit tests, integration tests, end-to-end tests). At the start of each sprint, you run the test suite to establish a passing baseline before making any changes. Every PR requires writing or updating tests for any code changed. "CI green" means the test suite (and other checks) pass on GitHub after your push.
 
 ---
 
