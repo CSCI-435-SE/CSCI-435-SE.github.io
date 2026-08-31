@@ -9,7 +9,14 @@ nav:
   - Syllabus: syllabus.md
   - Schedule: schedule.md
   - Projects: projects.md
-  - Sprints: sprints.md
+  - Sprints:
+    - Overview: sprints.md
+    - Sprint 0: sprint0.md
+    - Sprint 1: sprint1.md
+    - Sprint 2: sprint2.md
+    - Sprint 3: sprint3.md
+    - Sprint 4: sprint4.md
+    - AI Log Instructions: ai-logs.md
   - Presentations: presentations.md
   - Resources: resources.md
 
