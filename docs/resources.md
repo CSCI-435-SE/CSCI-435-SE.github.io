@@ -11,7 +11,7 @@ Readings assigned for specific classes will be posted on the [Schedule](schedule
 
 - Brooks, Frederick P. ["No Silver Bullet: Essence and accidents of software engineering."](https://www.researchgate.net/profile/Frederick_Brooks_Jr/publication/30868224_Essence_and_Accidents_of_Software_Engineering/links/0fcfd50d5e8c4aaf8a000000.pdf) *IEEE computer* 20, no. 4 (1987): 10-19.
 - Sommerville, Ian. *Software Engineering*, 9th ed. (2011).
-- Rajlich, Vaclav. [*Software Engineering: The Current Practice*](https://www.taylorfrancis.com/books/mono/10.1201/b11678/software-engineering-vaclav-rajlich). Chapman and Hall/CRC, 2016.
+- Rajlich, Vaclav. [*Software Engineering: The Current Practice*](https://www.taylorfrancis.com/books/mono/10.1201/b11678/software-engineering-vaclav-rajlich). Chapman and Hall/CRC, 2016. (Also available via the W&M Library digital collection.)
 - Rajlich, V. and Gosavi, P. ["Incremental change in object-oriented programming."](https://ieeexplore.ieee.org/abstract/document/1309648) *IEEE Software* 21, no. 4 (2004): 62-69.
 - Zeller, Andreas. [*Why Programs Fail: A Guide to Systematic Debugging*](https://www.amazon.com/Why-Programs-Fail-Systematic-Debugging/dp/0123745152), 2nd ed. Morgan Kaufmann, 2009. (Also available via the W&M Library digital collection.)
 - Pezze, Mauro, and Michal Young. [*Software Testing and Analysis: Process, Principles, and Techniques*](https://bcs.wiley.com/he-bcs/Books?action=index&bcsId=3754&itemId=0471455938). John Wiley & Sons, 2008.
