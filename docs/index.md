@@ -15,11 +15,11 @@ software engineering workflow: agile sprints, code review, CI, testing, and real
 <span class="wm-announcement-date">August 3, 2026</span> &mdash; Welcome to the course! Take a look at the [Syllabus](syllabus/) and [Schedule](schedule/) before our first class on August 27.
 {: .wm-announcement }
 
-<span class="wm-announcement-date">TBA</span> &mdash; **Teams have been formed.** Find your team and project assignment on Zulip. Check your GitHub and Zulip inboxes for your organization invite and team stream.
+<!-- <span class="wm-announcement-date">TBA</span> &mdash; **Teams have been formed.** Find your team and project assignment on Zulip. Check your GitHub and Zulip inboxes for your organization invite and team stream.
 {: .wm-announcement }
 
 <span class="wm-announcement-date">September 1, 2026</span> &mdash; **Sprint 0 is open.** All deliverables are due **September 17 at 11:59 PM**. See the [Sprint 0 requirements](sprints/sprint0/) for full details.
-{: .wm-announcement }
+{: .wm-announcement } -->
 
 ## Quick Links
 
