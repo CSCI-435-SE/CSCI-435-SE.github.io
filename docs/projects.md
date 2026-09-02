@@ -122,7 +122,7 @@ Team wiki and knowledge base with real-time collaborative editing.
 </div>
 
 <div class="wm-card">
-<div class="wm-meta">5 members</div>
+<div class="wm-meta">6 members</div>
 <h3>Gitea</h3>
 <div class="wm-member-list">
 <span class="wm-member">Vishav Chopra</span>
@@ -130,6 +130,7 @@ Team wiki and knowledge base with real-time collaborative editing.
 <span class="wm-member">Arjun Bhat</span>
 <span class="wm-member">Aman Bhoot</span>
 <span class="wm-member">Jack Donohue</span>
+<span class="wm-member">Ethan Turner</span>
 </div>
 </div>
 
