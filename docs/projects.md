@@ -75,3 +75,87 @@ Team wiki and knowledge base with real-time collaborative editing.
 </div>
 
 </div>
+
+---
+
+## Teams
+
+<div class="wm-card-grid" markdown="1">
+
+<div class="wm-card">
+<div class="wm-meta">6 members</div>
+<h3>Actual Budget</h3>
+<div class="wm-member-list">
+<span class="wm-member">Isabella Sasso</span>
+<span class="wm-member">James Leonard</span>
+<span class="wm-member">Cashen Croft</span>
+<span class="wm-member">Reese Bryan</span>
+<span class="wm-member">Sara Strick</span>
+<span class="wm-member">William McLemore</span>
+</div>
+</div>
+
+<div class="wm-card">
+<div class="wm-meta">6 members</div>
+<h3>Cal.diy</h3>
+<div class="wm-member-list">
+<span class="wm-member">Zachary Short</span>
+<span class="wm-member">Zachary Bowden</span>
+<span class="wm-member">Demir Batu Beynam</span>
+<span class="wm-member">Julissa Hernandez</span>
+<span class="wm-member">Joshua Ko</span>
+<span class="wm-member">Dylan Han</span>
+</div>
+</div>
+
+<div class="wm-card">
+<div class="wm-meta">6 members</div>
+<h3>Excalidraw</h3>
+<div class="wm-member-list">
+<span class="wm-member">Bennett Matuszewski</span>
+<span class="wm-member">Anthony Williams</span>
+<span class="wm-member">Alexander Brunson</span>
+<span class="wm-member">Tristan Raab</span>
+<span class="wm-member">Thomas Reilly</span>
+<span class="wm-member">Brian Fines</span>
+</div>
+</div>
+
+<div class="wm-card">
+<div class="wm-meta">5 members</div>
+<h3>Gitea</h3>
+<div class="wm-member-list">
+<span class="wm-member">Vishav Chopra</span>
+<span class="wm-member">Carson Rackley</span>
+<span class="wm-member">Arjun Bhat</span>
+<span class="wm-member">Aman Bhoot</span>
+<span class="wm-member">Jack Donohue</span>
+</div>
+</div>
+
+<div class="wm-card">
+<div class="wm-meta">6 members</div>
+<h3>Medusa</h3>
+<div class="wm-member-list">
+<span class="wm-member">Nicholas Piombino</span>
+<span class="wm-member">Logan Fecko</span>
+<span class="wm-member">Jingyang Chen</span>
+<span class="wm-member">Alex Grapsas</span>
+<span class="wm-member">Gracie Gones</span>
+<span class="wm-member">Muhammad Ali</span>
+</div>
+</div>
+
+<div class="wm-card">
+<div class="wm-meta">5 members</div>
+<h3>Outline</h3>
+<div class="wm-member-list">
+<span class="wm-member">Lauren Kim</span>
+<span class="wm-member">Michael Wang</span>
+<span class="wm-member">Conner Aylward</span>
+<span class="wm-member">Leana Gyalokay</span>
+<span class="wm-member">Mustafa Aljassar</span>
+</div>
+</div>
+
+</div>

@@ -133,3 +133,21 @@ h1, h2, h3,
   color: var(--wm-patina);
   margin-bottom: 0.25rem;
 }
+
+/* Member name pills on the Teams section of the Projects page */
+.wm-member-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-top: 0.55rem;
+}
+.wm-member {
+  display: inline-block;
+  background: #f4f6f5;
+  border: 1px solid var(--wm-silver);
+  border-radius: 20px;
+  padding: 0.15rem 0.6rem;
+  font-size: 0.78rem;
+  color: #1c1c1c;
+  white-space: nowrap;
+}
