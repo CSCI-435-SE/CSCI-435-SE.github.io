@@ -5,9 +5,9 @@ hide:
 
 # AI Log Instructions
 
-We will provide a Claude subscription to each student. We strongly recommend using this suscription for the class. Using Claude CLI is particularly useful because it will facilitate data collection, as documented in these instructions.
+We will provide a Claude subscription to each student. We strongly recommend using this subscription for the class. Using Claude Code CLI is particularly useful because it will facilitate data collection, as documented in these instructions.
 
-While you encouraged to use Claude, you are free to use any AI tools to assist your work in this class (e.g., when you ran out of tokens with the subscription we provide), on the condition that you
+While you are encouraged to use Claude, you are free to use any AI tools to assist your work in this class (e.g., when you ran out of tokens with the subscription we provide), on the condition that you
 **accurately and honestly report your use**. These instructions explain exactly what to log, how to
 capture it, and where to submit it.
 
@@ -29,6 +29,9 @@ You do **not** need to log: purely academic questions ("explain what a tRPC rout
 research unrelated to your project, or assignment instructions you asked AI to clarify.
 
 When in doubt, log it.
+
+!!! tip "Log everything — including unproductive sessions"
+    A session where AI gave wrong answers, went in circles, or didn't help is just as important to document as a productive one. You will not be graded on whether AI was helpful; you will be graded on whether you documented your usage accurately and completely.
 
 ---
 
@@ -147,12 +150,11 @@ specstory run cursor    # Cursor CLI
 specstory sync
 ```
 
-This converts whatever the tool has already logged locally. Run it again at any time to pick up
-new turns.
+Agentic CLI tools keep their own local session history even when SpecStory isn't wrapping them. `specstory sync` reads those existing records and converts them to SpecStory's Markdown format. Run it after any session you forgot to wrap, or at any point during a session to pick up turns so far.
 
-**At the end of each sprint:** run `specstory sync` one final time, then copy the relevant files
+**At the end of each sprint:** run `specstory sync` one final time, then copy the sprint-related files
 from `.specstory/history/` into `ai-logs/sprint#/<your-github-username>/`, renaming them to
-follow the naming convention above.
+follow the naming convention above. (SpecStory names files by date and tool automatically; verify that the slug portion describes the session clearly and adjust if needed.)
 
 ---
 
@@ -199,12 +201,12 @@ the issue with your AI usage. Use this format:
 
 **Role in this issue:** Implementation / Code review / Testing / Other
 
-| # | Date | Tool | Log | What AI helped with |
-|---|---|---|---|---|
-| 1 | 2026-09-08 | claude-web | [link](../../ai-logs/sprint0/jsmith/2026-09-08_claude-web_understanding-issue-42.md) | Understanding the issue, locating relevant code |
-| 2 | 2026-09-09 | claude-code | [link](../../ai-logs/sprint0/jsmith/2026-09-09_claude-code_issue-42-implementation.md) | Implementing the fix and writing tests |
+| # | Tool | Log | What AI helped with |
+|---|---|---|---|
+| 1 | claude-web | [link](ai-logs/sprint0/jsmith/2026-09-08_claude-web_understanding-issue-42.md) | Understanding the issue, locating relevant code |
+| 2 | claude-code | [link](ai-logs/sprint0/jsmith/2026-09-09_claude-code_issue-42-implementation.md) | Implementing the fix and writing tests |
 
-**Attachments:** [2026-09-08_claude-web_understanding-issue-42/](../../ai-logs/sprint0/jsmith/2026-09-08_claude-web_understanding-issue-42/)
+**Attachments:** [2026-09-08_claude-web_understanding-issue-42/](ai-logs/sprint0/jsmith/2026-09-08_claude-web_understanding-issue-42/)
 ```
 
 - Post this comment when your work on the issue is complete.
@@ -222,8 +224,8 @@ Before the sprint deadline:
 2. Export any web chat sessions not yet exported.
 3. Rename all files to follow the naming convention.
 4. Move all logs and attachment folders into `ai-logs/sprint#/<your-github-username>/`.
-5. Confirm every issue/PR you worked on has your AI Assistance comment with accurate links.
-6. Push the `ai-logs/` folder to the team repository.
+5. Push the `ai-logs/` folder to the team repository.
+6. Confirm every issue/PR you worked on has your AI Assistance comment with working links.
 
 ---
 
