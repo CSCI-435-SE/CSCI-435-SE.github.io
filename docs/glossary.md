@@ -123,6 +123,13 @@ A tool that wraps agentic CLI sessions (Claude Code, Gemini CLI, Codex CLI) and 
 
 ## Codebase & Project Concepts
 
+### Concept location
+
+The process of identifying which parts of a codebase are relevant and/or need to be changed to implement a given feature,fix a bug, or complete another change request or issue. Concept location is typically needed as part of analysis and design to solve a given issue: before writing any code, a developer navigates the code base searching for relevant code elements (classes, methods, etc.) that are related to the issue. 
+
+→ [Rajlich (2016), *Software Engineering: The Current Practice*](https://www.taylorfrancis.com/books/mono/10.1201/b11678/software-engineering-vaclav-rajlich)
+
+
 ### `CONTRIBUTING.md`
 
 A file at the root of many open-source repositories that explains how to contribute — coding style, commit conventions, PR format, review process, and the project's own Definition of Done. Read this file before writing your team's standards document. Your standards must be consistent with it.

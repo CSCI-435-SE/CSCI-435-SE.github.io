@@ -31,12 +31,7 @@ Once you join, introduce yourself in the `#general` stream and find your team's 
 
 All project repositories live in the [CSCI-435-SE](https://github.com/CSCI-435-SE) GitHub organization. You must be a member to clone, push branches, and open PRs.
 
-**The GitHub organization invite link is posted on Blackboard and in the course Zulip — do not share it publicly.** Click the link, sign in with your GitHub account, and accept the invitation.
-
-You will be able to see the organization at `github.com/CSCI-435-SE` immediately after accepting. Accept it before Sprint 0 begins.
-
-!!! warning "Accept the invite promptly"
-    GitHub organization invites expire after **7 days**. If yours expires, post in Zulip and the TA will re-send it.
+The instructor/TA will add you individually to your team's repository in the [CSCI-435-SE](https://github.com/CSCI-435-SE) GitHub organization. You will receive a GitHub notification when access is granted. If you have not received access by the start of Sprint 0, post in your team's Zulip stream and the TA will follow up.
 
 ---
 
@@ -44,7 +39,7 @@ You will be able to see the organization at `github.com/CSCI-435-SE` immediately
 
 #### D1 &mdash; Project Setup
 
-Every team member must run the project locally in order to complete the changes for Sprint 0 (see )
+Every team member must run the project locally in order to complete the changes for Sprint 0 (see D5)
 
 **What to do:**
 
@@ -104,7 +99,6 @@ A feature is a user-visible or developer-visible change that makes the product b
 | **Rough scope** | Small / Medium / Large / XL — one sentence justifying the estimate |
 | **Source** | Where the idea came from (project issue tracker, personal use, docs gap, community request, etc.) |
 
-Do not propose features already on the project's official roadmap or in open PRs — check the upstream issue tracker first.
 
 **Issue labels to apply** (use the project's existing labels where available; create these if they don't exist):
 
@@ -115,7 +109,6 @@ Do not propose features already on the project's official roadmap or in open PRs
 | `type: improvement` | Improving an existing capability |
 | `type: bug` | This is a bug |
 
-The instructor will triage your issues after the sprint, assigning priority and milestone labels.
 
 !!! info "Aim high on the ambitious ones"
     Sprint 0 is the time to think big. Some of these features will be scoped, decomposed, or merged during Sprint 1 requirements analysis; that is expected. Propose features you would actually want to use or build.
@@ -140,7 +133,7 @@ Summarize what the project already requires. This becomes the baseline your stan
 | Section | What to cover |
 |---|---|
 | **Coding conventions** | Language/framework style guide; linting/formatting tools; conventions specific to this codebase |
-| **Branching and commit conventions** | Branch naming (e.g., `feature/`, `fix/`); commit message format; when to squash |
+| **Branching and commit conventions** | Branch naming (e.g., `feature/`, `fix/`); commit message format |
 | **Pull request process** | PR restrictions; required reviewers; how to write a PR description; merge criteria |
 | **Testing expectations** | Which types of tests to write for which changes; minimum expectations; test naming conventions |
 | **AI tool use** | Which tools the team uses; what must be logged; review responsibilities for AI-generated code; how to flag AI-assisted work in PR descriptions |
@@ -188,11 +181,11 @@ Logs should be stored in `ai-logs/sprint0/<your-github-username>/` in the team r
 
 **4. Start logging from day one.** Log every agentic session starting from the moment you begin Sprint 0 work. Include a summary in D6.
 
-**Submission:** No separate deliverable. but we recommend doing a quick test by using Claude with SpecStory, collect the logs, and push them to your repository. Evidence of log setup and a usage summary are included in D6 (Sprint Report).
+**Submission:** No separate deliverable. But we recommend running a quick test by using Claude with SpecStory: run some prompts, collect the logs, and push them to your repository. Evidence of log setup and a usage summary are included in D6 (Sprint Report).
 
 ---
 
-#### D5 &mdash; Pull Requests
+#### D5 &mdash; Code Changes and Pull Requests
 
 The core hands-on activity of Sprint 0 is making real changes to the codebase and going through the full contribution workflow. Every team member should open **exactly 2 pull requests** in Sprint 0 (i.e., they need to work on two issues).
 
@@ -213,7 +206,7 @@ Coordinate early: decide who implements which issues before anyone starts coding
 2. **Find the relevant code yourself first**, without AI. Read the directory structure, search the codebase, follow the call stack. Take notes on what you find. This is essentially performing "Concept location" from the incremental change process covered in class.
 3. **Then confirm with AI.** Once you have a hypothesis about where to make the change, ask an agentic tool to validate or extend your understanding. Let AI help you move faster, not substitute for your own reading.
 
-This order matters: as a first experience, we want you to locate and understand code independently so that you understand the effort concept location takes and to force you learn on your own.
+This order matters: as a first experience, we want you to locate and understand code independently so that you understand the effort concept location takes and to force you to learn on your own.
 
 **How to create your branch and PR:**
 
@@ -264,7 +257,7 @@ git branch -d feat/issue-17-dark-mode  # delete the branch if already merged
 - The PR must pass CI if CI is configured in the project. If CI is not yet configured, note this in the PR description. **We don't require CI configuration for Sprint 0.**
 
 !!! warning "You must be able to explain every line"
-    You may use AI tools to help write code. However, you are responsible for understanding every line in your PR. Reviewers and the instructor may ask you to explain any part of your change at any time, including after the sprint. If you cannot explain code in your own PR, you will received points off.
+    You may use AI tools to help write code. However, you are responsible for understanding every line in your PR. Reviewers and the instructor may ask you to explain any part of your change at any time, including after the sprint. If you cannot explain code in your own PR, you will receive points off.
 
 **Submission:** All PRs in the project's GitHub repository. Links to merged (or reviewed) PRs go in D6.
 
@@ -305,8 +298,8 @@ At the end of Sprint 0, the team creates a release tag in GitHub to mark the spr
 **What to do:**
 
 1. Ensure all Sprint 0 PRs are merged (or in a final reviewed state) before tagging.
-2. Check the project's existing release history and CHANGELOG to understand the versioning scheme in use (e.g., `v1.2.3`, calendar-based versions like `2025.11.0`).
-3. Create a Git tag and a GitHub release following that scheme. If the project has no prior releases, use `v0.1.0-csci435-s0`. If it has a scheme, append `-csci435-s0` to the current version (e.g., `v2.17.2-csci435-s0`).
+2. Check the project's latest release (or most recent version tag) to find the current version number.
+3. Create a Git tag using that version with the `-csci435-s0` suffix appended — do **not** bump the version number. For example, if the current version is `v2.17.2`, tag as `v2.17.2-csci435-s0`. If the project has no prior releases, use `v0.1.0-csci435-s0`.
 4. Write a brief release description: what was changed in the project.
 
 ```bash
@@ -322,7 +315,7 @@ Then create the GitHub release from the tag on the repository's Releases page.
 
 #### D8 &mdash; Reflection Survey (Individual)
 
-Each team member should complete the Sprint 0 reflection survey individually, which aims to engage the student into reflecting on the process followed in Sprint 0, including their AI usage. The link will be distributed via Blackboard and Zulip.
+Each team member must complete the Sprint 0 reflection survey individually, which aims to engage the student into reflecting on the process followed in Sprint 0, including their AI usage. The link will be distributed via Blackboard and Zulip.
 
 **Deadline:** Sep 17, 11:59 PM.
 
@@ -334,7 +327,7 @@ Sprint 0 is worth **100 points** (9% of the course grade). Points are awarded to
 
 | Deliverable | Points | Notes |
 |---|---|---|
-| D1 &mdash; Project Setup | 10 | Evidence: screenshots + written anwers to questions about the project in sprint report |
+| D1 &mdash; Project Setup | 10 | Evidence: screenshots + written answers to questions about the project in sprint report |
 | D2 &mdash; Feature Backlog | 20 | Quality, specificity, and ambition of GitHub issues; completeness of required fields; appropriate labels |
 | D3 &mdash; Standards Document | 10 | Coverage of required sections; grounded in existing project conventions; coherent DoD |
 | D4 &mdash; AI Tooling Setup | 5 | Evidence of log capture and usage summary in sprint report |
