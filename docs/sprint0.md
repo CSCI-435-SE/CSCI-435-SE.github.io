@@ -205,7 +205,7 @@ Coordinate early: decide who implements which issues before anyone starts coding
 **Before you write any code:**
 
 1. **Read the issue carefully.** What exactly is being asked? Ask the author on the issue if anything is unclear.
-2. **Find the relevant code yourself first**, without AI. Read the directory structure, search the codebase, follow the call stack. Take notes on what you find. This is essentially performing "Concept location" from the incremental change process covered in class.
+2. **Find the relevant code yourself first**, without AI. Read the directory structure, search the codebase, inspect code files, navigate code dependencies (e.g., function/method calls), etc. Take notes on what you find. This is essentially performing "Concept location" from the incremental change process covered in class.
 3. **Then confirm with AI.** Once you have a hypothesis about where to make the change, ask an agentic tool to validate or extend your understanding. Let AI help you move faster, not substitute for your own reading.
 
 This order matters: as a first experience, we want you to locate and understand code independently so that you understand the effort concept location takes and to force you to learn on your own.
