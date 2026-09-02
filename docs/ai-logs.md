@@ -5,18 +5,20 @@ hide:
 
 # AI Log Instructions
 
-You are free to use any AI tools to assist your work in this class, on the condition that you
+We will provide a Claude subscription to each student. We strongly recommend using this suscription for the class. Using Claude CLI is particularly useful because it will facilitate data collection, as documented in these instructions.
+
+While you encouraged to use Claude, you are free to use any AI tools to assist your work in this class (e.g., when you ran out of tokens with the subscription we provide), on the condition that you
 **accurately and honestly report your use**. These instructions explain exactly what to log, how to
 capture it, and where to submit it.
 
-Questions? Contact your TA ([mhasan02@wm.edu](mailto:mhasan02@wm.edu)) or
+Don't hesitate to ask questions at any moment, especially during log collection. Contact your TA ([mhasan02@wm.edu](mailto:mhasan02@wm.edu)) or
 Dr. Chaparro ([oscarch@wm.edu](mailto:oscarch@wm.edu)).
 
 ---
 
 ## What counts as a loggable session
 
-Log every AI interaction that is **related to the course project**, including:
+Log every AI interaction that is **related to the course project**, including (but not limited to):
 
 - Writing, debugging, or reviewing code
 - Understanding the codebase, architecture, or an issue
@@ -44,7 +46,7 @@ ai-logs/
 ```
 
 Each sprint gets its own subfolder. Each team member gets their own subfolder named by their GitHub
-username. **Do not put your logs in a teammate's folder.**
+username. Create the subfolder if it is not yet present. **Do not put your logs in a teammate's folder.**
 
 ---
 
@@ -156,7 +158,7 @@ follow the naming convention above.
 
 ### Web chat tools &mdash; use the browser exporter extensions
 
-For **Claude.ai, ChatGPT, Gemini, Grok, and DeepSeek** in the browser, install the
+For **Claude.ai, ChatGPT, Gemini, and Grok** in the browser, install the
 corresponding Chrome extension and export at the end of each session:
 
 | Tool | Chrome Extension |
@@ -165,7 +167,7 @@ corresponding Chrome extension and export at the end of each session:
 | ChatGPT | [ChatGPT Exporter](https://chromewebstore.google.com/detail/chatgpt-exporter-chatgpt/ilmdofdhpnhffldihboadndccenlnfll) |
 | Gemini | [Gemini Exporter](https://chromewebstore.google.com/detail/gemini-exporter-save-gemi/jfepajhaapfonhhfjmamediilplchakk) |
 | Grok | [Grok Exporter](https://chromewebstore.google.com/detail/grok-exporter-grok-to-pdf/gjoigaflapfgapfebiajiolclnpfneao) |
-| DeepSeek | [DeepSeek Exporter](https://chromewebstore.google.com/detail/deepseek-exporter-extract/ccidioajndoplgongndfmljpcaejlnlc) |
+<!-- | DeepSeek | [DeepSeek Exporter](https://chromewebstore.google.com/detail/deepseek-exporter-extract/ccidioajndoplgongndfmljpcaejlnlc) | -->
 
 Export each session as **Markdown** immediately after finishing. Rename the exported file to match
 the naming convention and place it in your folder.

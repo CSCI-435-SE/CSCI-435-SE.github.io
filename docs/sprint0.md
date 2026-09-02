@@ -165,10 +165,12 @@ AI tools are required in this course. Sprint 0 establishes your team's AI workfl
 
 You may additionally use chat-based tools (Claude, ChatGPT, Gemini, etc.) for non-agentic tasks such as understanding code, drafting, or research.
 
-!!! warning "AI accounts and credentials"
-    Use your own accounts. **Do not share API keys, login credentials, or account access** with teammates or anyone else. Sharing credentials violates the terms of service of every AI provider listed above, and the course Claude Team plan in particular.
 
 **Course Claude Team plan:** The instructor will distribute seats on a Claude Team plan for the class. This gives each team member access to Claude without the free tier's rate limits. Details and instructions will be posted on Zulip and/or Blackboard. If you cannot access the Team plan, let the instructor and TA know.
+
+
+!!! warning "Claude account and credentials"
+    Use your own Claude account. **Do not share login credentials or account access** with teammates or anyone else. Sharing credentials violates the terms of service of  Claude Team plan and may lead to account suspension.
 
 **3. Set up AI log capture.** Full instructions are on the **[AI Log Instructions](ai-logs.md)** page. In brief:
 
