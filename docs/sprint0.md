@@ -83,10 +83,10 @@ Each team member proposes **at least 4 feature ideas** for the project as **GitH
 
 **Issue composition per member (minimum 4):**
 
-- **2 small or medium** features — concrete, well-scoped changes a single developer could complete in 1&ndash;2 weeks. These are the issues you will pull into Sprints 1&ndash;2.
+- **2 small or medium** features — concrete, well-scoped changes a single developer could complete in roughly 1-1.5 weeks. See the issues the instructor/TA will create for Sprint 0 as reference.
 - **2 ambitious** features — larger improvements or new capabilities that would take a Sprint or more. Think about what real users of this project actually want. If your team will implement them in later sprints (to be decided), they will probably need to be broken down into more manageable tasks.
 
-There is no upper limit. If you have more ideas, open more issues. Remember that you team will have to analyze the existing backlog of issues, decompose them, prioritize them, assign them, etc. within a given sprint so that the work reasonably fits three weeks. Therefore, it is okay to have many ideas/issues in Sprint 0.
+There is no upper limit. If you have more ideas, open more issues. Remember that you team will have to analyze the existing backlog of issues, decompose them, prioritize them, assign them, etc. within a given sprint so that the work reasonably fits 2.5 - 3 weeks. Therefore, it is okay to have many ideas/issues in Sprint 0.
 
 **What makes a good issue:**
 A feature is a user-visible or developer-visible change that makes the product better: a new capability, a significant improvement to an existing one, or a meaningful non-functional improvement (performance, accessibility, security). Each issue must include:
