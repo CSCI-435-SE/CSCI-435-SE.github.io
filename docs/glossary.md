@@ -138,6 +138,19 @@ A file at the root of many open-source repositories that explains how to contrib
 
 Files that provide instructions to AI agents operating in the repository — what the codebase does, how to run tests, what conventions to follow, and any restrictions on AI-generated changes. Not all projects have them. If your project does, read them before each sprint and decide as a team whether to use them as-is, adapt, or supplement.
 
+### Docker
+
+A platform for packaging and running applications in isolated environments called *containers*. A container bundles the app and all its dependencies together, so the app behaves the same on every machine regardless of what is installed locally. Many projects in this course use Docker to run the app, the database, and other services locally. If your project has a `Dockerfile`, you will need Docker installed — follow the setup guide in `STUDENTS.md`.
+
+→ [Get started with Docker](https://docs.docker.com/get-started/)
+
+### Docker Compose
+
+A tool for defining and running multi-container Docker applications. A `docker-compose.yml` file describes all the services your app needs (web server, database, cache, etc.) and how they connect. Running `docker compose up` starts the full stack in one command. Many projects in this course use Compose as the primary way to run the app locally.
+
+→ [Docker Compose overview](https://docs.docker.com/compose/)
+
+
 ### Linter / formatter
 
 A linter is a tool that analyzes code for style and potential errors without running it (e.g., ESLint for JavaScript, RuboCop for Ruby). A formatter automatically reformats code to match a style guide (e.g., Prettier, `gofmt`). Most projects in this course have linting and formatting configured — check your project's `CONTRIBUTING.md` and config files (`.eslintrc`, `rubocop.yml`, etc.) and run these tools before opening a PR.
