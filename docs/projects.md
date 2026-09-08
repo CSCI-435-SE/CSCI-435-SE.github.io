@@ -140,7 +140,7 @@ Team wiki and knowledge base with real-time collaborative editing.
 <div class="wm-member-list">
 <span class="wm-member">Nicholas Piombino</span>
 <span class="wm-member">Logan Fecko</span>
-<span class="wm-member">Jingyang Chen</span>
+
 <span class="wm-member">Alex Grapsas</span>
 <span class="wm-member">Gracie Gones</span>
 <span class="wm-member">Muhammad Ali</span>
