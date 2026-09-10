@@ -169,6 +169,6 @@ The collection of automated tests for a project (unit tests, integration tests, 
 
 ### Zulip
 
-The course communication platform, similar to Slack but organized into *streams* (like channels) and *topics* (threaded conversations within a stream). All course announcements, Q&A, and team coordination happen on Zulip. You must join before Sprint 0 begins — see [Before you begin](sprint0.md#before-you-begin) for the link.
+The course communication platform, similar to Slack but organized into *channels* and *topics* (threaded conversations within a channel). All course announcements, Q&A, and team coordination happen on Zulip. You must join before Sprint 0 begins — see [Before you begin](sprint0.md#before-you-begin) for the link.
 
 → [Zulip — getting started](https://zulip.com/help/getting-started-with-zulip)
