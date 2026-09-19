@@ -24,37 +24,38 @@ Each team delivers a short lightning talk covering what the project is, what the
 
 ### Format
 
-- **Slides:** required. Prepare using any presentation tool (PowerPoint, Google Slides, Keynote, etc.) and submit a PDF on Blackboard.
-- **Length:** **10 minutes per team**, followed by up to **2 minutes of Q&A** from the class.
-- **Order:** announcement by the instructor in class.
-- **Submission:** export your slides as **PDF** and upload to Blackboard **before class starts** (by 12:20 PM on Sep 22).
-- **Who presents:** the whole team should be prepared to present and answer questions.
+- **Slides:** required. Use any presentation tool (PowerPoint, Google Slides, Keynote, etc.) and submit a PDF on Blackboard.
+- **Length:** **10 minutes per team**, followed by up to **2 minutes of Q&A**.
+- **Order:** announced by the instructor at the start of class.
+- **Submission:** export your slides as PDF and upload to Blackboard **before class** (by 12:20 PM on Sep 22).
+- **Who presents:** the whole team should be present and ready to present and answer questions.
 
 ---
 
 ### What to cover
 
-Your talk should cover the topics below. Present the topics clearly and concisely, but with enough detail to be understood by the audience. You do not need to use these as slide headings; organize your talk in whatever order flows best.
+Cover each topic below clearly and concisely. You do not need to follow this order — organize your talk however flows best.
 
 | Topic | What to address |
 |---|---|
 | **Project overview** | What is the project? Who are its users? What are its main features? |
 | **Architecture & technologies** | What are the main components and how do they interact? What are the key technologies, frameworks, and external services? |
-| **Team organization and communication** | What's your team name? How did the team organize? Any separation of roles in the team? |
-| **Onboarding experience** | How hard was it to get the project running locally? What obstacles did you hit? What did you learn from reading the codebase? |
+| **Team organization** | What is your team name? How is the team organized? Are there any defined roles? |
+| **SE practices** | What engineering practices will the team follow? (e.g., coding conventions, PR and code review process, testing approach, AI usage, CI/CD, issue management) |
+| **Onboarding experience** | How hard was it to get the project running locally? What obstacles did you hit? What did you learn from exploring the codebase? |
 | **Sprint 0 outcomes** | What issues and PRs did your team complete? What was the most valuable thing you built or learned? |
-| **Risks, challenges & Sprint 1 plan** | What are the biggest unknowns or risks going into Sprint 1? What features does the team plan to tackle first? |
+| **Risks, challenges & Sprint 1 plan** | What are the biggest unknowns going into Sprint 1? What features does the team plan to tackle first? |
 
 ---
 
 ### Tips
 
-- **Slides are for your audience, not for you.** Keep text minimal; rely on visuals, diagrams, and screenshots.
+- **Slides are for your audience, not for you.** Keep text minimal; use visuals, diagrams, and screenshots instead.
 - There is no need to show the system running live.
-- A screenshot of the system running locally or a codebase architecture diagram is worth more than a paragraph of prose.
-- Make sure the audience understands what system *does* within the first 60 seconds.
+- A screenshot of the system running locally or a codebase architecture diagram is more convincing than paragraphs of prose.
+- Make sure the audience understands what the system does within the first 60 seconds.
 - Every team member should be ready to present and answer questions.
-- **Practice at least once end-to-end** before class to make sure your talk is not longer than 10 minutes.
+- **Practice at least once end-to-end** before class to stay within 10 minutes.
 
 ---
 
@@ -62,10 +63,10 @@ Your talk should cover the topics below. Present the topics clearly and concisel
 
 | Criterion | Points |
 |---|---|
-| Project overview is clear and accurate &mdash; the audience knows what the project does and who it is for | 6 |
-| Architecture and technologies are explained correctly and at appropriate depth | 6 |
-| Onboarding experience and Sprint 0 outcomes are concretely and honestly reported | 6 |
-| Risks, challenges, and Sprint 1 plan are specific and realistic (not generic or vague) | 6 |
+| Project and team overview are clear &mdash; what the system does, who uses it, who's on the team | 6 |
+| Architecture, technologies, and SE practices are explained correctly and at appropriate depth | 6 |
+| Onboarding experience and Sprint 0 outcomes are reported concretely and honestly | 6 |
+| Risks, challenges, and Sprint 1 plan are specific and realistic | 6 |
 | Delivery: well-organized, on time, clearly communicated, slides support the talk | 6 |
 | **Total** | **30** |
 
