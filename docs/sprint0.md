@@ -373,5 +373,6 @@ Push the following to your team's GitHub repository **by Sep 17, 11:59 PM**:
 
 ### Lightning Talk &mdash; Sep 22 (in class)
 
-!!! info "Requirements will be posted separately"
-    Each team will deliver a lightning talk on Sep 22. Detailed requirements will be posted before that date on Zulip and the course website. The lightning talk is **not part of the Sprint 0 rubric**; it is a separate deliverable graded independently.
+Full requirements are on the **[Presentations](presentations.md#sprint-0-lightning-talks-sep-22-in-class)** page.
+
+In brief: each team has **10 minutes** to present (+ 2 min Q&A). Upload your slides as PDF to Blackboard by **12:20 PM on Sep 22**. The lightning talk is **not part of the Sprint 0 rubric**; it is graded separately (30 points / 3% of course grade).
