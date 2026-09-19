@@ -13,7 +13,7 @@ software engineering workflow: agile sprints, code review, CI, testing, and real
 ## Announcements
 
 <span class="wm-announcement-date">September 19, 2026</span> **The class on Tuesday, Sep 22** will include:<br>
-&mdash; **A 15-min quiz** at the start of class (Sprint 0 material and topics covered in lecture). <br>
+&mdash; **A 15-min quiz** at the start of class (Sprint 0 material and topics covered in the lectures). <br>
 &mdash; **Sprint 0 Lightning Talks** &mdash; each team has 10 minutes to present. Upload your slides as PDF to Blackboard by 12:20 PM. See the [Presentations page](presentations/) for full requirements.
 {: .wm-announcement }
 
