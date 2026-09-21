@@ -15,8 +15,8 @@ See the [Schedule](schedule.md) for sprint dates and the [Syllabus](syllabus.md#
 
 | Sprint | Dates | Weight | Status |
 |---|---|---|---|
-| [S0 &mdash; Project Onboarding](sprint0.md) | Sep 1&ndash;17 | 100 pts (9%) | **Active** |
-| [S1 &mdash; Requirements & First Features](sprint1.md) | Sep 22&ndash;Oct 8 | TBD | Coming soon |
+| [S0 &mdash; Project Onboarding](sprint0.md) | Sep 1&ndash;17 | 100 pts (9%) | Closed |
+| [S1 &mdash; Project Development & Release](sprint1.md) | Sep 22&ndash;Oct 8 | 100 pts (10%) | **Active** |
 | [S2 &mdash; Core Development](sprint2.md) | Oct 13&ndash;29 | TBD | Coming soon |
 | [S3 &mdash; Hardening & Integration](sprint3.md) | Nov 3&ndash;19 | TBD | Coming soon |
 | [S4 &mdash; Release & Retrospective](sprint4.md) | Nov 24&ndash;Dec 10 | TBD | Coming soon |

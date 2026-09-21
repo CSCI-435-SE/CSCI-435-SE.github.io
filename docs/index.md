@@ -12,14 +12,17 @@ software engineering workflow: agile sprints, code review, CI, testing, and real
 
 ## Announcements
 
+<span class="wm-announcement-date">September 22, 2026</span> &mdash; **Sprint 1 is open.** All deliverables are due **October 8 at 11:59 PM**. See the [Sprint 1 requirements](sprint1/) for full details.
+{: .wm-announcement }
+
 <span class="wm-announcement-date">September 19, 2026</span> **The class on Tuesday, Sep 22** will include:<br>
 &mdash; **A 15-min quiz** at the start of class (Sprint 0 material and topics covered in the lectures). <br>
 &mdash; **Sprint 0 Lightning Talks** &mdash; each team has 10 minutes to present. Upload your slides as PDF to Blackboard by 12:20 PM. See the [Presentations page](presentations/) for full requirements.
 {: .wm-announcement }
 
-<span class="wm-announcement-date">September 2, 2026</span> &mdash; **Sprint 0 is open.** All deliverables are due **September 17 at 11:59 PM**. See the [Sprint 0 requirements](sprint0/) for full details. <br>
+<!-- <span class="wm-announcement-date">September 2, 2026</span> &mdash; **Sprint 0 is open.** All deliverables are due **September 17 at 11:59 PM**. See the [Sprint 0 requirements](sprint0/) for full details. <br>
 &mdash; **Teams have been formed.** Find your team and project assignment on the [Projects page](projects/). Check your GitHub or email inbox for your repository access notification and find your team stream on Zulip.
-{: .wm-announcement } 
+{: .wm-announcement } -->
 
 <!-- <span class="wm-announcement-date">August 3, 2026</span> &mdash; Welcome to the course! Take a look at the [Syllabus](syllabus/) and [Schedule](schedule/) before our first class on August 27.
 {: .wm-announcement } -->
