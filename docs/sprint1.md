@@ -265,7 +265,7 @@ Each team submits one sprint report summarizing Sprint 1.
 | **Sprint overview** | Brief narrative: what the team set out to do and what was actually delivered. Be honest about scope changes |
 | **Sprint backlog** | Link to the Sprint 1 GitHub Milestone; table of issues (title, owner, estimated points, scope, status) |
 | **Requirements & design** | Were specs complete before coding started? Any surprises? Key design decisions and brief rationale |
-| **Completed issues** | Table: issue title, issue author, all associated PRs (PR link, author, reviewer(s), status), brief description of changes |
+| **Completed issues** | Table: issue title, issue owner, all associated PRs (PR link, author, reviewer(s), status), brief description of changes |
 | **Test strategy** | What kinds of tests were written? Were there changes you couldn't test automatically? Why? |
 | **AI tool usage** | Per member: tools used, sessions logged, link to AI log folder. Notable patterns vs. Sprint 0 |
 | **Release** | Tag name and link to the Sprint 1 release on GitHub |
@@ -308,23 +308,23 @@ Each team member must complete the Sprint 1 reflection survey individually. The 
 
 ### Grading
 
-Sprint 1 is worth **100 points** (10% of the course grade). D4 (Pull Requests) and D8 (Reflection Survey) are graded individually; all other deliverables are graded as a team.
+Sprint 1 is worth **100 points** (10% of the course grade). D2, D3, D4, D5, and D8 are graded individually; D1, D6, and D7 are graded as a team.
 
 | Deliverable | Points | Notes |
 |---|---|---|
 | D1 — Sprint Backlog | 10 | Issues selected, estimated, assigned, and attached to milestone; rationale in sprint report |
-| D2 — Requirements Specification | 20 | User story format, INVEST criteria, acceptance criteria quality; peer review evidence on issues |
-| D3 — Design Decisions | 10 | At least one non-trivial decision documented per issue; rationale is clear |
-| D4 — Pull Requests | 40 | Per member: see detail below. Individual grade. |
-| D5 — AI Logs | 5 | Logs present, correctly formatted, named, and linked to issues; summary in report |
+| D2 — Requirements Specification | 20 | Individual. User story format, INVEST criteria, acceptance criteria quality; peer review evidence on issues |
+| D3 — Design Decisions | 7 | Individual. At least one non-trivial decision documented per issue; rationale is clear |
+| D4 — Pull Requests | 36 | Individual. Per member: see detail below. |
+| D5 — AI Logs | 7 | Individual. Logs present, correctly formatted, named, and linked to issues; summary in report |
 | D6 — Sprint Report | 10 | Completeness, specificity, and quality of evidence |
-| D7 — Sprint Release | 5 | Tag follows convention; description summarizes sprint changes |
-| D8 — Reflection Survey | 5 | Individual; required for completion |
+| D7 — Sprint Release | 2 | Tag follows convention; description summarizes sprint changes |
+| D8 — Reflection Survey | 8 | Individual. Required for completion. |
 | **Total** | **100** | |
 
 **D4 — PR grading detail:**
 
-All PRs associated with each issue are graded on the criteria below. The D4 score is the aggregate across all issues, normalized to 40 points.
+All PRs associated with each issue are graded on the criteria below. The D4 score is the aggregate across all issues, normalized to 36 points.
 
 | Criterion | Points per PR |
 |---|---|
