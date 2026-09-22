@@ -253,9 +253,9 @@ Each team submits one sprint report summarizing Sprint 1.
 |---|---|
 | **Team** | Team name; member names and GitHub usernames; project name and repository link |
 | **Sprint overview** | Brief narrative: what the team set out to do and what was actually delivered. Be honest about scope changes |
-| **Sprint backlog** | Link to the Sprint 1 GitHub Milestone; table of issues (title, owner, scope, status) |
+| **Sprint backlog** | Link to the Sprint 1 GitHub Milestone; table of issues (title, owner, estimated points, scope, status) |
 | **Requirements & design** | Were specs complete before coding started? Any surprises? Key design decisions and brief rationale |
-| **Completed PRs** | Table: PR title, issue link, author, reviewer(s), status, brief description |
+| **Completed issues** | Table: issue title, issue author, all associated PRs (PR link, author, reviewer(s), status), brief description of changes |
 | **Test strategy** | What kinds of tests were written? Were there changes you couldn't test automatically? Why? |
 | **AI tool usage** | Per member: tools used, sessions logged, link to AI log folder. Notable patterns vs. Sprint 0 |
 | **Release** | Tag name and link to the Sprint 1 release on GitHub |
@@ -328,6 +328,8 @@ All PRs associated with each issue are graded on the criteria below. The D4 scor
 !!! warning "Minimum bar"
     A team with no merged PRs (D4), no sprint report (D6), or no release (D7) receives a **0 for Sprint 1** regardless of other deliverables.
 
+!!! info "Extra credit"
+    A PR submitted to the **real upstream project** and accepted or under active review earns up to **3 bonus points** per PR, at the instructor's discretion.
 
 ---
 

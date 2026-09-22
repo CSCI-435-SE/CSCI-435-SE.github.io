@@ -67,6 +67,19 @@ A tag is a named pointer to a specific commit, used to mark a release. In this c
 
 A GitHub Issue is a structured record in a repository's issue tracker representing a task, feature request, or bug. In this course, the feature backlog lives entirely as GitHub Issues — not in a separate document. Issues have a title, description, labels, and can be linked to PRs via `Closes #N`.
 
+### GitHub Milestone
+
+A GitHub Milestone groups related issues under a shared deadline. In this course, each sprint has its own milestone. The milestone view gives you a live progress bar (open vs. closed issues) and keeps the sprint backlog visible at a glance.
+
+→ [About milestones (GitHub Docs)](https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/about-milestones)
+
+### GitHub Projects
+
+A built-in Kanban and table tool that lives inside a GitHub organization or repository. It lets you visualize your sprint backlog, track issue status across columns (e.g., Backlog → In Progress → Done), and add custom fields like estimated story points. In this course you are encouraged to use it for sprint planning. The **Team planning** template supports custom numeric fields (useful for story points); the **Kanban** template is simpler and works well for tracking status.
+
+→ [Quickstart for Projects (GitHub Docs)](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/quickstart-for-projects)
+
+
 ### GitHub Organization
 
 A shared GitHub account that groups repositories and members. All course project repositories live under the [CSCI-435-SE](https://github.com/CSCI-435-SE) organization. You must accept an invite to join the org before you can access or push to any repo.
@@ -85,6 +98,30 @@ A pull request is a proposal to merge changes from one branch into another (typi
 
 A shared checklist that defines when a piece of work is truly complete — not just "code written" but code reviewed, tests passing, CI green, and documentation updated. Each sprint, your team adopts the project's existing DoD (if one exists) and supplements it where the project is silent.
 
+### Acceptance criteria
+
+A set of testable conditions that an issue must satisfy before it is considered complete. Acceptance criteria apply to any type of issue — features, bug fixes, research tasks, refactors — not just new functionality. Each condition should have a clear pass/fail outcome: something you (or a reviewer) can verify by inspection or by following a defined test step. Vague intent ("the UI should feel fast") is not an acceptance criterion; a concrete observable behavior ("the page renders in under 2 seconds on a standard connection") is.
+
+Be careful with overly specific criteria — a condition that cannot realistically be verified or achieved does more harm than good. For exploratory or research issues, criteria often describe the output of the investigation (e.g., "a written summary of options with a recommended approach") rather than observable system behavior. In this course, acceptance criteria must be written before coding begins.
+
+### INVEST criteria
+
+A checklist for evaluating whether a user story is well-formed. Each letter stands for a quality the story should have:
+
+| Letter | Meaning |
+|---|---|
+| **I** | Independent — can be developed without depending on another story |
+| **N** | Negotiable — the details can be discussed and adjusted |
+| **V** | Valuable — delivers something meaningful to a user or stakeholder |
+| **E** | Estimable — the team can size it |
+| **S** | Small — fits within a sprint |
+| **T** | Testable — has acceptance criteria that can be verified |
+
+A story that fails multiple criteria usually needs to be split or rewritten before it enters the sprint backlog.
+
+→ [INVEST in Good Stories and SMART Tasks](https://xp123.com/invest-in-good-stories-and-smart-tasks/)
+
+
 ### Feature backlog
 
 An ordered list of features and improvements a team wants to build. In this course, the backlog lives in your project's GitHub issue tracker (not a document). You build it at the start of the course and draw from it throughout the semester.
@@ -92,6 +129,19 @@ An ordered list of features and improvements a team wants to build. In this cour
 ### Issue scope (Small / Medium / Large / XL)
 
 A rough estimate of how much work an issue represents. Used to help plan what fits in a sprint and to set expectations for reviewers. There is no fixed definition — these are relative to the project and agreed on by the team. A Small issue might be a one-file change; an XL might take a full sprint for one person.
+
+### Planning poker
+
+A team estimation technique in which each member privately selects a card representing their story-point estimate for an issue, then everyone reveals at once. Disagreements spark discussion — the person with the lowest and highest estimate each explain their reasoning — and the team re-estimates until they converge. The simultaneous reveal prevents anchoring (where early estimates bias everyone else). In this course, planning poker (or an equivalent consensus method) is the expected approach for sizing your sprint backlog.
+
+### Sprint backlog
+
+The set of issues a team commits to completing in a single sprint, selected from the broader feature backlog during sprint planning. Each item in the sprint backlog is estimated, assigned to an owner, and attached to the sprint's GitHub Milestone. The sprint backlog is fixed at planning time — new work is not added mid-sprint without explicit agreement. At the start of each sprint, building the sprint backlog is one of the first tasks.
+
+### Story points
+
+A unit for estimating the relative effort, complexity, and uncertainty of an issue — not hours. The exact scale is up to the team (1–5, Fibonacci, t-shirt sizes converted to numbers). What matters is consistency: a 3-point issue should feel roughly three times as much work as a 1-point issue, across the whole backlog. Story points are used during sprint planning to check whether the team has selected a realistic workload. They are recorded on the GitHub issue (or in GitHub Projects) and referenced in the sprint report.
+
 
 ### Sprint
 
