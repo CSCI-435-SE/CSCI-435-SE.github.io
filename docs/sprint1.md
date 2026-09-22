@@ -208,6 +208,16 @@ git push origin feat/issue-42-export-pdf
 
 After pushing, open the PR via GitHub's **"Compare & pull request"** banner. Select `main` as the base branch.
 
+After your PR is merged, clean up:
+
+```bash
+git checkout main           # switch back to main
+git pull origin main        # pull the merged changes
+git branch -d feat/issue-42-export-pdf  # delete local branch (safe: only works if merged)
+```
+
+Also delete the remote branch from GitHub: on the merged PR page, click **"Delete branch"**.
+
 **Submission:** All PRs merged. Links and a summary table in D6.
 
 ---
@@ -222,14 +232,14 @@ Continue the logging practice from Sprint 0. Every agentic session related to Sp
 
 **Format requirements:**
 
-- Logs must be exported via SpecStory or an equivalent tool that preserves full session metadata (timestamps, tool calls, user/AI attribution). Follow the [AI Log Instructions](ai-logs.md). Accepted formats: **`.md`** (preferred), `.txt`, `.json`.
-- Do not copy-paste from a chat interface. If SpecStory is unavailable for your tool, clearly label every message as `[User]` or `[AI]` and include timestamps.
+- Logs must capture full session metadata: timestamps, prompts, and AI responses. Use SpecStory or a browser export extension when available (see [AI Log Instructions](ai-logs.md)). If no export tool exists for your tool, manually transcribe the session with every message labeled `[User]` or `[AI]` and include timestamps. Do not submit raw, unstructured copy-pastes. Accepted formats: **`.md`** (preferred), `.txt`, `.json`.
 - Do not summarize or reconstruct your AI usage after the fact. Logs must be captured during the session.
 - Do not submit `.html`, `.docx`, or `.pdf` log files, or links to private chats. These will not receive credit.
 
 **Linking:** Reference your log files in a **comment on the corresponding GitHub issue** — do not add AI log references to the PR description. Use the format and template described in [AI Log Instructions](ai-logs.md). Logs not linked to an issue comment will not receive credit. Broken links will not receive credit.
 
-Logs may be committed to the repo via a PR, but the reference must still appear in an **issue comment**, not the PR description or in a PR comment. **Each contributor (implementor, code reviewer, estimator) posts their own comment on the issue** — if three people worked on an issue, there should be three separate AI Assistance comments.
+!!! warning "Log references go in issue comments only"
+    Logs may be committed to the repo via a PR, but the reference must still appear in an **issue comment** — not in the PR description or in a PR comment. **Each contributor (implementor, code reviewer, estimator) posts their own comment on the issue** — if three people worked on an issue, there should be three separate AI Assistance comments.
 
 **If you did not use AI for an issue**, post a brief note in an issue comment stating this. No log file is needed for that issue, but your log folder must still exist.
 
@@ -349,8 +359,6 @@ Push the following to your team's GitHub repository **by Oct 8, 11:59 PM**:
 
 ### Lightning Talk — Oct 20 (in class)
 
-The Sprint 1–2 Lightning Talk covers **both** Sprints 1 and 2. Full requirements are on the **[Presentations](presentations.md)** page.
-
-Each team has **10 minutes** to present (+ 2 min Q&A), covering Sprint 1 and Sprint 2 progress together. Upload slides as PDF to Blackboard by **12:20 PM on Oct 20**.
+The Sprint 1–2 Lightning Talk covers **both** Sprints 1 and 2. Full requirements will be posted on the **[Presentations](presentations.md)** page.
 
 ← [Back to Sprints overview](sprints.md)
