@@ -7,9 +7,9 @@ hide:
 
 **Sep 22–Oct 8 · All deliverables due Oct 8, 11:59 PM · 100 points (10% of course grade)**
 
-Sprint 1 is the first full development sprint. By the end, each team should have a working release with new feature and other changes that improve the project in a meaningful, demonstrable way. 
+Sprint 1 is the first full development sprint. By the end, each team should have a working release with new features and other changes that improve the project in a meaningful, demonstrable way. 
 
-Each team will define the sprint backlog: prioritize, estimate, and select issues that will be solved in the sprint. Each team member will implement at least two medium-size issues (graduate students will implement at least an additional small issue) following the SE practices defined in sprint 0.
+Each team will define the sprint backlog: prioritize, estimate, and select issues that will be solved in the sprint. Each team member will implement at least two medium-size issues (graduate students will implement at least an additional small issue) following the SE practices defined in Sprint 0.
 
 ---
 
