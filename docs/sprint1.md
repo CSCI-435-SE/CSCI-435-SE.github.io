@@ -24,7 +24,7 @@ Review your Sprint 0 deliverables before planning Sprint 1:
 
 - Re-read your issue backlog (D2 from S0). Which issues are most impactful? Which are feasible in ~2.5 weeks?
 - Re-read your standards document (D3 from S0). Conventions carry forward; update it if Sprint 0 revealed gaps.
-- Check the Sprint 0 report's **"Sprint 1 ideas"** section — treat it as a starting point, not a final answer.
+- Check the Sprint 0 report's **"Sprint 1 ideas"** section — treat it as a starting point.
 - Make sure all Sprint 0 PRs are merged and the repo is in a clean state before starting new work.
 - Make sure all Sprint 0 issues are closed (or explicitly marked as deferred).
 - Verify your AI log setup from Sprint 0 is working before starting new sessions.
@@ -62,7 +62,7 @@ The team selects and prepares the issues it will implement in Sprint 1.
     The instructor or TA may add new issues or flag specific issues as high priority during the sprint. Treat this as the customer expressing urgency — acknowledge it and adjust your plan accordingly.
 
 !!! info "Suggested pacing"
-    Aim to have D2 specs written and peer-reviewed by **Sep 27**. That leaves a bit more than 1.5 weeks for implementation with clear targets in hand. If specs are still being drafted next week, you are likely behind.
+    Aim to have issue specs written and peer-reviewed (see D2) by **Sep 27**. That leaves a bit more than 1.5 weeks for implementation with clear targets in hand. If specs are still being drafted next week, you are likely behind.
 
 **What to provide in D6 (Sprint report):** Link to the Sprint 1 milestone; brief rationale for how you scoped the sprint.
 
@@ -175,6 +175,21 @@ The **Notes** column should include a brief explanation (one to two sentences) o
 | Documentation — inline comments and PR description are clear | | |
 | AI transparency — if AI was used, is there evidence of human verification? | | |
 | Overall — would you merge this as-is? | | |
+
+Use this template for your review comment:
+
+````markdown
+## Code Review
+
+| Criterion | Score (1–10) | Notes |
+|---|---|---|
+| Correctness — does the change do what the issue asked? | | |
+| Test coverage — are tests present and meaningful? | | |
+| Code quality — consistent style, clear naming, no unnecessary duplication | | |
+| Documentation — inline comments and PR description are clear | | |
+| AI transparency — if AI was used, is there evidence of human verification? | | |
+| Overall — would you merge this as-is? | | |
+````
 
 Each student must conduct at least one code review per sprint. Over the course of the semester, each student must review code from every teammate at least once.
 
