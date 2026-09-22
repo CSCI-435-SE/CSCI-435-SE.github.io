@@ -5,9 +5,11 @@ hide:
 
 # Sprint 1 — Project Development & Release
 
-**Sep 22–8 · All deliverables due Oct 8, 11:59 PM · 100 points (10% of course grade)**
+**Sep 22–Oct 8 · All deliverables due Oct 8, 11:59 PM · 100 points (10% of course grade)**
 
-Sprint 1 is the first full development sprint. By the end, each team should have a working release with new features that improve the project in a meaningful, demonstrable way.
+Sprint 1 is the first full development sprint. By the end, each team should have a working release with new feature and other changes that improve the project in a meaningful, demonstrable way. 
+
+Each team will define the sprint backlog: prioritize, estimate, and select issues that will be solved in the sprint. Each team member will implement at least two medium-size issues (graduate students will implement at least an additional small issue) following the SE practices defined in sprint 0.
 
 ---
 
@@ -20,7 +22,7 @@ Sprint 1 is the first full development sprint. By the end, each team should have
 
 Review your Sprint 0 deliverables before planning Sprint 1:
 
-- Re-read your feature backlog (D2 from S0). Which issues are most impactful? Which are feasible in ~2.5 weeks?
+- Re-read your issue backlog (D2 from S0). Which issues are most impactful? Which are feasible in ~2.5 weeks?
 - Re-read your standards document (D3 from S0). Conventions carry forward; update it if Sprint 0 revealed gaps.
 - Check the Sprint 0 report's **"Sprint 1 ideas"** section — treat it as a starting point, not a final answer.
 - Make sure all Sprint 0 PRs are merged and the repo is in a clean state before starting new work.
@@ -37,9 +39,9 @@ The team selects and prepares the issues it will implement in Sprint 1.
 
 **Start this early.** Issues may turn out to be broader than expected, overlap with each other, or be invalid. Discovering this in week 2 leaves no time to recover.
 
-**Step 1 — Refine the backlog.** Go through all open issues as a team. Add missing ones, close invalid or duplicate ones, and **decompose any large or XL issues into smaller sub-issues** that can be completed within the sprint. Record decisions in a team meeting or Zulip thread.
+**Step 1 — Refine the backlog.** Go through all open issues as a team. Add missing ones, close invalid or duplicate ones, and **decompose any large or XL issues into smaller sub-issues** that can be completed within the sprint. Record decisions in a team meeting (preferred) or Zulip thread.
 
-**Step 2 — Estimate and select.** Use the prioritization and estimation techniques from lecture — story points and planning poker — to size and rank your backlog. Select a set of issues the full team can realistically complete in 2.5 weeks. Your sprint backlog must meet the following minimums:
+**Step 2 — Estimate and select.** Use the prioritization and estimation techniques from the planning lecture (story points and planning poker) to size and rank your backlog. Use any units for the story points. Select a set of issues the full team can realistically complete in 2.5 weeks. Your sprint backlog must meet the following minimums:
 
 | Role | Minimum issues selected |
 |---|---|
@@ -50,7 +52,7 @@ The team selects and prepares the issues it will implement in Sprint 1.
     One well-implemented, thoroughly tested feature is worth more than three half-finished ones. Plan conservatively, then expand if you're ahead of schedule.
 
 !!! tip "GitHub Projects"
-    Consider using [GitHub Projects](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/quickstart-for-projects) to organize your backlog, track progress, and visualize burndown. It integrates directly with your issues and milestone.
+    Consider using [GitHub Projects](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/quickstart-for-projects) to organize your backlog, track progress, and visualize point burndown. It integrates directly with your issues and milestone.
 
 **Step 3 — Assign ownership.** Every selected issue must have a single owner (assigned in GitHub). One issue per member at minimum; members may own more than one. No issue should be assigned to more than one person.
 
@@ -59,7 +61,10 @@ The team selects and prepares the issues it will implement in Sprint 1.
 !!! info "Instructor and TA involvement"
     The instructor or TA may add new issues or flag specific issues as high priority during the sprint. Treat this as the customer expressing urgency — acknowledge it and adjust your plan accordingly.
 
-**What to provide in D6:** Link to the Sprint 1 milestone; brief rationale for how you scoped the sprint.
+!!! info "Suggested pacing"
+    Aim to have D2 specs written and peer-reviewed by **Sep 27**. That leaves a bit more than 1.5 weeks for implementation with clear targets in hand. If specs are still being drafted next week, you are likely behind.
+
+**What to provide in D6 (Sprint report):** Link to the Sprint 1 milestone; brief rationale for how you scoped the sprint.
 
 ---
 
@@ -69,7 +74,7 @@ For each issue in your Sprint 1 backlog, the **owner** must write or significant
 
 **Format:** If your project already uses an issue template, adapt it to include the fields below. If your project has no feature request template, create one. Otherwise, use the following structure as a guide.
 
-**For features and enhancements**, write the issue as a **user story** that satisfies the [INVEST criteria](https://www.agilealliance.org/glossary/invest/):
+**For features and enhancements**, write the issue as a **user story** that satisfies the [INVEST criteria](https://xp123.com/invest-in-good-stories-and-smart-tasks/) -- see also the slides on Project management:
 
 ```markdown
 ## User Story
@@ -91,6 +96,9 @@ As a [type of user], I want [goal] so that [benefit].
 ```
 
 Each acceptance criterion must be **testable** — observable behavior, not vague intent. Minimum 3 per issue.
+
+!!! tip "What makes a criterion testable?"
+    A testable criterion has a clear pass/fail outcome: *"The export button is disabled when no items are selected"* is testable. *"The UI should feel responsive"* is not. If you cannot write a test or manual step that definitively passes or fails it, rewrite it.
 
 **For bug reports**, include at minimum:
 
@@ -131,7 +139,7 @@ For each issue in your Sprint 1 backlog, the owner must document at least one no
 **Where to put it:** Add a `## Design` section to the GitHub issue body, or include it in the PR description. For decisions that affect multiple issues or the overall architecture, add a team-level note to `docs/sprint1/design.md`.
 
 !!! tip "Don't overthink the scope"
-    "Should I add this field to the existing component or create a new one?" with a clear rationale is a perfectly good design decision. The goal is to make your reasoning visible.
+    "Should I add this field to the existing component or create a new one?" with a clear rationale is a perfectly good design decision. The goal is to make your reasoning visible — one sentence per field is enough. This is not a design document.
 
 **Submission:** Design decisions documented in GitHub issues, PR descriptions, or `docs/sprint1/design.md`. Links in D6.
 
@@ -183,6 +191,9 @@ Each student must conduct at least one code review per sprint. Over the course o
 !!! warning "You must be able to explain every line"
     Reviewers and the instructor may ask you to explain any part of your change at any time. If you cannot, you will receive points off.
 
+!!! tip "Using AI more intentionally"
+    Before accepting a proposed change, ask the agent to explain what it changed and why, and what could go wrong. This keeps you engaged with the change before it lands in your branch — and gives you something concrete to say during code review.
+
 **Branch and PR workflow** (same as Sprint 0):
 
 ```bash
@@ -208,7 +219,7 @@ After pushing, open the PR via GitHub's **"Compare & pull request"** banner. Sel
 
 #### D5 — AI Logs
 
-Continue the logging practice from Sprint 0. Every agentic session related to Sprint 1 work must be logged. The requirements below are stricter than Sprint 0 — review them carefully before submitting.
+Continue the logging practice from Sprint 0. Every agentic session related to Sprint 1 work must be logged. **The requirements below are stricter than Sprint 0 — review them carefully before submitting.**
 
 **Where to store logs:** `ai-logs/sprint1/<your-github-username>/`
 
