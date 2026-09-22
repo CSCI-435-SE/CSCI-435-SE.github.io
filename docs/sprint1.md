@@ -52,11 +52,11 @@ The team selects and prepares the issues it will implement in Sprint 1.
     One well-implemented, thoroughly tested feature is worth more than three half-finished ones. Plan conservatively, then expand if you're ahead of schedule.
 
 !!! tip "GitHub Projects"
-    Consider using [GitHub Projects](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/quickstart-for-projects) to organize your backlog, track progress, and visualize point burndown. It integrates directly with your issues and milestone.
+    Consider using [GitHub Projects](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/quickstart-for-projects) to organize your backlog, track progress, and visualize point burndown. It integrates directly with your issues and milestone. See the [GitHub for Beginners tutorial](https://github.blog/developer-skills/github/github-for-beginners-getting-started-with-github-issues-and-projects/) — the [Projects section starts at 02:59](https://www.youtube.com/watch?v=c67GaAkf1BE&t=179s) in the accompanying video. Try the **Team planning** or **Kanban** templates; Team planning supports custom fields such as estimated story points.
 
 **Step 3 — Assign ownership.** Every selected issue must have a single owner (assigned in GitHub). One issue per member at minimum; members may own more than one. No issue should be assigned to more than one person.
 
-**Step 4 — Create the Sprint 1 milestone.** Create a GitHub Milestone named `Sprint 1` and attach all selected issues to it.
+**Step 4 — Create the Sprint 1 milestone.** Create a [GitHub Milestone](https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/about-milestones) named `Sprint 1` and attach all selected issues to it.
 
 !!! info "Instructor and TA involvement"
     The instructor or TA may add new issues or flag specific issues as high priority during the sprint. Treat this as the customer expressing urgency — acknowledge it and adjust your plan accordingly.
@@ -136,7 +136,7 @@ For each issue in your Sprint 1 backlog, the owner must document at least one no
 | **Rationale** | Why you chose this option over the others |
 | **Consequences** | What this decision makes easier and what it makes harder |
 
-**Where to put it:** Add a `## Design` section to the GitHub issue body, or include it in the PR description. For decisions that affect multiple issues or the overall architecture, add a team-level note to `docs/sprint1/design.md`.
+**Where to put it:** Add a `## Design` section to the GitHub issue body, in an issue comment, or include it in the PR description. For decisions that affect multiple issues or the overall architecture, add a team-level note to `docs/sprint1/design.md`.
 
 !!! tip "Don't overthink the scope"
     "Should I add this field to the existing component or create a new one?" with a clear rationale is a perfectly good design decision. The goal is to make your reasoning visible — one sentence per field is enough. This is not a design document.
@@ -149,28 +149,23 @@ For each issue in your Sprint 1 backlog, the owner must document at least one no
 
 This is the core development activity of Sprint 1. Each team member implements their assigned issue(s) through the full PR workflow.
 
-**Minimum PRs per member:**
-
-| Role | Minimum PRs |
-|---|---|
-| CSCI 435 (undergraduate) | 2 PRs addressing medium or larger issues |
-| CSCI 535 (graduate) | 3 PRs, or 2 PRs where at least one addresses a large or XL issue |
-
-!!! info "One PR per issue"
-    In most cases, one issue maps to one PR. If an issue requires multiple PRs, split it into sub-issues first.
+At least one PR per issue must be created, merged, and closed. In most cases, one issue maps to one PR; if an issue truly requires multiple PRs, split it into sub-issues first.
 
 **Requirements for each PR:**
 
 - Linked to a GitHub issue (`Closes #<number>` in the description).
 - Description clearly explains *what* changed, *why*, and *how* it was tested.
 - New or updated tests for every behavioral change; test strategy explained in the PR.
-- CI must pass. If CI is not configured, document manual verification in the PR description.
-- Reviewed by at least one teammate using the **code review rubric** below.
+- CI should pass if it is configured for your project. If CI is not yet working, document manual verification in the PR description instead — CI setup is encouraged but not required for all projects.
+- Reviewed by at least one teammate (not yourself) using the **code review rubric** below — same process as Sprint 0.
 - Merged before the sprint deadline.
+- Delete the branch after the PR is merged (same as Sprint 0).
 
 **Code review rubric:**
 
-When a PR is ready for review, the reviewer must evaluate it on the criteria below and **post the filled-in rubric as a comment on the PR**:
+When a PR is ready for review, the reviewer must evaluate it on the criteria below and **post the filled-in rubric as a comment on the PR**. Fill in the rubric during your **initial review pass** — before the author makes any revisions in response to your comments. Scoring it after all back-and-forth fixes defeats the purpose. If you review a follow-up revision, you may add a brief update to your comment noting what changed.
+
+The **Notes** column should include a brief explanation (one to two sentences) of your score. Reviewers may also make specific comments on individual lines of code via GitHub's code review interface.
 
 | Criterion | Score (1–10) | Notes |
 |---|---|---|
@@ -186,7 +181,7 @@ Each student must conduct at least one code review per sprint. Over the course o
 **Before you write any code:**
 
 1. **Read the issue and spec.** Understand the acceptance criteria before touching any code.
-2. **Then use AI.** Use an agentic tool to validate, extend, or accelerate your understanding, but you must be able to explain every line in your PR.
+2. **Consider using AI.** If you find an agentic tool helpful, use it to validate, extend, or accelerate your understanding — but you must be able to explain every line in your PR.
 
 !!! warning "You must be able to explain every line"
     Reviewers and the instructor may ask you to explain any part of your change at any time. If you cannot, you will receive points off.
@@ -223,18 +218,20 @@ Continue the logging practice from Sprint 0. Every agentic session related to Sp
 
 **Where to store logs:** `ai-logs/sprint1/<your-github-username>/`
 
-**Naming convention:** `<issue-number>-<short-description>.<ext>` — e.g., `42-pdf-export.md`. Use this format consistently.
+**Naming convention:** `YYYY-MM-DD_<tool>_<short-slug>.md` — e.g., `2026-09-25_claude-code_issue-42-pdf-export.md`. Follow the same convention described in [AI Log Instructions](ai-logs.md).
 
 **Format requirements:**
 
-- Logs must be **Markdown files** exported via SpecStory or an equivalent tool that preserves full session metadata (timestamps, tool calls, user/AI attribution). Follow the [AI Log Instructions](ai-logs.md).
+- Logs must be exported via SpecStory or an equivalent tool that preserves full session metadata (timestamps, tool calls, user/AI attribution). Follow the [AI Log Instructions](ai-logs.md). Accepted formats: **`.md`** (preferred), `.txt`, `.json`.
 - Do not copy-paste from a chat interface. If SpecStory is unavailable for your tool, clearly label every message as `[User]` or `[AI]` and include timestamps.
 - Do not summarize or reconstruct your AI usage after the fact. Logs must be captured during the session.
-- Do not submit HTML, TXT, JSONL, or links to private chats. These will not receive credit.
+- Do not submit `.html`, `.docx`, or `.pdf` log files, or links to private chats. These will not receive credit.
 
-**Linking:** Reference your log file in a **comment on the corresponding GitHub issue** and in your **PR description**. Logs not linked to their issue will not receive credit. Broken links will not receive credit.
+**Linking:** Reference your log files in a **comment on the corresponding GitHub issue** — do not add AI log references to the PR description. Use the format and template described in [AI Log Instructions](ai-logs.md). Logs not linked to an issue comment will not receive credit. Broken links will not receive credit.
 
-**If you did not use AI for an issue**, note this briefly in the PR description. No log file is needed for that issue, but your log folder must still exist.
+Logs may be committed to the repo via a PR, but the reference must still appear in an **issue comment**, not the PR description or in a PR comment. **Each contributor (implementor, code reviewer, estimator) posts their own comment on the issue** — if three people worked on an issue, there should be three separate AI Assistance comments.
+
+**If you did not use AI for an issue**, post a brief note in an issue comment stating this. No log file is needed for that issue, but your log folder must still exist.
 
 **What to include in D6:** Per member: tools used, number of sessions logged, link to `ai-logs/sprint1/<username>/`, and 2–3 sentences on what worked well or what you'd do differently.
 
@@ -317,7 +314,7 @@ Sprint 1 is worth **100 points** (10% of the course grade). D4 (Pull Requests) a
 
 **D4 — PR grading detail:**
 
-Each PR is graded on the following criteria. Undergraduate members (CSCI 435) are assessed on 2 PRs; graduate members (CSCI 535) on 3 PRs (or 2 where one is large/XL scope), normalized to 40 points.
+All PRs associated with each issue are graded on the criteria below. The D4 score is the aggregate across all issues, normalized to 40 points.
 
 | Criterion | Points per PR |
 |---|---|
@@ -331,8 +328,6 @@ Each PR is graded on the following criteria. Undergraduate members (CSCI 435) ar
 !!! warning "Minimum bar"
     A team with no merged PRs (D4), no sprint report (D6), or no release (D7) receives a **0 for Sprint 1** regardless of other deliverables.
 
-!!! info "Extra credit"
-    A PR submitted to the **real upstream project** and accepted or under active review earns up to **3 bonus points** per PR, at the instructor's discretion.
 
 ---
 
@@ -343,7 +338,7 @@ Push the following to your team's GitHub repository **by Oct 8, 11:59 PM**:
 - Sprint 1 milestone created with all selected issues attached and assigned (D1)
 - GitHub issue bodies updated with user stories, acceptance criteria, and design decisions (D2, D3)
 - All PRs merged; code review rubric posted as a comment on each PR (D4)
-- AI logs committed to `ai-logs/sprint1/<github-username>/`, named `<issue-number>-<short-description>.md`, linked from issues and PRs (D5)
+- AI logs committed to `ai-logs/sprint1/<github-username>/`, named `YYYY-MM-DD_<tool>_<short-slug>.md`, referenced in an issue comment (not PR description or comments) (D5)
 - `docs/sprint1/report.md` (or `.pdf` or `.docx`) — sprint report (D6)
 - Sprint 1 release tag pushed and GitHub release created (D7)
 - D8 reflection survey submitted individually by **Oct 8, 11:59 PM**
