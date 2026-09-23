@@ -135,7 +135,7 @@ Team wiki and knowledge base with real-time collaborative editing.
 </div>
 
 <div class="wm-card">
-<div class="wm-meta">6 members</div>
+<div class="wm-meta">5 members</div>
 <h3>Medusa</h3>
 <div class="wm-member-list">
 <span class="wm-member">Nicholas Piombino</span>
