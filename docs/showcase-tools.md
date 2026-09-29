@@ -14,15 +14,15 @@ Pick your team's new-tech showcase tool from this list. Requirements, dates, and
 3. **No repeats across rounds.** A tool showcased by any team in Round 1 cannot be picked in Round 2.
 4. **One team per category per round**, so we don't get two near-identical demos on the same day.
 5. **Demo on your own project.** The live demo and the tutorial video must use your team's project codebase.
-6. **First come, first served.** Claim your tool in the Zulip **#showcases** channel, topic `tool claims — round 1`, by **Fri, Oct 2, 11:59 PM**. The instructor confirms each claim in the thread.
+6. **First come, first served.** Claim your tool in the Zulip **#showcases** channel, topic `tool_claims_R1`, by **Fri, Oct 2, 11:59 PM**. The instructor confirms each claim in the thread.
 7. **Off-list tools** are welcome, but need instructor approval in the same Zulip topic before you start.
 
 **Excluded tools:** Claude Code, GitHub Issues & Projects, and GitHub Actions (they are already part of the course workflow).
 
 !!! warning "Risks that apply to every tool"
     - **Free plans have limits.** Quotas, seat caps, and rate limits can run out in the middle of a demo. Rehearse with the plan you will use, and keep your video ready as a backup.
-    - **Apps on the course GitHub organization need approval.** Tools that install as a GitHub App on `CSCI-435-SE` (e.g., CodeRabbit, SonarQube Cloud, Snyk, Semgrep) must be approved by the instructor. Request it in the **#showcases** channel (topic `app install requests`) by **Wed, Oct 7**.
-    - **Install and sign in before class.** The classroom Wi-Fi is shared by ~35 laptops. Download everything in advance, and sign in to Docker Hub (anonymous downloads are limited per network).
+    - **Apps on the course GitHub organization need approval.** Tools that install as a GitHub App on `CSCI-435-SE` (e.g., CodeRabbit, SonarQube Cloud, Snyk, Semgrep) must be approved by the instructor. Request it in the **#showcases** channel (topic `app_install_requests`) by **Wed, Oct 7**.
+    - **Install and sign in before class.** Download everything in advance, and sign in to Docker Hub (anonymous downloads are limited per network).
     - **Use your own accounts, not the project's real services.** Never paste secrets, API keys, or personal data into a tool, and only load-test or scan systems you run yourself.
     - **Pricing changes often.** The notes below were checked on **Sep 27, 2026**. If something changed, tell the instructor.
 
