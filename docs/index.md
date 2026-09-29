@@ -18,10 +18,10 @@ software engineering workflow: agile sprints, code review, CI, testing, and real
 <span class="wm-announcement-date">September 22, 2026</span> &mdash; **Sprint 1 is open.** All deliverables are due **October 8 at 11:59 PM**. See the [Sprint 1 requirements](sprint1/) for full details.
 {: .wm-announcement }
 
-<span class="wm-announcement-date">September 19, 2026</span> **The class on Tuesday, Sep 22** will include:<br>
+<!-- <span class="wm-announcement-date">September 19, 2026</span> **The class on Tuesday, Sep 22** will include:<br>
 &mdash; **A 15-min quiz** at the start of class (Sprint 0 material and topics covered in the lectures). <br>
 &mdash; **Sprint 0 Lightning Talks** &mdash; each team has 10 minutes to present. Upload your slides as PDF to Blackboard by 12:20 PM. See the [Presentations page](presentations/) for full requirements.
-{: .wm-announcement }
+{: .wm-announcement } -->
 
 <!-- <span class="wm-announcement-date">September 2, 2026</span> &mdash; **Sprint 0 is open.** All deliverables are due **September 17 at 11:59 PM**. See the [Sprint 0 requirements](sprint0/) for full details. <br>
 &mdash; **Teams have been formed.** Find your team and project assignment on the [Projects page](projects/). Check your GitHub or email inbox for your repository access notification and find your team stream on Zulip.
@@ -38,7 +38,7 @@ software engineering workflow: agile sprints, code review, CI, testing, and real
 
 <div class="wm-card">
 <h3><a href="syllabus/">Syllabus</a></h3>
-Course policies, grading, and the AI ledger requirement.
+Course policies, grading, and the AI log requirement.
 </div>
 
 <div class="wm-card">
@@ -48,7 +48,7 @@ Full Tuesday/Thursday class schedule, sprint dates, and key dates for Fall 2026.
 
 <div class="wm-card">
 <h3><a href="projects/">Projects</a></h3>
-The eight open-source projects teams will choose from this semester.
+The open-source projects and team assignments for this semester.
 </div>
 
 <div class="wm-card">
@@ -58,7 +58,12 @@ Sprint-by-sprint requirements and deliverables.
 
 <div class="wm-card">
 <h3><a href="presentations/">Presentations</a></h3>
-Lightning talks, the final presentation, and new-tech showcases.
+Lightning talks and the final presentation.
+</div>
+
+<div class="wm-card">
+<h3><a href="showcase1/">Showcases</a></h3>
+New-tech showcases: requirements and the list of tools to choose from.
 </div>
 
 <div class="wm-card">

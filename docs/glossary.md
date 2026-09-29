@@ -63,6 +63,12 @@ A tag is a named pointer to a specific commit, used to mark a release. In this c
 
 → [Managing releases (GitHub Docs)](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository)
 
+### GitHub App
+
+An integration that a GitHub organization or repository owner installs to give an outside service access to its repos, for example a bot that comments on pull requests or a service that scans code. Example tools installed as GitHub Apps: CodeRabbit (AI code review), SonarQube Cloud and Snyk (code scanning). In this course, apps on the [CSCI-435-SE](https://github.com/CSCI-435-SE) organization must be approved by the instructor before they can be installed.
+
+→ [About GitHub Apps (GitHub Docs)](https://docs.github.com/en/apps/overview)
+
 ### GitHub Issue
 
 A GitHub Issue is a structured record in a repository's issue tracker representing a task, feature request, or bug. In this course, the feature backlog lives entirely as GitHub Issues — not in a separate document. Issues have a title, description, labels, and can be linked to PRs via `Closes #N`.
@@ -188,6 +194,12 @@ A file at the root of many open-source repositories that explains how to contrib
 
 Files that provide instructions to AI agents operating in the repository — what the codebase does, how to run tests, what conventions to follow, and any restrictions on AI-generated changes. Not all projects have them. If your project does, read them before each sprint and decide as a team whether to use them as-is, adapt, or supplement.
 
+### Dev container
+
+A development environment defined in a `devcontainer.json` file (usually in a `.devcontainer/` folder) that runs inside a Docker container. It pins the tools, runtimes, and extensions a project needs, so every developer gets the same setup. It can run locally with VS Code and Docker, or in the cloud with GitHub Codespaces. Example tools for working with dev containers: the VS Code Dev Containers extension, GitHub Codespaces.
+
+→ [Development Containers](https://containers.dev/)
+
 ### Docker
 
 A platform for packaging and running applications in isolated environments called *containers*. A container bundles the app and all its dependencies together, so the app behaves the same on every machine regardless of what is installed locally. Many projects in this course use Docker to run the app, the database, and other services locally. If your project has a `Dockerfile`, you will need Docker installed — follow the setup guide in `STUDENTS.md`.
@@ -201,13 +213,29 @@ A tool for defining and running multi-container Docker applications. A `docker-c
 → [Docker Compose overview](https://docs.docker.com/compose/)
 
 
+### End-to-end (E2E) testing
+
+Testing the whole application the way a user would: a tool drives a real browser, clicks through a flow (e.g., sign up, create a document, log out), and checks what appears on screen. E2E tests catch problems that unit tests miss, but they are slower and more fragile. Example tools for E2E testing: Playwright, Cypress.
+
 ### Linter / formatter
 
 A linter is a tool that analyzes code for style and potential errors without running it (e.g., ESLint for JavaScript, RuboCop for Ruby). A formatter automatically reformats code to match a style guide (e.g., Prettier, `gofmt`). Most projects in this course have linting and formatting configured — check your project's `CONTRIBUTING.md` and config files (`.eslintrc`, `rubocop.yml`, etc.) and run these tools before opening a PR.
 
+### Load testing
+
+Measuring how a system behaves when many users or requests hit it at once: response times, error rates, and where it starts to break. Only load-test systems you run yourself (e.g., a local instance), never public or shared servers. Example tool for load testing: k6.
+
 ### Monorepo
 
 A single Git repository that contains multiple related packages or applications. Actual Budget and Medusa use monorepo setups managed with Yarn workspaces and Turborepo. If your project is a monorepo, pay attention to which package you are working in when running commands — running `npm install` at the root vs. inside a package directory can have different effects.
+
+### Mutation testing
+
+A way to measure test quality. The tool makes small deliberate changes ("mutants") to the code, such as flipping `>` to `>=`, and reruns the tests. If the tests still pass, the mutant "survived," meaning the tests would not notice that bug. Example tool for mutation testing: StrykerJS.
+
+### Static analysis
+
+Analyzing code without running it to find bugs, security vulnerabilities, or code smells. Linters are a simple form of static analysis. Example tools for static analysis: Semgrep and SonarQube Cloud, which go further with security rules and quality dashboards.
 
 ### Test suite
 

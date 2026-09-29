@@ -45,7 +45,7 @@ The course combines lectures with a semester-long team project.
 
 Lectures pair core software engineering theory with practical techniques/tools and real-world case studies. The semester also includes periodic new tech showcases: short, walkable demo sessions where students present a modern software engineering tool or technology.
 
-The project runs the full semester: six teams of 6&ndash;7 students each contribute to one real, established open-source project. The project follows a sprint-based structure mirroring real agile development practice, with teams periodically reporting progress through lightning talks, a written sprint report, and a final presentation.
+The project runs the full semester: six teams of 5&ndash;6 students each contribute to one real, established open-source project. The project follows a sprint-based structure mirroring real agile development practice, with teams periodically reporting progress through lightning talks, a written sprint report, and a final presentation.
 
 Every team is self-organized: each team names a team lead and divides other roles as it sees fit. On a team with a graduate student, that student normally serves as team lead. Roles can change during the semester. All students, graduate and undergraduate, are expected to make direct, regular, and visible contributions to the project throughout the semester.
 

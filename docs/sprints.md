@@ -9,7 +9,7 @@ The project unfolds across **5 sprints (S0&ndash;S4)**. Each sprint builds on th
 S0 gets everyone set up and working; S1&ndash;S3 are the main development sprints; S4 closes the
 project with a polished release, presentation, and retrospective.
 
-See the [Schedule](schedule.md) for sprint dates and the [Syllabus](syllabus.md#9-project-structure-sprints-presentations-and-showcases) for an overview of the grading structure.
+See the [Schedule](schedule.md) for sprint dates and the [Syllabus](syllabus.md#11-project-structure-sprints-presentations-and-showcases) for an overview of the grading structure.
 
 ---
 
