@@ -77,13 +77,10 @@ Cover each topic below clearly and concisely. You do not need to follow this ord
 
 ## New-tech showcases
 
-Short demo sessions (2 rounds) where students present a modern software engineering tool or technology.
+Short demo sessions (2 rounds) where teams present a modern software engineering tool or technology.
 
-- **Round 1:** Oct 6 (in class)
-- **Round 2:** Nov 5 (in class)
-
-!!! info "Detailed requirements coming soon"
-    Detailed requirements for the new-tech showcases (format, timing, what to prepare, grading criteria) will be posted here before each round.
+- **Round 1:** Oct 13 (in class) &mdash; see the [Showcase 1](showcase1.md) page for requirements and the [Showcase Tools](showcase-tools.md) list
+- **Round 2:** Nov 5 (in class) &mdash; details will be posted after Round 1
 
 ---
 

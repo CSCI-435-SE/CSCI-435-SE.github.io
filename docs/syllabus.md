@@ -80,8 +80,8 @@ Important dates (college dates in **bold**):
 
 - **Sep 4 &mdash; Last day to add/drop**
 - Sep 22 &mdash; Sprint 0 lightning project talks
-- Oct 6 &mdash; New-tech showcase, round 1
 - **Oct 8 &mdash; Fall Break begins (no class; official break runs Oct 8&ndash;11)**
+- Oct 13 &mdash; New-tech showcase, round 1
 - Oct 20 &mdash; Sprints 1&ndash;2 lightning project talks
 - **Oct 26 &mdash; Last day to withdraw**
 - **Nov 3 &mdash; Election Day, no class**
