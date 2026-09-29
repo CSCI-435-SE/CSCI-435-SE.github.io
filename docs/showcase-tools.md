@@ -9,20 +9,19 @@ Pick your team's new-tech showcase tool from this list. Requirements, dates, and
 
 ## Selection rules
 
-1. **One tool per team per round.** Round 2 (Nov 5) must use a different tool from Round 1 (Oct 13).
+1. **One tool per team, and one team per tool.**
 2. **Not already used in your project.** You cannot pick a tool that is already set up in your project's repository or that your team used in Sprints 0&ndash;1. Each tool below lists the teams it is **not available to**.
-3. **No repeats across rounds.** A tool showcased by any team in Round 1 cannot be picked in Round 2.
-4. **One team per category per round**, so we don't get two near-identical demos on the same day.
-5. **Demo on your own project.** The live demo and the tutorial video must use your team's project codebase.
-6. **First come, first served.** Claim your tool in the Zulip **#showcases** channel, topic `tool_claims_R1`, by **Fri, Oct 2, 11:59 PM**. The instructor confirms each claim in the thread.
-7. **Off-list tools** are welcome, but need instructor approval in the same Zulip topic before you start.
+3. **One team per category**, so we don't get two near-identical demos.
+4. **Demo on your own project.** The live demo and the tutorial video must use your team's project codebase.
+5. **First come, first served.** Claim your tool in the Zulip **#showcases** channel, topic `tool_claims_R1`, by **Fri, Oct 2, 11:59 PM**. The instructor confirms each claim in the thread.
+6. **Off-list tools** are welcome, but need instructor approval in the same Zulip topic before you start.
 
 **Excluded tools:** Claude Code, GitHub Issues & Projects, and GitHub Actions (they are already part of the course workflow).
 
 !!! warning "Risks that apply to every tool"
     - **Free plans have limits.** Quotas, seat caps, and rate limits can run out in the middle of a demo. Rehearse with the plan you will use, and keep your video ready as a backup.
     - **Apps on the course GitHub organization need approval.** Tools that install as a GitHub App on `CSCI-435-SE` (e.g., CodeRabbit, SonarQube Cloud, Snyk, Semgrep) must be approved by the instructor. Request it in the **#showcases** channel (topic `app_install_requests`) by **Wed, Oct 7**.
-    - **Install and sign in before class.** Download everything in advance, and sign in to Docker Hub (anonymous downloads are limited per network).
+    - **Install and sign in before class.** Download everything in advance. If your tool uses Docker, download the images before class and sign in to Docker Hub.
     - **Use your own accounts, not the project's real services.** Never paste secrets, API keys, or personal data into a tool, and only load-test or scan systems you run yourself.
     - **Pricing changes often.** The notes below were checked on **Sep 27, 2026**. If something changed, tell the instructor.
 
@@ -95,7 +94,7 @@ Pick your team's new-tech showcase tool from this list. Requirements, dates, and
     - **Heads-up:** sign in to Docker Hub before class to avoid download limits.
     - **Not available to:** **Actual Budget, Cal.diy, Excalidraw, Outline**
 
-## Design
+## UI design
 
 - **Figma** &mdash; [figma.com](https://figma.com): Collaborative UI design with Dev Mode for handing designs to developers.
     - **Heads-up:** each teammate must verify Figma for Education with a W&M email &mdash; do it now, since approval can take time.
@@ -112,7 +111,7 @@ Pick your team's new-tech showcase tool from this list. Requirements, dates, and
     - **Heads-up:** the free plan allows only 1 user, so one teammate owns the account. Don't send real user data.
     - **Not available to:** **Cal.diy, Excalidraw, Outline**
 
-- **React / Vue DevTools profilers** &mdash; [React DevTools](https://react.dev/learn/react-developer-tools) &middot; [Vue DevTools](https://devtools.vuejs.org): Browser extensions to inspect component state and find slow renders.
+- **Browser DevTools profiler (React DevTools, or Vue DevTools for Gitea)** &mdash; [React DevTools](https://react.dev/learn/react-developer-tools) &middot; [Vue DevTools](https://devtools.vuejs.org): Browser extensions to inspect component state and find slow renders.
     - **Heads-up:** none significant &mdash; make sure you profile a realistic interaction.
 
 ## Diagrams
