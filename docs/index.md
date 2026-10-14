@@ -12,6 +12,9 @@ software engineering workflow: agile sprints, code review, CI, testing, and real
 
 ## Announcements
 
+<span class="wm-announcement-date">October 13, 2026</span> &mdash; **Sprint 2 is open.** All deliverables are due **October 29 at 11:59 PM**; the mid-sprint check-in (D7) is due **October 22 at 11:59 PM**. See the [Sprint 2 requirements](sprint2/) for full details.
+{: .wm-announcement }
+
 <span class="wm-announcement-date">October 6, 2026</span> &mdash; **The course schedule has been updated.** See the [Schedule](schedule/) page for the latest dates and topics.
 {: .wm-announcement }
 

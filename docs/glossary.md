@@ -186,6 +186,11 @@ The process of identifying which parts of a codebase are relevant and/or need to
 → [Rajlich (2016), *Software Engineering: The Current Practice*](https://www.taylorfrancis.com/books/mono/10.1201/b11678/software-engineering-vaclav-rajlich)
 
 
+
+### Class diagram
+
+A UML diagram that shows types (classes, interfaces, or structs) in a system, their attributes and methods, and the relationships between them: composition, aggregation, dependency, and association. Class diagrams are used to reason about structure -- what exists, what it contains, and how parts relate.
+
 ### `CONTRIBUTING.md`
 
 A file at the root of many open-source repositories that explains how to contribute — coding style, commit conventions, PR format, review process, and the project's own Definition of Done. Read this file before writing your team's standards document. Your standards must be consistent with it.
@@ -233,6 +238,10 @@ A single Git repository that contains multiple related packages or applications.
 
 A way to measure test quality. The tool makes small deliberate changes ("mutants") to the code, such as flipping `>` to `>=`, and reruns the tests. If the tests still pass, the mutant "survived," meaning the tests would not notice that bug. Example tool for mutation testing: StrykerJS.
 
+### Sequence diagram
+
+A UML diagram that shows how objects or components interact over time: the messages exchanged, the order of calls, and who is involved. Sequence diagrams are used to reason about behavior -- what happens, in what order, and through what paths.
+
 ### Static analysis
 
 Analyzing code without running it to find bugs, security vulnerabilities, or code smells. Linters are a simple form of static analysis. Example tools for static analysis: Semgrep and SonarQube Cloud, which go further with security rules and quality dashboards.
@@ -240,6 +249,17 @@ Analyzing code without running it to find bugs, security vulnerabilities, or cod
 ### Test suite
 
 The collection of automated tests for a project (unit tests, integration tests, end-to-end tests). At the start of each sprint, you run the test suite to establish a passing baseline before making any changes. Every PR requires writing or updating tests for any code changed. "CI green" means the test suite (and other checks) pass on GitHub after your push.
+
+
+### Technical debt
+
+The accumulated cost of shortcuts, design compromises, and deferred improvements in a codebase. Technical debt is not inherently bad -- a deliberate shortcut can be the right trade-off -- but it should be documented so it can be addressed later. Left unmanaged, it slows future development and makes the code harder to understand and extend.
+
+### UML -- Unified Modeling Language
+
+A standardized notation for visualizing software structure and behavior. UML diagrams are a communication tool for reasoning about design and explaining it to others. Common types used in this course: class diagrams and sequence diagrams.
+
+→ [UML specification (Object Management Group)](https://www.omg.org/spec/UML/)
 
 ---
 
