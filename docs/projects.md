@@ -109,14 +109,13 @@ Team wiki and knowledge base with real-time collaborative editing.
 </div>
 
 <div class="wm-card">
-<div class="wm-meta">6 members</div>
+<div class="wm-meta">5 members</div>
 <h3>Excalidraw</h3>
 <div class="wm-member-list">
 <span class="wm-member">Anthony Williams</span>
 <span class="wm-member">Alexander Brunson</span>
 <span class="wm-member">Tristan Raab</span>
 <span class="wm-member">Thomas Reilly</span>
-<span class="wm-member">Brian Fines</span>
 <span class="wm-member">Cashen Croft</span>
 </div>
 </div>
@@ -148,11 +147,10 @@ Team wiki and knowledge base with real-time collaborative editing.
 </div>
 
 <div class="wm-card">
-<div class="wm-meta">5 members</div>
+<div class="wm-meta">4 members</div>
 <h3>Outline</h3>
 <div class="wm-member-list">
 <span class="wm-member">Lauren Kim</span>
-<span class="wm-member">Michael Wang</span>
 <span class="wm-member">Conner Aylward</span>
 <span class="wm-member">Leana Gyalokay</span>
 <span class="wm-member">Mustafa Aljassar</span>

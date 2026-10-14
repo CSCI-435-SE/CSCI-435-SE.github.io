@@ -18,11 +18,11 @@ software engineering workflow: agile sprints, code review, CI, testing, and real
 <span class="wm-announcement-date">October 6, 2026</span> &mdash; **The course schedule has been updated.** See the [Schedule](schedule/) page for the latest dates and topics.
 {: .wm-announcement }
 
-<span class="wm-announcement-date">September 28, 2026</span> &mdash; **New-Tech Showcase 1 moves to Oct 13** (after Fall Break). Requirements are posted on the [Showcase 1](showcase1/) page. Claim your team's tool by **Fri, Oct 2, 11:59 PM** in the Zulip **#showcases** channel; see the [Showcase Tools](showcase-tools/) list.
+<!-- <span class="wm-announcement-date">September 28, 2026</span> &mdash; **New-Tech Showcase 1 moves to Oct 13** (after Fall Break). Requirements are posted on the [Showcase 1](showcase1/) page. Claim your team's tool by **Fri, Oct 2, 11:59 PM** in the Zulip **#showcases** channel; see the [Showcase Tools](showcase-tools/) list.
 {: .wm-announcement }
 
 <span class="wm-announcement-date">September 22, 2026</span> &mdash; **Sprint 1 is open.** All deliverables are due **October 8 at 11:59 PM**. See the [Sprint 1 requirements](sprint1/) for full details.
-{: .wm-announcement }
+{: .wm-announcement } -->
 
 <!-- <span class="wm-announcement-date">September 19, 2026</span> **The class on Tuesday, Sep 22** will include:<br>
 &mdash; **A 15-min quiz** at the start of class (Sprint 0 material and topics covered in the lectures). <br>

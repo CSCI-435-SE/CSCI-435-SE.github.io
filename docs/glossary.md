@@ -191,6 +191,10 @@ The process of identifying which parts of a codebase are relevant and/or need to
 
 A UML diagram that shows types (classes, interfaces, or structs) in a system, their attributes and methods, and the relationships between them: composition, aggregation, dependency, and association. Class diagrams are used to reason about structure -- what exists, what it contains, and how parts relate.
 
+### Impact analysis
+
+The process of determining what else in a codebase may be affected by a proposed change before implementing it. Typically follows concept location: once you know which elements are relevant, you assess the ripple effects on other components, tests, and interfaces. Impact analysis helps avoid unintended breakage and informs how large or risky a change will be.
+
 ### `CONTRIBUTING.md`
 
 A file at the root of many open-source repositories that explains how to contribute — coding style, commit conventions, PR format, review process, and the project's own Definition of Done. Read this file before writing your team's standards document. Your standards must be consistent with it.
