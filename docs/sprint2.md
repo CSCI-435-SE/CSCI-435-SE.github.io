@@ -136,7 +136,7 @@ This is a new individual deliverable.
 !!! info "The Gitea team (Go)"
     Both diagrams are required. Go uses structs and interfaces rather than classes; your class diagram should reflect Go's model (structs, interfaces, embedding). Include a brief note in your submission explaining the mapping from Go constructs to UML notation.
 
-**UML notation:** Inheritance, composition, aggregation, dependency, and association are all valid and expected relationships for class diagrams. For attributes and methods, show only those relevant to the issue; you do not need to show every member of every class.
+**UML notation:** Inheritance, composition, aggregation, dependency, and association are all valid and expected relationships for class diagrams (see the [Glossary](glossary.md) for definitions). For attributes and methods, show only those relevant to the issue; **you do not need to show every member of every class**.
 
 **Tutorials:**
 
@@ -176,31 +176,45 @@ The examples below illustrate the expected style, level of detail, and annotatio
 
 | File | Location |
 |---|---|
-| Diagram images (PNG, JPEG, or PDF) | One image for each diagram, embedded or linked from the MD file below |
-| `<issue#>-<username>.md` | `docs/sprint2/diagrams/` -- embeds or links your class and sequence diagrams |
-| `<issue#>-<username>-analysis.md` | `docs/sprint2/diagrams/` -- your Q&A answers |
+| `<issue#>-<username>-class.png` (or `.pdf`) | `docs/sprint2/diagrams/` |
+| `<issue#>-<username>-sequence.png` (or `.pdf`) | `docs/sprint2/diagrams/` |
+| `<issue#>-<username>.md` | `docs/sprint2/diagrams/` -- embeds diagrams and Q&A |
 
----
+**Expected file structure and Q&A** (copy this template and fill it in):
 
-**Diagram Q&A:**
+```markdown
+# Issue #<N> -- <issue title>
 
-Answer all questions in your `<issue#>-<username>-analysis.md` file.
+## Class Diagram
 
-*Class diagram:*
+![Class diagram](<issue#>-<username>-class.png)
 
-1. Which classes (or types/interfaces for Go) from the existing codebase did you identify as relevant during concept location, and which are new or modified as part of your solution? What guided your decision about where to draw the diagram's boundaries?
+## Sequence Diagram
+
+![Sequence diagram](<issue#>-<username>-sequence.png)
+
+## Q&A
+
+**Class diagram:**
+
+1. Among all the classes shown in the diagram, which 1--2 are most central to understanding the codebase and solving the issue? Explain what role each one plays.
+
 2. What is the most significant relationship shown in the diagram? Explain what it represents in the system and why it matters for understanding the solution.
+
 3. Looking back at your implementation, is there anything in this design you would change, and why?
 
-*Sequence diagram:*
+**Sequence diagram:**
 
 1. What user action or system event starts the sequence, and what is the expected outcome when it completes successfully?
-2. Identify the 2-3 most important steps in the sequence. For each one, describe what is happening and note whether it involves existing code or new/modified code from your solution.
+
+2. Identify the 2--3 most important steps in the sequence. For each one, describe what is happening and note whether it involves existing code or new/modified code from your solution.
+
 3. What error cases or alternative paths are not shown in the diagram, and why did you leave them out?
 
-*Cross-cutting (answer once, applies to both diagrams):*
+**Cross-cutting:**
 
 4. If you used AI to create or check any part of the diagrams, describe what it produced, what you verified against the actual code, and what you had to correct or add. If AI was not used, write "N/A."
+```
 
 ---
 
@@ -311,7 +325,7 @@ Push the following to your team's GitHub repository **by Oct 29, 11:59 PM**:
 - GitHub issue bodies updated with user stories, acceptance criteria, and design decisions with alternatives (D2, D3)
 - All PRs merged; each PR description includes the tech debt section; code review rubric posted as a comment on each PR (D4)
 - AI logs committed to `ai-logs/sprint2/<github-username>/`, named `YYYY-MM-DD_<tool>_<short-slug>.md`, linked from an issue or PR comment (D5)
-- `docs/sprint2/diagrams/<issue#>-<username>.md` and `<issue#>-<username>-analysis.md` (D6)
+- `docs/sprint2/diagrams/<issue#>-<username>-class.png`, `<issue#>-<username>-sequence.png`, and `<issue#>-<username>.md` (D6)
 - **`docs/sprint2/checkin/<username>.md` -- due Oct 22, 11:59 PM** (D7)
 - `docs/sprint2/report.md` (or `.pdf` or `.docx`) (D8)
 - Sprint 2 release tag pushed and GitHub release created (D9)
