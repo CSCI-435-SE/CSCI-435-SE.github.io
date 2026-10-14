@@ -189,7 +189,17 @@ The process of identifying which parts of a codebase are relevant and/or need to
 
 ### Class diagram
 
-A UML diagram that shows types (classes, interfaces, or structs) in a system, their attributes and methods, and the relationships between them: composition, aggregation, dependency, and association. Class diagrams are used to reason about structure -- what exists, what it contains, and how parts relate.
+A UML diagram that shows types (classes, interfaces, or structs) in a system, their attributes and methods, and the relationships between them. Class diagrams are used to reason about structure -- what exists, what it contains, and how parts relate.
+
+**Relationships:**
+
+| Relationship | Meaning | Example |
+|---|---|---|
+| **Inheritance** | "Is-a" -- one type extends another and inherits its behavior | `AdminUser` extends `User` |
+| **Composition** | Strong "has-a" -- the contained object cannot exist without its owner | An `Order` owns its `OrderItem`s; items are deleted with the order |
+| **Aggregation** | Weak "has-a" -- the contained object can exist independently | A `Team` has `Member`s, but members can exist outside the team |
+| **Association** | General "knows about" -- one type holds a reference to another | A `Controller` references a `Service` |
+| **Dependency** | "Uses" -- one type depends on another temporarily, often as a method parameter | A `ReportGenerator` takes a `DataSource` as input |
 
 ### Impact analysis
 

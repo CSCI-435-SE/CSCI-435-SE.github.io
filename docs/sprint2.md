@@ -5,9 +5,9 @@ hide:
 
 # Sprint 2: Project Development & Quality
 
-**Oct 13-Oct 29 &middot; All deliverables due Oct 29, 11:59 PM &middot; 100 points (10% of course grade)**
+**Oct 13-Oct 29 &middot; All deliverables due Oct 29, 11:59 PM (with Mid-sprint check-in on Oct 22) &middot; 100 points (10% of course grade)**
 
-Sprint 2 builds on Sprint 1. The issue backlog, PR workflow, and general expectations carry forward; see [Sprint 1](sprint1.md) for anything not explicitly changed here. This page covers what is **new or different** in Sprint 2.
+Sprint 2 builds on Sprint 1: the goal is to further develop the system with new features, enhacements, defect corrections, etc. The issue backlog, PR workflow, and general expectations carry forward; see [Sprint 1](sprint1.md) for anything not explicitly changed here. This page covers what is **new or different** in Sprint 2.
 
 ---
 
@@ -18,8 +18,8 @@ Sprint 2 builds on Sprint 1. The issue backlog, PR workflow, and general expecta
 
 ### Before you begin
 
-- **Address carryovers first.** Review your unfinished Sprint 1 issues before selecting new work (see D1).
-- **Read the "Things that must improve" section** before starting D2-D5. These issues were observed in Sprint 1 and will be graded strictly.
+- **Identify incomplete issues from Sprint 1.** Review your unfinished Sprint 1 issues before selecting new work (see D1).
+- **Read the "Things that must improve" section** section below before starting D2-D5. These issues were observed in Sprint 1 and will be graded strictly.
 - Verify your AI log setup is working before starting new agentic sessions.
 
 ---
@@ -27,27 +27,27 @@ Sprint 2 builds on Sprint 1. The issue backlog, PR workflow, and general expecta
 ### What is new in Sprint 2
 
 - **UML diagrams and Q&A** (D6): a new individual deliverable
-- **Mid-sprint check-in** (D7): a new individual deliverable, due Oct 22
-- **Tech debt annotation**: a required section in every PR description (D4)
+- **Mid-sprint check-in** (D7): a new individual deliverable, **due Oct 22**
+- **Technical debt annotation**: a required section in every PR description (D4)
 - **Alternatives required** in design decisions (D3)
 
 ---
 
 ### Things that must improve from Sprint 1
 
-These issues were observed in Sprint 1 and will be graded strictly in Sprint 2.
+These issues were observed in Sprint 1 and will be graded strictly in Sprint 2. If you are having issues with AI logging, please contact us promptly for support.
 
-**1. AI log completeness.** Every student must have logs committed to the repo. Logs must include full session content: the prompts you wrote and the AI output in response. Summaries of conversations do not count. AI output without the prompts that produced it does not count.
+**1. AI log completeness.** Every student must have logs committed to the repo. Logs must include full session content: the **prompts you wrote** and the **AI output** in response. Summaries of conversations are **not** AI logs and will not receive full credit. AI output without the prompts that produced it are incomplete logs and will not receive full credit.
 
-**2. AI log linking.** For every issue or PR that involved AI use, post a comment on that issue or PR that links directly to the specific log file. "Directly" means a link that opens the log file itself, not a link to the folder that contains it (e.g., `ai-logs/sprint2/username/`) and not a link to a different issue or PR. Use the format and template from [AI Log Instructions](ai-logs.md).
+**2. AI log linking.** For every issue or PR that involved AI use, post a comment on that issue or PR (note: in this sprint we accept both AI log references in the issue or PR) that links directly to the specific log file. "Directly" means a link that opens the log file itself, not a link to the folder that contains it (e.g., `ai-logs/sprint2/username/`) and not a link to a different issue or PR. Use the format and template from [AI Log Instructions](ai-logs.md) -- you just require copy/pasting the template and changing the fields.
 
-**3. AI log format.** SpecStory format is strongly recommended. Screenshots of the AI interface are not logs. Common mistakes to avoid:
+**3. AI log format.** SpecStory format is strongly recommended. Screenshots of the AI interface are not AI logs. Common mistakes to avoid:
 
 - Summaries of conversations instead of full output
 - Logs not linked from the issue or PR they document
 - AI output pasted without the prompts that produced it
 
-**4. No self-reviews.** A student cannot approve or merge their own PR. Reviewers must post substantive comments, not just click approve. When your PR is ready for review, notify your reviewer promptly in your team's Zulip stream. Aim to turn around reviews within 24 hours of being asked. **Responsive code review is part of being a good team member.**
+**4. No self-reviews.** A student cannot approve or merge their own PR. Reviewers must post substantive comments, not just click approve. When your PR is ready for review, notify your reviewer promptly in your team's Zulip channel (or email). Aim to turn around reviews within 24 hours of being asked. **Responsive code review is part of being a good team member.**
 
 **5. Design decisions must include alternatives.** Document at least two concrete options you considered and explain why you chose one over the other. "We decided to use X" without alternatives will not earn full credit.
 
@@ -59,9 +59,9 @@ These issues were observed in Sprint 1 and will be graded strictly in Sprint 2.
 
 Same process as Sprint 1 ([D1](sprint1.md#d1--sprint-backlog-github-issues)), with one addition:
 
-**Carryovers are a priority.** If you have unfinished Sprint 1 issues, include them in your Sprint 2 backlog before selecting new work. If you decide not to carry over a Sprint 1 issue, document the reason on the issue itself. Acceptable reasons: the issue was closed, made invalid by subsequent changes, or is no longer relevant to the project.
+**Incomplete Sprint 1 issues are a priority.** If you have unfinished Sprint 1 issues, include them in your Sprint 2 backlog before selecting new work. If you decide not to carry over a Sprint 1 issue, document the reason on the issue itself. Acceptable reasons: the issue was closed, made invalid by subsequent changes, or is no longer relevant to the project.
 
-The instructor or TA may also ask for specific issues to be included in the sprint, or add new issues to your team's backlog. These take priority over issues you selected independently.
+The instructor or TA may also ask for specific issues to be included in the sprint, or add new issues to your team's backlog for you to consider. 
 
 **Scope minimums for Sprint 2** (same as Sprint 1):
 
@@ -90,7 +90,7 @@ Same format as Sprint 1 ([D3](sprint1.md#d3--design-decisions)), with one requir
 
 **Alternatives are required.** Each design decision must name at least two concrete options you considered and explain why you chose one over the other. "We decided to use X" without alternatives will not earn full credit. (See item 5 in "Things that must improve.")
 
-Tech debt is folded into this deliverable via the PR description (see D4). No separate submission needed.
+Technical debt is folded into this deliverable via the PR description (see D4). No separate deliverable is needed.
 
 ---
 
@@ -98,7 +98,7 @@ Tech debt is folded into this deliverable via the PR description (see D4). No se
 
 Same workflow as Sprint 1 ([D4](sprint1.md#d4--code-changes-and-pull-requests)), with one required addition to every PR description:
 
-**Tech debt section (required in every PR):**
+**Technical debt section (required in every PR):**
 
 ```markdown
 ## Tech Debt
@@ -128,7 +128,7 @@ This is a new individual deliverable.
 
 **Before drawing your diagrams, review the tutorials linked below.** They explain UML elements, their meaning, and when to use each type of relationship or notation. Familiarity with the basics will make your diagrams significantly more accurate.
 
-**What to create:** One **class diagram** and one **sequence diagram** for one of your medium issues. The person who resolved the issue creates the diagrams.
+**What to create:** One **class diagram** and one **sequence diagram** for one of your medium issues. The person who resolved the issue creates the diagrams. The diagrams should show  code components and behavior relevant to your issue(s) --- more details below. Below we provide reference diagrams to guide this task.
 
 !!! info "If you resolved multiple small issues equivalent in scope to one medium issue"
     Create diagrams that cover all of those issues together.
@@ -136,14 +136,14 @@ This is a new individual deliverable.
 !!! info "The Gitea team (Go)"
     Both diagrams are required. Go uses structs and interfaces rather than classes; your class diagram should reflect Go's model (structs, interfaces, embedding). Include a brief note in your submission explaining the mapping from Go constructs to UML notation.
 
-**UML notation:** Class diagrams do not need to show inheritance. Composition, aggregation, dependency, and association are all valid and expected relationships. For attributes and methods, show only those relevant to the issue; you do not need to show every member of every class.
+**UML notation:** Inheritance, composition, aggregation, dependency, and association are all valid and expected relationships for class diagrams. For attributes and methods, show only those relevant to the issue; you do not need to show every member of every class.
 
 **Tutorials:**
 
 - Class diagrams: [Lucidchart -- How to Draw a UML Class Diagram](https://www.lucidchart.com/pages/how-to-draw-a-class-diagram-in-UML)
 - Sequence diagrams: [Visual Paradigm -- Creating Sequence Diagrams](https://guides.visual-paradigm.com/creating-sequence-diagrams-in-uml-a-comprehensive-tutorial/) &middot; [Gliffy -- UML Sequence Diagram Tutorial](https://www.gliffy.com/resources/how-make-sequence-diagram-uml-diagram-tutorials)
 
-**Tools:** Any tool of your preference. Examples: [PlantUML](https://plantuml.com/), [Mermaid](https://mermaid.js.org/) (renders directly in GitHub Markdown), [draw.io](https://draw.io/), [Lucidchart](https://lucidchart.com/), [Visual Paradigm](https://visual-paradigm.com/).
+**Tools:** To create the diagrams, you can use any tool of your preference. Examples: [PlantUML](https://plantuml.com/), [Mermaid](https://mermaid.js.org/) (renders directly in GitHub Markdown), [draw.io](https://draw.io/), [Lucidchart](https://lucidchart.com/), [Visual Paradigm](https://visual-paradigm.com/).
 
 ---
 
@@ -154,9 +154,9 @@ Each diagram should cover two things:
 1. **Relevant existing code** you identified during concept location and impact analysis: the classes, components, or interactions already in the codebase that you needed to understand to implement your solution.
 2. **New and modified code** that makes up your solution: the classes, methods, or interactions you added or changed.
 
-Clearly distinguish between existing and new/modified elements (for example, with a legend, color, or a label).
+Distinguish between existing and new/modified elements (for example, with a legend, color, or a label).
 
-**Annotations are required.** Add brief notes directly on the diagram to explain key design decisions: why a specific relationship exists, why you structured a class a certain way, what an important method call is doing. Annotations are part of the deliverable and will be graded. Diagrams without annotations will not earn full credit.
+**Annotations are required.** Add brief notes directly on the diagram to explain key design decisions: why a specific relationship exists, why you structured a class a certain way, what an important method call is doing. Annotations are part of the deliverable and will be graded. Diagrams without annotations will not earn full credit. See the amber boxes in the reference diagrams below for examples of annotations.
 
 ---
 
@@ -176,7 +176,7 @@ The examples below illustrate the expected style, level of detail, and annotatio
 
 | File | Location |
 |---|---|
-| Diagram image (PNG, JPEG, or PDF) | Embedded or linked from the MD file below |
+| Diagram images (PNG, JPEG, or PDF) | One image for each diagram, embedded or linked from the MD file below |
 | `<issue#>-<username>.md` | `docs/sprint2/diagrams/` -- embeds or links your class and sequence diagrams |
 | `<issue#>-<username>-analysis.md` | `docs/sprint2/diagrams/` -- your Q&A answers |
 
