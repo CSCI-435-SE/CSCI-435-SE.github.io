@@ -70,6 +70,8 @@ The instructor or TA may also ask for specific issues to be included in the spri
 | Each CSCI 435 member | at least 2 medium issues (or equivalent story points) |
 | Each CSCI 535 (grad) member | at least 2 medium issues + 1 additional small issue (or equivalent story points) |
 
+**If your backlog doesn't have enough issues:** If your team does not have enough issues to meet the scope minimum, create new ones. Identify areas that still need work (e.g., new features, improvements to existing functionality, test coverage gaps, or bugs) and write issues for them following the same process as before (user story, acceptance criteria, estimate).
+
 Create a `Sprint 2` milestone in GitHub and attach all selected issues to it.
 
 **What to provide in D8 (Sprint report):** Link to the Sprint 2 milestone; rationale for backlog decisions; explanation of any Sprint 1 carryovers or skips.
