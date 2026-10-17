@@ -17,7 +17,11 @@ nav:
     - Sprint 3: sprint3.md
     - Sprint 4: sprint4.md
     - AI Log Instructions: ai-logs.md
-  - Presentations: presentations.md
+  - Presentations:
+    - Overview: presentations.md
+    - LT0 — Sep 22: presentations/lt0.md
+    - LT2 — Oct 20: presentations/lt2.md
+    - Final — Dec 1: presentations/final.md
   - Showcases:
     - Showcase 1: showcase1.md
     - Showcase Tools: showcase-tools.md
