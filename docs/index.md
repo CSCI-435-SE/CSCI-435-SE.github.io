@@ -12,7 +12,7 @@ software engineering workflow: agile sprints, code review, CI, testing, and real
 
 ## Announcements
 
-<span class="wm-announcement-date">October 15, 2026</span> &mdash; **Sprints 1–2 Lightning Talks — Tuesday, Oct 20:** <br>
+<span class="wm-announcement-date">October 17, 2026</span> &mdash; **Sprints 1–2 Lightning Talks — Tuesday, Oct 20:** <br>
 &mdash; Each team has **10 minutes** to present progress from Sprint 1, key technical decisions, connections to course concepts, and the Sprint 2 plan. <br>
 &mdash; Upload your slides as **PDF to Blackboard by 12:20 PM** on Oct 20. See the [Presentations page](presentations/lt2.md) for full requirements.
 {: .wm-announcement }
