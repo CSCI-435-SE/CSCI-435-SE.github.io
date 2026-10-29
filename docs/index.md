@@ -12,6 +12,10 @@ software engineering workflow: agile sprints, code review, CI, testing, and real
 
 ## Announcements
 
+
+<span class="wm-announcement-date">October 29, 2026</span> &mdash; **The course schedule has been updated.** See the [Schedule](schedule/) page for the latest dates and topics.
+{: .wm-announcement }
+
 <span class="wm-announcement-date">October 17, 2026</span> &mdash; **Sprints 1–2 Lightning Talks — Tuesday, Oct 20:** <br>
 &mdash; Each team has **10 minutes** to present progress from Sprint 1, key technical decisions, connections to course concepts, and the Sprint 2 plan. <br>
 &mdash; Upload your slides as **PDF to Blackboard by 12:20 PM** on Oct 20. See the [Presentations page](presentations/lt2.md) for full requirements.
@@ -19,9 +23,9 @@ software engineering workflow: agile sprints, code review, CI, testing, and real
 
 <span class="wm-announcement-date">October 13, 2026</span> &mdash; **Sprint 2 is open.** All deliverables are due **October 29 at 11:59 PM**; the mid-sprint check-in (D7) is due **October 22 at 11:59 PM**. See the [Sprint 2 requirements](sprint2/) for full details.
 {: .wm-announcement }
-
+<!-- 
 <span class="wm-announcement-date">October 6, 2026</span> &mdash; **The course schedule has been updated.** See the [Schedule](schedule/) page for the latest dates and topics.
-{: .wm-announcement }
+{: .wm-announcement } -->
 
 <!-- <span class="wm-announcement-date">September 28, 2026</span> &mdash; **New-Tech Showcase 1 moves to Oct 13** (after Fall Break). Requirements are posted on the [Showcase 1](showcase1/) page. Claim your team's tool by **Fri, Oct 2, 11:59 PM** in the Zulip **#showcases** channel; see the [Showcase Tools](showcase-tools/) list.
 {: .wm-announcement }
