@@ -5,7 +5,7 @@ hide:
 
 # Sprint 2: Project Development & Quality
 
-**Oct 13-Oct 29 &middot; All deliverables due Oct 29, 11:59 PM (with Mid-sprint check-in on Oct 22) &middot; 100 points (10% of course grade)**
+**Oct 13-Oct 29 &middot; All deliverables due Oct 29, 11:59 PM (with Mid-sprint check-in on Oct 22) &middot; 100 points (12% of course grade)**
 
 Sprint 2 builds on Sprint 1: the goal is to further develop the system with new features, enhacements, defect corrections, etc. The issue backlog, PR workflow, and general expectations carry forward; see [Sprint 1](sprint1.md) for anything not explicitly changed here. This page covers what is **new or different** in Sprint 2.
 
@@ -270,7 +270,7 @@ Each team member must complete the Sprint 2 reflection survey individually. The 
 
 ### Grading
 
-Sprint 2 is worth **100 points** (10% of the course grade). D1, D8, and D9 are graded as a team; all other deliverables are graded individually.
+Sprint 2 is worth **100 points** (12% of the course grade). D1, D8, and D9 are graded as a team; all other deliverables are graded individually.
 
 | Deliverable | Points | Notes |
 |---|---|---|

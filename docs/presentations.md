@@ -22,4 +22,4 @@ Short demo sessions (2 rounds) where teams present a modern software engineering
 | Showcase | Date | Spec |
 |---|---|---|
 | **Round 1** | Oct 13 | [Showcase 1](showcase1.md) — see also [Showcase Tools](showcase-tools.md) |
-| **Round 2** | Nov 5 | Details posted after Round 1 |
+| **Round 2** | Nov 10 | Details posted after Round 1 |

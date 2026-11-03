@@ -85,7 +85,7 @@ Important dates (college dates in **bold**):
 - Oct 20 &mdash; Sprints 1&ndash;2 lightning project talks
 - **Oct 26 &mdash; Last day to withdraw**
 - **Nov 3 &mdash; Election Day, no class**
-- Nov 5 &mdash; New-tech showcase, round 2
+- Nov 10 &mdash; New-tech showcase, round 2
 - Nov 17 & 19 &mdash; In-class project working sessions (instructor away)
 - **Nov 25&ndash;29 &mdash; Thanksgiving Break, no class**
 - Dec 1 & 3 &mdash; Final project presentations
