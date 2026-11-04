@@ -17,8 +17,8 @@ See the [Schedule](schedule.md) for sprint dates and the [Syllabus](syllabus.md#
 |---|---|---|---|
 | [S0 &mdash; Project Onboarding](sprint0.md) | Sep 1&ndash;17 | 100 pts (9%) | Closed |
 | [S1 &mdash; Project Development & Release](sprint1.md) | Sep 22&ndash;Oct 8 | 100 pts (10%) | Closed |
-| [S2 &mdash; Project Development & Quality](sprint2.md) | Oct 13&ndash;29 | 100 pts (12%) | **Active** |
-| [S3 &mdash; Hardening & Integration](sprint3.md) | Nov 3&ndash;19 | TBD | Coming soon |
+| [S2 &mdash; Project Development & Quality](sprint2.md) | Oct 13&ndash;29 | 100 pts (12%) | Closed |
+| [S3 &mdash; Project Development & Testing](sprint3.md) | Nov 3&ndash;19 | 100 pts (12%) | **Active** |
 | [S4 &mdash; Release & Retrospective](sprint4.md) | Nov 24&ndash;Dec 10 | TBD | Coming soon |
 
 ---
