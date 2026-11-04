@@ -33,7 +33,7 @@ Sprint 3 continues the development of your project and puts the focus on **testi
 - **Mid-sprint check-in requires an open PR** (D7), due Nov 12.
 
 !!! info "Team feature for Sprints 3&ndash;4"
-    Each team will be assigned a larger feature that spans Sprints 3 and 4. The instructor or TA will post it as an issue in your team's issue tracker and notify your team when it is posted.
+    Each team will be assigned a larger feature that spans Sprints 3 and 4. The instructor or TA will post it as an issue in your team's issue tracker and notify your team when it is posted. See D1 for how to split it into sub-issues.
 
 ---
 
@@ -85,6 +85,8 @@ A hardening issue is scoped like any other issue (see the scope justification ab
 - **Failing tests in the baseline:** pass/fail counts before and after, and the cause of each failure.
 
 Regenerating snapshots, reformatting code, or silencing a check without fixing its cause counts as small at most.
+
+**Team feature.** When the team feature issue is posted (see the box under "What is new in Sprint 3"), split it into sub-issues, each with its own owner, spec (D2), and scope. Link each sub-issue to the feature issue. Sub-issues count toward your scope minimum like any other issue.
 
 Create a `Sprint 3` milestone in GitHub and attach all selected issues to it.
 

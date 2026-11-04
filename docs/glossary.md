@@ -236,6 +236,14 @@ A tool for defining and running multi-container Docker applications. A `docker-c
 
 Testing the whole application the way a user would: a tool drives a real browser, clicks through a flow (e.g., sign up, create a document, log out), and checks what appears on screen. E2E tests catch problems that unit tests miss, but they are slower and more fragile. Example tools for E2E testing: Playwright, Cypress.
 
+### Flaky test
+
+A test that sometimes passes and sometimes fails on the same code, without any change. Common causes: timing and waits, test order, shared state between tests, time zones and dates, and database results returned in an unstable order. A flaky test is a problem even when it usually passes: people stop trusting red CI runs. Fix the cause rather than retrying or skipping the test; if you must skip it, link an issue and give the reason in a code comment.
+
+### Hardening issue
+
+An issue that makes the existing system more reliable instead of adding a feature: fixing a bug, a flaky test, a failing or missing CI check, or tests that fail on `main`. Hardening issues are scoped like any other issue and must include evidence that the problem is fixed (see the [Sprint 3](sprint3.md) page).
+
 ### Linter / formatter
 
 A linter is a tool that analyzes code for style and potential errors without running it (e.g., ESLint for JavaScript, RuboCop for Ruby). A formatter automatically reformats code to match a style guide (e.g., Prettier, `gofmt`). Most projects in this course have linting and formatting configured — check your project's `CONTRIBUTING.md` and config files (`.eslintrc`, `rubocop.yml`, etc.) and run these tools before opening a PR.
@@ -250,7 +258,24 @@ A single Git repository that contains multiple related packages or applications.
 
 ### Mutation testing
 
-A way to measure test quality. The tool makes small deliberate changes ("mutants") to the code, such as flipping `>` to `>=`, and reruns the tests. If the tests still pass, the mutant "survived," meaning the tests would not notice that bug. Example tool for mutation testing: StrykerJS.
+A way to measure test quality. The tool makes small deliberate changes ("mutants") to the code, such as flipping `>` to `>=`, and reruns the tests. If the tests still pass, the mutant "survived," meaning the tests would not notice that bug. Example tools for mutation testing: StrykerJS (JavaScript/TypeScript), Gremlins (Go).
+
+### Mutant (killed / survived / no coverage)
+
+A copy of the code with one small change made by a mutation testing tool, for example `a > b` changed to `a >= b`, or a function call removed. Each mutant ends with a status:
+
+- **Killed:** at least one test failed, so the tests noticed the change. This is what you want.
+- **Survived:** all tests passed. Either your tests have a gap, or the mutant is equivalent (see below).
+- **No coverage:** no test executes the changed line at all.
+- **Timeout:** the change made the code run too long (e.g., an infinite loop); usually counted as killed.
+
+### Equivalent mutant
+
+A mutant that behaves exactly like the original code, so no test can ever kill it. Example: changing `i < n` to `i != n` in a loop where `i` starts at 0, increases by 1, and `n` is never negative. Equivalent mutants are not test gaps; when you report one, explain why the behavior is the same.
+
+### Mutation score
+
+The percentage of mutants that were killed (killed ÷ all mutants, usually excluding equivalent ones). A higher score means the tests catch more of the injected changes. The score is only meaningful for the files that were mutated, and a high score does not prove the tests check the right behavior.
 
 ### Sequence diagram
 
