@@ -57,7 +57,7 @@ These issues were observed in Sprint 1 and will be graded strictly in Sprint 2. 
 
 #### D1 - Sprint Backlog
 
-Same process as Sprint 1 ([D1](sprint1.md#d1--sprint-backlog-github-issues)), with one addition:
+Same process as Sprint 1 ([D1](sprint1.md#d1-sprint-backlog-github-issues)), with one addition:
 
 **Incomplete Sprint 1 issues are a priority.** If you have unfinished Sprint 1 issues, include them in your Sprint 2 backlog before selecting new work. If you decide not to carry over a Sprint 1 issue, document the reason on the issue itself. Acceptable reasons: the issue was closed, made invalid by subsequent changes, or is no longer relevant to the project.
 
@@ -80,7 +80,7 @@ Create a `Sprint 2` milestone in GitHub and attach all selected issues to it.
 
 #### D2 - Requirements Specification
 
-Same format and requirements as Sprint 1 ([D2](sprint1.md#d2--requirements-specification)). User story format, INVEST criteria, acceptance criteria quality, and peer review are unchanged.
+Same format and requirements as Sprint 1 ([D2](sprint1.md#d2-requirements-specification)). User story format, INVEST criteria, acceptance criteria quality, and peer review are unchanged.
 
 Specs must be written and peer-reviewed before coding begins.
 
@@ -88,7 +88,7 @@ Specs must be written and peer-reviewed before coding begins.
 
 #### D3 - Design Decisions
 
-Same format as Sprint 1 ([D3](sprint1.md#d3--design-decisions)), with one required addition:
+Same format as Sprint 1 ([D3](sprint1.md#d3-design-decisions)), with one required addition:
 
 **Alternatives are required.** Each design decision must name at least two concrete options you considered and explain why you chose one over the other. "We decided to use X" without alternatives will not earn full credit. (See item 5 in "Things that must improve.")
 
@@ -98,7 +98,7 @@ Technical debt is folded into this deliverable via the PR description (see D4). 
 
 #### D4 - Code Changes and Pull Requests
 
-Same workflow as Sprint 1 ([D4](sprint1.md#d4--code-changes-and-pull-requests)), with one required addition to every PR description:
+Same workflow as Sprint 1 ([D4](sprint1.md#d4-code-changes-and-pull-requests)), with one required addition to every PR description:
 
 **Technical debt section (required in every PR):**
 
@@ -118,7 +118,7 @@ Both fields are required. "None." is a valid answer. PRs missing this section wi
 
 #### D5 - AI Logs
 
-Same requirements as Sprint 1 ([D5](sprint1.md#d5--ai-logs)), with stricter enforcement as described in the "Things that must improve" section above.
+Same requirements as Sprint 1 ([D5](sprint1.md#d5-ai-logs)), with stricter enforcement as described in the "Things that must improve" section above.
 
 **Log storage:** `ai-logs/sprint2/<your-github-username>/`
 
@@ -240,7 +240,7 @@ This is a new individual deliverable, graded separately from the team rubric.
 
 #### D8 - Sprint Report
 
-Same format as Sprint 1 ([D6 in Sprint 1](sprint1.md#d6--sprint-report)).
+Same format as Sprint 1 ([D6 in Sprint 1](sprint1.md#d6-sprint-report)).
 
 **Submit to:** `docs/sprint2/report.md` (or `report.pdf`, `report.docx`).
 
@@ -252,7 +252,7 @@ Cover Sprint 2 work only. Include a brief section on Sprint 1 carryovers and wha
 
 #### D9 - Sprint Release
 
-Same as Sprint 1 ([D7 in Sprint 1](sprint1.md#d7--sprint-release)).
+Same as Sprint 1 ([D7 in Sprint 1](sprint1.md#d7-sprint-release)).
 
 Tag with the `-csci435-s2` suffix. Example: if Sprint 1 was `v2.17.2-csci435-s1`, tag Sprint 2 as `v2.17.2-csci435-s2`.
 

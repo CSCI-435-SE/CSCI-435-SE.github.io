@@ -11,6 +11,19 @@ Sprint 3 continues the development of your project and puts the focus on **testi
 
 ---
 
+!!! abstract "Sprint 3 at a glance"
+    **Key dates:** Nov 12: check-in + at least one code PR (open or merged) &middot; Nov 19: everything else
+
+    **Rules that cost the most points:**
+
+    - Don't merge your own PR.
+    - Spec review on the issue, saying what was checked.
+    - `Closes #N` in every PR.
+    - Real AI logs.
+    - Test Evidence table in every PR; expected values not copied from the code's output.
+    - Mutation testing with a tool, before and after reports committed.
+    - Your team introduces no new test failures; skipped tests and disabled checks need an issue.
+
 !!! tip "Unfamiliar with a term?"
     Check the [Glossary](glossary.md) for definitions of terms used throughout this page.
 
@@ -19,14 +32,14 @@ Sprint 3 continues the development of your project and puts the focus on **testi
 ### Before you begin
 
 - **Read "Things that must improve"** below. These issues were observed in Sprint 2 and will be graded strictly.
-- **Run your team's test suites and CI on `main`** in the first days of the sprint and record the results (see D8). This is your baseline.
-- **Set up the mutation testing tool early** (see D6). Do not wait until your PRs are merged.
+- **Record your baseline early** (see D8): the test results at your Sprint 2 release tag (`-csci435-s2`), from CI or by running the relevant test suites locally. It helps you find hardening issues and get the mutation tool running.
+- **Try the mutation testing tool early** (see D6), on any existing file in the part of the code you work on. Do not wait until your PRs are ready.
 
 ---
 
 ### What is new in Sprint 3
 
-- **Mutation testing** (D6): a new individual deliverable. It **replaces** the UML diagrams from Sprint 2; there are no diagrams this sprint.
+- **Mutation testing** (D6): a new individual deliverable. It **replaces** the UML diagrams from Sprint 2.
 - **Test evidence section** in every PR description (D4).
 - **Hardening issues**: one of your issues may be a hardening issue (D1).
 - **Suite health section** in the sprint report (D8).
@@ -45,11 +58,11 @@ These issues were observed in Sprint 2 and will be graded strictly in Sprint 3.
 
 **2. Spec reviews must be visible and show what was checked.** Before coding starts, a teammate posts a review comment on the issue itself. The comment states what the reviewer checked: whether each acceptance criterion is clear and testable, which cases were considered (and whether they are covered), and whether the scope fits. If the reviewer finds problems, they list them and the author updates the spec. If the spec is good, the reviewer says so and approves, but "Looks good!" with nothing about what was checked is not a spec review.
 
-**3. Traceability.** Every PR description includes `Closes #<issue>`. Issues are closed by their PR, not manually. Do not close an issue that has no merged PR unless you explain why on the issue. Every issue and PR in the sprint is attached to the `Sprint 3` milestone.
+**3. Traceability.** Every PR description includes `Closes #<issue>`. Issues are closed by their PR, not manually. Do not close an issue that has no merged PR unless you explain why on the issue. Every issue and every code PR in the sprint is attached to the `Sprint 3` milestone.
 
 **4. AI logs must be real logs.** A log shows your prompts and the AI's output (SpecStory format recommended). The following are **not** logs and receive no credit: summaries of a session, paraphrased prompts, a share link to a chat, or tool output without the prompts that produced it. File names must follow `YYYY-MM-DD_<tool>_<short-slug>.md`. Link the log from the issue or PR it documents.
 
-**5. Open PRs early.** In Sprint 2, most PRs were opened and merged in the last two days, which left no time for review. In Sprint 3, you must have at least one code PR open by the mid-sprint check-in (see D7).
+**5. Open PRs early.** In Sprint 2, most PRs were opened in the last two days. In Sprint 3, you need a code PR by the mid-sprint check-in (see D7).
 
 **6. The sprint report must render.** Check that tables and links display correctly on GitHub (no escaped `\|` or `\[`). Use the Sprint 3 sections, not a copy of a previous report.
 
@@ -80,25 +93,25 @@ Same process as Sprint 2 ([D1](sprint2.md#d1-sprint-backlog)), including the pri
 A hardening issue is scoped like any other issue (see the scope justification above). It must also include evidence that the problem is fixed:
 
 - **Bug fix:** a test that fails before the fix and passes after.
-- **Flaky test:** the root cause, and repeated runs before and after the fix (for example, 30 runs each).
+- **Flaky test:** the root cause, and enough repeated runs of that test before and after the fix to show the change (for example, 20 runs for a unit test or 10 for an E2E test).
 - **Broken or missing CI check:** links to CI runs before and after the fix.
-- **Failing tests in the baseline:** pass/fail counts before and after, and the cause of each failure.
+- **Failing tests in the baseline:** pass/fail counts before and after, and the cause of each group of failures.
 
 Regenerating snapshots, reformatting code, or silencing a check without fixing its cause counts as small at most.
 
-**Team feature.** When the team feature issue is posted (see the box under "What is new in Sprint 3"), split it into sub-issues, each with its own owner, spec (D2), and scope. Link each sub-issue to the feature issue. Sub-issues count toward your scope minimum like any other issue.
+**Team feature.** When the team feature issue is posted (see the box under "What is new in Sprint 3"), split it into sub-issues, each with its own owner, spec (D2), and scope. Link each sub-issue to the feature issue. Sub-issues count toward your scope minimum like any other issue. When the feature is posted, add its sub-issues to your Sprint 3 milestone and adjust your backlog as needed.
 
 Create a `Sprint 3` milestone in GitHub and attach all selected issues to it.
 
-**What to provide in D8 (Sprint report):** link to the Sprint 3 milestone; rationale for backlog decisions; carryovers and skips; which issues are hardening issues.
+**What to provide in D8 (Sprint report):** link to the Sprint 3 milestone and the rationale for your backlog decisions.
 
 ---
 
 #### D2 - Requirements Specification
 
-Same format and requirements as Sprint 1 ([D2](sprint1.md#d2--requirements-specification)). Specs must be written and reviewed before coding begins; see item 2 in "Things that must improve" for what counts as a review.
+Same format and requirements as Sprint 1 ([D2](sprint1.md#d2-requirements-specification)). Specs must be written and reviewed before coding begins; see item 2 in "Things that must improve" for what counts as a review.
 
-Hardening issues use the bug format (OB/EB/S2R) when they fix a defect, or the user-story format otherwise.
+Hardening issues use the bug format (OB/EB/S2R) when they fix a defect. Otherwise, use a short task format: the problem, the goal, and acceptance criteria.
 
 ---
 
@@ -125,9 +138,11 @@ Same workflow as Sprint 2 ([D4](sprint2.md#d4-code-changes-and-pull-requests)), 
 checked that their expected values are correct. If none, write "None."]
 ```
 
-Every acceptance criterion from D2 appears in the table. "Where the expected value comes from" means the source of the expected result in your assertions: the acceptance criterion, the issue discussion, documentation, an upstream behavior, and so on. **The current output of your own code is not a valid source**; a test whose expected value was copied from what the code returns cannot detect that the code is wrong.
+Every acceptance criterion from D2 appears in the table. For bug reports, use the Expected Behavior instead of acceptance criteria. For PRs that change no product behavior (for example, CI changes), write "N/A" and explain why. "Where the expected value comes from" means the source of the expected result in your assertions: the acceptance criterion, the issue discussion, documentation, an upstream behavior, and so on. **The current output of your own code is not a valid source**; a test whose expected value was copied from what the code returns cannot detect that the code is wrong.
 
-**Reviewers** add one line to the code review rubric ([Sprint 1, D4](sprint1.md#d4--code-changes-and-pull-requests)):
+**If your fork has no CI** that runs your tests, include in the PR description the command(s) you ran and a summary of the results (passed, failed, skipped).
+
+**Reviewers** add one line to the code review rubric ([Sprint 1, D4](sprint1.md#d4-code-changes-and-pull-requests)):
 
 | Criterion | Score (1–10) | Notes |
 |---|---|---|
@@ -137,7 +152,7 @@ Every acceptance criterion from D2 appears in the table. "Where the expected val
 
 #### D5 - AI Logs
 
-Same requirements as Sprint 1 ([D5](sprint1.md#d5--ai-logs)), with the enforcement described in item 4 of "Things that must improve."
+Same requirements as Sprint 1 ([D5](sprint1.md#d5-ai-logs)), with the enforcement described in item 4 of "Things that must improve."
 
 **Log storage:** `ai-logs/sprint3/<your-github-username>/`
 
@@ -145,15 +160,15 @@ Same requirements as Sprint 1 ([D5](sprint1.md#d5--ai-logs)), with the enforceme
 
 #### D6 - Mutation Testing *(new)*
 
-This is a new individual deliverable. It replaces the Sprint 2 UML diagrams.
+This is a new individual deliverable.
 
 **What it is.** A mutation testing tool makes small changes to your code (*mutants*), such as flipping a condition or changing a boundary, and runs your tests against each one. If a test fails, the mutant is *killed*. If all tests pass, the mutant *survived*: your tests did not notice that the code changed. Survivors point to weak or missing tests.
 
-**What to do.** For **one of your medium issues** (CSCI 535: **two** medium issues):
+**What to do.** For **one of your issues whose PR changes source code and tests** (CSCI 535: **two** such issues; your small issue may be one of them):
 
 1. Run a mutation testing tool on the **source files changed by your PR(s)** for that issue. Do not mutate the whole project.
 2. Using the tool's report, analyze every surviving mutant: is it *equivalent* (it behaves exactly like the original code, so no test can kill it), or does it reveal a gap in your tests? If there are more than 10 surviving mutants, analyze at least 10, starting with those in lines your PR added or changed.
-3. Add or strengthen **at least one test that kills a surviving mutant** that revealed a gap. Re-run the tool to confirm it is killed.
+3. Add or strengthen **at least one test that kills a surviving mutant** that revealed a gap. Re-run the tool to confirm it is killed. If no surviving mutant reveals a gap (all are killed or equivalent), say so and justify it in the surviving-mutants table; that completes this step.
 4. Answer the questions in the template below.
 
 **Evidence.** Configure the tool to write a machine-readable report (StrykerJS: add `"json"` to `reporters`; Gremlins: `--output=<file>.json`; go-mutesting: save the terminal output to a text file). Commit the report from your first run and from your re-run as `docs/sprint3/mutation/reports/<issue#>-<username>-before.json` and `-after.json` (`.txt` for go-mutesting). The mutation scores you list must match the reports, and the mutant your new test kills must show as killed in the "after" report.
@@ -177,7 +192,7 @@ This is a new individual deliverable. It replaces the Sprint 2 UML diagrams.
 - **Long runs.** Mutating only the files changed by your PR keeps run time manageable.
 
 !!! warning "If you are blocked"
-    If you cannot get the tool to run, first ask your teammates: someone may already have a working setup. If you are still stuck, tell the TA **by Nov 10**, with the errors you got and the AI log of what you tried. The TA will help you debug it. If it still cannot be made to work, the TA may approve running the tool on a different issue or a different part of your code instead. Reporting it late will not be accepted as a reason for a missing D6.
+    If you cannot get the tool to run, first ask your teammates: someone may already have a working setup. If you are still stuck, tell the TA **as early as possible**, with the errors you got and the AI log of what you tried. The TA will help you debug it. If it still cannot be made to work, the TA may approve running the tool on a different issue or a different part of your code instead. Problems reported at the end of the sprint will not excuse a missing D6.
 
 **Submission:** `docs/sprint3/mutation/<issue#>-<username>.md`, using this template:
 
@@ -201,7 +216,7 @@ Commit: [link] · Test: [file › test name] · Kills: [mutant location]
 ## Questions
 
 1. What did the surviving mutants reveal about your tests?
-2. Which of your tests' expected values come from the acceptance criteria, and which (if any) were taken from the code's own output?
+2. Did any surviving mutant point to an assertion whose expected value was not based on the requirements? Explain.
 3. If you used AI to configure the tool, analyze survivors, or write tests, what did it produce and what did you verify or correct? If AI was not used, write "N/A."
 ```
 
@@ -219,20 +234,20 @@ Commit: [link] · Test: [file › test name] · Kills: [mutant location]
 2. What is one thing you learned about testing in your project?
 3. What is one risk to finishing your work by Nov 19, and what will you do about it?
 
-**Required link:** at least one **code PR you authored**, open and ready for review (or already merged) by Nov 12.
+**Required link:** at least one **code PR you authored**, open and ready for review, or merged, by Nov 12.
 
 ---
 
 #### D8 - Sprint Report
 
-Same format as Sprint 1 ([D6 in Sprint 1](sprint1.md#d6--sprint-report)), with these additions:
+Same format as Sprint 1 ([D6 in Sprint 1](sprint1.md#d6-sprint-report)), with these additions:
 
 - **Suite health** (new section):
-    - **Baseline table** for the test suites relevant to your team (the packages or areas you work on, not necessarily the whole repository): suite, command or CI workflow, and the number of passing, failing, and skipped tests at the **start** of the sprint and at the **end**.
+    - **Baseline table** for the test suites relevant to your team (the packages or areas you work on, not the whole repository): suite, command or CI workflow, and the number of passing, failing, and skipped tests at your **Sprint 2 release tag** (`-csci435-s2`) and at the **end** of the sprint. Use CI results where available; if you run tests locally, run only the packages you change.
     - **Failures grouped by cause** (for example: environment-specific, already broken upstream, flaky, caused by our changes). One issue per cause is enough; list the affected tests in it.
     - **No failures introduced by your team.** Any test your team's changes broke must be fixed by the end of the sprint. Pre-existing failures only need to be recorded and grouped; fixing them is optional (and can be a hardening issue).
     - **Skipped tests and disabled CI checks.** Skipping a test or disabling a CI check requires a linked issue and a reason, both in the report and in a code comment.
-- **Mutation testing summary:** one row per D6 submission (member, issue, mutants, killed, survived, score, link).
+- **Mutation testing:** links to each member's D6 file.
 - **Hardening issues:** which issues they are and where they came from.
 - Carryovers from Sprint 2 and what changed.
 
@@ -242,7 +257,7 @@ Same format as Sprint 1 ([D6 in Sprint 1](sprint1.md#d6--sprint-report)), with t
 
 #### D9 - Sprint Release
 
-Same as Sprint 1 ([D7 in Sprint 1](sprint1.md#d7--sprint-release)). Tag with the `-csci435-s3` suffix.
+Same as Sprint 1 ([D7 in Sprint 1](sprint1.md#d7-sprint-release)). Tag with the `-csci435-s3` suffix.
 
 Create the release **after the last Sprint 3 merge**, so it matches the final state of `main`. The release description summarizes the sprint's changes (features, fixes, hardening work), not just the tag name.
 
@@ -268,7 +283,7 @@ Sprint 3 is worth **100 points** (12% of the course grade). D1, D8, and D9 are g
 | D4 - Pull Requests | 20 | Individual. See detail below |
 | D5 - AI Logs | 5 | Individual. Real logs, correctly named, linked from the issue or PR |
 | D6 - Mutation Testing | 15 | Individual. See rubric below |
-| D7 - Mid-Sprint Check-in | 5 | Individual. On time, substantive, and an open code PR linked = 5; late, thin, or no PR = 3; missing = 0 |
+| D7 - Mid-Sprint Check-in | 5 | Individual. On time, substantive, and an open or merged code PR linked = 5; late, thin, or no PR = 3; missing = 0 |
 | D8 - Sprint Report | 10 | Team. Completeness, specificity, quality of evidence; suite health section |
 | D9 - Sprint Release | 2 | Team. Tag follows convention; created after the last merge; release description summarizes changes |
 | D10 - Reflection Survey | 8 | Individual. Required for completion |
@@ -317,7 +332,7 @@ Push the following to your team's GitHub repository **by Nov 19, 11:59 PM**:
 - All PRs merged by someone other than the author; each PR description includes `Closes #N`, the Tech Debt section, and the Test Evidence section; code review rubric posted on each PR (D4)
 - AI logs in `ai-logs/sprint3/<github-username>/`, named `YYYY-MM-DD_<tool>_<short-slug>.md`, linked from the issue or PR (D5)
 - `docs/sprint3/mutation/<issue#>-<username>.md` and the before/after reports in `docs/sprint3/mutation/reports/` (two of each for CSCI 535) (D6)
-- **`docs/sprint3/checkin/<username>.md` with a link to an open code PR -- due Nov 12, 11:59 PM** (D7)
+- **`docs/sprint3/checkin/<username>.md` with a link to an open or merged code PR -- due Nov 12, 11:59 PM** (D7)
 - `docs/sprint3/report.md` (or `.pdf` or `.docx`), including the suite health section (D8)
 - Sprint 3 release tag pushed and GitHub release created after the last merge (D9)
 - D10 reflection survey submitted individually by **Nov 19, 11:59 PM**
