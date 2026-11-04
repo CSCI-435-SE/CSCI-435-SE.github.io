@@ -14,7 +14,7 @@ Sprint 3 continues the development of your project and puts the focus on **testi
 !!! abstract "Sprint 3 at a glance"
     **Key dates:** Nov 12: check-in + at least one code PR (open or merged) &middot; Nov 19: everything else
 
-    **Rules that cost the most points:**
+    **Important rules (they cost the most points):**
 
     - Don't merge your own PR.
     - Spec review on the issue, saying what was checked.
@@ -46,7 +46,7 @@ Sprint 3 continues the development of your project and puts the focus on **testi
 - **Mid-sprint check-in requires an open PR** (D7), due Nov 12.
 
 !!! info "Team feature for Sprints 3&ndash;4"
-    Each team will be assigned a larger feature that spans Sprints 3 and 4. The instructor or TA will post it as an issue in your team's issue tracker and notify your team when it is posted. See D1 for how to split it into sub-issues.
+    Each team will be assigned a larger feature that spans Sprints 3 and 4. The instructor or TA will post it as an issue in your team's issue tracker and notify your team when it is posted. You will likely need to split it into sub-issues.
 
 ---
 
@@ -56,11 +56,11 @@ These issues were observed in Sprint 2 and will be graded strictly in Sprint 3.
 
 **1. No self-merges.** The author of a PR cannot merge it, even after it is approved. The reviewer (or another teammate) merges.
 
-**2. Spec reviews must be visible and show what was checked.** Before coding starts, a teammate posts a review comment on the issue itself. The comment states what the reviewer checked: whether each acceptance criterion is clear and testable, which cases were considered (and whether they are covered), and whether the scope fits. If the reviewer finds problems, they list them and the author updates the spec. If the spec is good, the reviewer says so and approves, but "Looks good!" with nothing about what was checked is not a spec review.
+**2. Spec reviews must be visible and show what was checked.** Before coding starts, a teammate posts a review comment on the issue itself. The comment states what the reviewer checked: whether each acceptance criterion is clear and testable, which cases were considered (and whether they are covered), and whether the scope fits. If the reviewer finds problems, they list them and the author updates the spec. If the spec is good, the reviewer says so and approves, but "Looks good!" with nothing about what was checked is not acceptable.
 
 **3. Traceability.** Every PR description includes `Closes #<issue>`. Issues are closed by their PR, not manually. Do not close an issue that has no merged PR unless you explain why on the issue. Every issue and every code PR in the sprint is attached to the `Sprint 3` milestone.
 
-**4. AI logs must be real logs.** A log shows your prompts and the AI's output (SpecStory format recommended). The following are **not** logs and receive no credit: summaries of a session, paraphrased prompts, a share link to a chat, or tool output without the prompts that produced it. File names must follow `YYYY-MM-DD_<tool>_<short-slug>.md`. Link the log from the issue or PR it documents.
+**4. AI logs must be real logs.** A log shows your prompts and the AI's output (SpecStory format recommended). The following are **not** logs and receive no full credit: summaries of a session, paraphrased prompts, a share link to a chat, or tool output without the prompts that produced it. File names must follow `YYYY-MM-DD_<tool>_<short-slug>.md`. Link the log from the issue or PR it documents.
 
 **5. Open PRs early.** In Sprint 2, most PRs were opened in the last two days. In Sprint 3, you need a code PR by the mid-sprint check-in (see D7).
 
@@ -111,7 +111,7 @@ Create a `Sprint 3` milestone in GitHub and attach all selected issues to it.
 
 Same format and requirements as Sprint 1 ([D2](sprint1.md#d2-requirements-specification)). Specs must be written and reviewed before coding begins; see item 2 in "Things that must improve" for what counts as a review.
 
-Hardening issues use the bug format (OB/EB/S2R) when they fix a defect. Otherwise, use a short task format: the problem, the goal, and acceptance criteria.
+Hardening issues use a bug format (include the observed and expected behaviors, the steps to reproduct the issue, and other details about the issue) when they fix a defect. Otherwise, use a short task format: the problem, the goal, acceptance criteria, and other necessary details.
 
 ---
 
@@ -123,7 +123,7 @@ Same as Sprint 2 ([D3](sprint2.md#d3-design-decisions)): each decision names at 
 
 #### D4 - Code Changes and Pull Requests
 
-Same workflow as Sprint 2 ([D4](sprint2.md#d4-code-changes-and-pull-requests)), including the Tech Debt section. Sprint 3 adds a **Test Evidence** section to every PR description:
+Same workflow as Sprint 2 ([D4](sprint2.md#d4-code-changes-and-pull-requests)), including **the Tech Debt section**. Sprint 3 adds a **Test Evidence** section to every PR description:
 
 ```markdown
 ## Test Evidence
@@ -162,14 +162,14 @@ Same requirements as Sprint 1 ([D5](sprint1.md#d5-ai-logs)), with the enforcemen
 
 This is a new individual deliverable.
 
-**What it is.** A mutation testing tool makes small changes to your code (*mutants*), such as flipping a condition or changing a boundary, and runs your tests against each one. If a test fails, the mutant is *killed*. If all tests pass, the mutant *survived*: your tests did not notice that the code changed. Survivors point to weak or missing tests.
+**What it is.** A mutation testing tool makes small changes to your code (*mutants*), such as flipping a condition or changing a boundary value, and runs your tests against each one. If a test fails, the mutant is *killed*. If all tests pass, the mutant *survived*: your tests did not notice that the code changed. Survivors point to weak or missing tests.
 
 **What to do.** For **one of your issues whose PR changes source code and tests** (CSCI 535: **two** such issues; your small issue may be one of them):
 
-1. Run a mutation testing tool on the **source files changed by your PR(s)** for that issue. Do not mutate the whole project.
+1. Run a mutation testing tool on the **source files changed by your PR(s)** for that issue. Do not run it on the whole project.
 2. Using the tool's report, analyze every surviving mutant: is it *equivalent* (it behaves exactly like the original code, so no test can kill it), or does it reveal a gap in your tests? If there are more than 10 surviving mutants, analyze at least 10, starting with those in lines your PR added or changed.
 3. Add or strengthen **at least one test that kills a surviving mutant** that revealed a gap. Re-run the tool to confirm it is killed. If no surviving mutant reveals a gap (all are killed or equivalent), say so and justify it in the surviving-mutants table; that completes this step.
-4. Answer the questions in the template below.
+4. **Answer the questions in the template below**.
 
 **Evidence.** Configure the tool to write a machine-readable report (StrykerJS: add `"json"` to `reporters`; Gremlins: `--output=<file>.json`; go-mutesting: save the terminal output to a text file). Commit the report from your first run and from your re-run as `docs/sprint3/mutation/reports/<issue#>-<username>-before.json` and `-after.json` (`.txt` for go-mutesting). The mutation scores you list must match the reports, and the mutant your new test kills must show as killed in the "after" report.
 
