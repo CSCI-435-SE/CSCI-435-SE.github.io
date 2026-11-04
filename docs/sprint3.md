@@ -16,9 +16,9 @@ Sprint 3 continues the development of your project and puts the focus on **testi
 
     **Important rules (they cost the most points):**
 
-    - Don't merge your own PR.
+    - No merge without an approval on the latest commit.
     - Spec review on the issue, saying what was checked.
-    - `Closes #N` in every PR.
+    - Every code PR links its issue.
     - Real AI logs.
     - Test Evidence table in every PR; expected values not copied from the code's output.
     - Mutation testing with a tool, before and after reports committed.
@@ -31,6 +31,7 @@ Sprint 3 continues the development of your project and puts the focus on **testi
 
 ### Before you begin
 
+- **Check your AI log setup** against the [AI Log Instructions](ai-logs.md) before your first session.
 - **Read "Things that must improve"** below. These issues were observed in Sprint 2 and will be graded strictly.
 - **Record your baseline early** (see D8): the test results at your Sprint 2 release tag (`-csci435-s2`), from CI or by running the relevant test suites locally. It helps you find hardening issues and get the mutation tool running.
 - **Try the mutation testing tool early** (see D6), on any existing file in the part of the code you work on. Do not wait until your PRs are ready.
@@ -54,15 +55,15 @@ Sprint 3 continues the development of your project and puts the focus on **testi
 
 These issues were observed in Sprint 2 and will be graded strictly in Sprint 3.
 
-**1. No self-merges.** The author of a PR cannot merge it, even after it is approved. The reviewer (or another teammate) merges.
+**1. Open PRs early.** In Sprint 2, most PRs were opened in the last two days, which left no time for review. In Sprint 3, you need a code PR by the mid-sprint check-in (see D7).
 
-**2. Spec reviews must be visible and show what was checked.** Before coding starts, a teammate posts a review comment on the issue itself. The comment states what the reviewer checked: whether each acceptance criterion is clear and testable, which cases were considered (and whether they are covered), and whether the scope fits. If the reviewer finds problems, they list them and the author updates the spec. If the spec is good, the reviewer says so and approves, but "Looks good!" with nothing about what was checked is not acceptable.
+**2. Independent approval before merging.** A PR is merged only after a teammate approves its **latest commit**. Merging without an approval, or after pushing new commits since the approval, is not allowed. Once approved, the author may merge. To keep reviews moving, request the review on GitHub and notify your reviewer on Zulip; reviewers respond (approve or request changes) within 24 hours.
 
-**3. Traceability.** Every PR description includes `Closes #<issue>`. Issues are closed by their PR, not manually. Do not close an issue that has no merged PR unless you explain why on the issue. Every issue and every code PR in the sprint is attached to the `Sprint 3` milestone.
+**3. Spec reviews must be visible and show what was checked.** Before coding starts, a teammate posts a review comment on the issue itself. The comment states what the reviewer checked: whether each acceptance criterion is clear and testable, which cases were considered (and whether they are covered), and whether the scope fits. If the reviewer finds problems, they list them and the author updates the spec. If the spec is good, the reviewer says so and approves, but "Looks good!" with nothing about what was checked is not acceptable.
 
-**4. AI logs must be real logs.** A log shows your prompts and the AI's output (SpecStory format recommended). The following are **not** logs and receive no full credit: summaries of a session, paraphrased prompts, a share link to a chat, or tool output without the prompts that produced it. File names must follow `YYYY-MM-DD_<tool>_<short-slug>.md`. Link the log from the issue or PR it documents.
+**4. Link PRs and issues.** Every code PR must link the issue it addresses, so the PR can be checked against the spec. Use `Closes #<issue>` in the PR description so the issue closes automatically when the PR is merged, and attach issues and code PRs to the `Sprint 3` milestone.
 
-**5. Open PRs early.** In Sprint 2, most PRs were opened in the last two days. In Sprint 3, you need a code PR by the mid-sprint check-in (see D7).
+**5. AI logs must be real logs.** A log shows your prompts and the AI's output (SpecStory format recommended; see the [AI Log Instructions](ai-logs.md)). The following are **not** logs and receive no full credit: summaries of a session, paraphrased prompts, a share link to a chat, or tool output without the prompts that produced it. File names must follow `YYYY-MM-DD_<tool>_<short-slug>.md`. Link the log from the issue or PR it documents.
 
 **6. The sprint report must render.** Check that tables and links display correctly on GitHub (no escaped `\|` or `\[`). Use the Sprint 3 sections, not a copy of a previous report.
 
@@ -83,7 +84,7 @@ Same process as Sprint 2 ([D1](sprint2.md#d1-sprint-backlog)), including the pri
 
 **Scope must be justified.** Each issue states its scope (small or medium) and one or two sentences on why: which components it touches and how much change you expect. The instructor or TA may reclassify an issue whose scope is clearly overstated.
 
-**Hardening issues.** One of your issues may be a *hardening issue*: work that makes the existing system more reliable rather than adding a feature. Good sources:
+**Hardening issues (optional).** One of your issues may be a *hardening issue*: work that makes the existing system more reliable rather than adding a feature. Good sources:
 
 - **Your baseline run** (see D8): failing tests, flaky tests, or broken CI checks on `main`.
 - **Tech debt your team recorded** in the "Introduced" and "Encountered" fields of your Sprint 1 and Sprint 2 PRs.
@@ -109,7 +110,7 @@ Create a `Sprint 3` milestone in GitHub and attach all selected issues to it.
 
 #### D2 - Requirements Specification
 
-Same format and requirements as Sprint 1 ([D2](sprint1.md#d2-requirements-specification)). Specs must be written and reviewed before coding begins; see item 2 in "Things that must improve" for what counts as a review.
+Same format and requirements as Sprint 1 ([D2](sprint1.md#d2-requirements-specification)). Specs must be written and reviewed before coding begins; see item 3 in "Things that must improve" for what counts as a review.
 
 Hardening issues use a bug format (include the observed and expected behaviors, the steps to reproduct the issue, and other details about the issue) when they fix a defect. Otherwise, use a short task format: the problem, the goal, acceptance criteria, and other necessary details.
 
@@ -123,12 +124,12 @@ Same as Sprint 2 ([D3](sprint2.md#d3-design-decisions)): each decision names at 
 
 #### D4 - Code Changes and Pull Requests
 
-Same workflow as Sprint 2 ([D4](sprint2.md#d4-code-changes-and-pull-requests)), including **the Tech Debt section**. Sprint 3 adds a **Test Evidence** section to every PR description:
+Same workflow as Sprint 2 ([D4](sprint2.md#d4-code-changes-and-pull-requests)), including **the Tech Debt section**. Sprint 3 adds a **Test Evidence** section to every PR description. It replaces the "how it was tested" part of the description, so you don't write it twice.
 
 ```markdown
 ## Test Evidence
 
-| Acceptance criterion | Test(s) (file › test name) | Level (unit / integration / E2E / manual) | Where the expected value comes from |
+| Acceptance criterion | Test(s) | Level | Source of expected value |
 |---|---|---|---|
 | AC1: ... | ... | ... | ... |
 
@@ -138,7 +139,24 @@ Same workflow as Sprint 2 ([D4](sprint2.md#d4-code-changes-and-pull-requests)), 
 checked that their expected values are correct. If none, write "None."]
 ```
 
-Every acceptance criterion from D2 appears in the table. For bug reports, use the Expected Behavior instead of acceptance criteria. For PRs that change no product behavior (for example, CI changes), write "N/A" and explain why. "Where the expected value comes from" means the source of the expected result in your assertions: the acceptance criterion, the issue discussion, documentation, an upstream behavior, and so on. **The current output of your own code is not a valid source**; a test whose expected value was copied from what the code returns cannot detect that the code is wrong.
+How to fill it in:
+
+- **One row per acceptance criterion** from D2. For bug reports, use the Expected Behavior instead. For PRs that change no product behavior (for example, CI changes), write "N/A" and explain why.
+- **Test(s):** the test name (and file, if not obvious). If you checked the AC manually, write `Manual:` followed by the steps and what you saw. If an AC is tested both automatically and manually, list both in the same row.
+- **Level:** `unit`, `integration`, `E2E`, or `manual`.
+- **Source of expected value:** where the expected result in your test comes from. Use one of: `AC`, `issue discussion`, `docs`, `upstream behavior`, or `other` (explain). **The current output of your own code is not a valid source**; a test whose expected value was copied from what the code returns cannot detect that the code is wrong.
+- **Not tested automatically, and why:** only for ACs checked manually only.
+- You may use AI to draft this section, but you are responsible for checking that it is accurate.
+
+Example:
+
+| Acceptance criterion | Test(s) | Level | Source of expected value |
+|---|---|---|---|
+| AC1: An end date before the start date is rejected with an error | `outOfOffice.schema.test.ts` › rejects end before start | unit | AC |
+| AC2: The away badge appears on the booking page during the out-of-office window | `booking-ooo.e2e.ts` › shows away badge in window | E2E | AC |
+| AC3: The badge text is readable in dark mode | Manual: enabled dark mode, opened the booking page during the window → badge text is readable | manual | issue discussion |
+
+**Not tested automatically, and why:** AC3 depends on visual contrast, which our test setup does not check.
 
 **If your fork has no CI** that runs your tests, include in the PR description the command(s) you ran and a summary of the results (passed, failed, skipped).
 
@@ -152,7 +170,7 @@ Every acceptance criterion from D2 appears in the table. For bug reports, use th
 
 #### D5 - AI Logs
 
-Same requirements as Sprint 1 ([D5](sprint1.md#d5-ai-logs)), with the enforcement described in item 4 of "Things that must improve."
+Same requirements as Sprint 1 ([D5](sprint1.md#d5-ai-logs)) and the [AI Log Instructions](ai-logs.md), with the enforcement described in item 5 of "Things that must improve."
 
 **Log storage:** `ai-logs/sprint3/<your-github-username>/`
 
@@ -242,11 +260,11 @@ Commit: [link] · Test: [file › test name] · Kills: [mutant location]
 
 Same format as Sprint 1 ([D6 in Sprint 1](sprint1.md#d6-sprint-report)), with these additions:
 
-- **Suite health** (new section):
-    - **Baseline table** for the test suites relevant to your team (the packages or areas you work on, not the whole repository): suite, command or CI workflow, and the number of passing, failing, and skipped tests at your **Sprint 2 release tag** (`-csci435-s2`) and at the **end** of the sprint. Use CI results where available; if you run tests locally, run only the packages you change.
-    - **Failures grouped by cause** (for example: environment-specific, already broken upstream, flaky, caused by our changes). One issue per cause is enough; list the affected tests in it.
+- **Suite health** (new section). Keep it short:
+    - **Baseline table** for the test suites relevant to your team (the packages or areas you work on, not the whole repository). For each suite: the command or CI workflow, and the test runner's summary line (passed, failed, skipped) at your **Sprint 2 release tag** (`-csci435-s2`) and at the **end** of the sprint. Use CI results where available; if you run tests locally, run only the packages you change.
+    - **Failures grouped by cause** (for example: environment-specific, already broken upstream, flaky, caused by our changes), with a link to one issue per cause that lists the affected tests.
     - **No failures introduced by your team.** Any test your team's changes broke must be fixed by the end of the sprint. Pre-existing failures only need to be recorded and grouped; fixing them is optional (and can be a hardening issue).
-    - **Skipped tests and disabled CI checks.** Skipping a test or disabling a CI check requires a linked issue and a reason, both in the report and in a code comment.
+    - **Skipped tests and disabled CI checks.** Skipping a test or disabling a CI check requires a linked issue and a reason in a code comment.
 - **Mutation testing:** links to each member's D6 file.
 - **Hardening issues:** which issues they are and where they came from.
 - Carryovers from Sprint 2 and what changed.
@@ -297,9 +315,9 @@ The D4 score is the aggregate across all your PRs, normalized to 20 points.
 |---|---|
 | Change correctly implements the acceptance criteria from D2 | 6 |
 | Tests written or updated appropriately; Test Evidence section complete, with every AC covered and expected values justified | 6 |
-| PR description explains what changed and why; Tech Debt section present; `Closes #N` present | 3 |
+| PR description explains what changed and why; Tech Debt section present; issue linked | 3 |
 | CI passes (or manual verification documented) | 3 |
-| Code reviewed using the rubric (including the test evidence line); reviewer comment posted; PR merged by someone other than the author | 2 |
+| Code reviewed using the rubric (including the test evidence line); reviewer comment posted; PR merged only after an approval on the latest commit | 2 |
 | **Total per PR** | **20** |
 
 **D6 - Mutation testing rubric:**
@@ -319,7 +337,7 @@ CSCI 535: the D6 score is the average of the two submissions.
 
 !!! info "Extra credit"
     - A PR submitted to the **real upstream project** and accepted or under active review earns up to **3 bonus points** per PR, at the instructor's discretion.
-    - A **bug report filed in the upstream project** that comes from your own testing work and is **confirmed by the maintainers** earns up to **1 bonus point** per report, at the instructor's discretion.
+    - A **bug report filed in the upstream project** that comes from your own testing work and is **confirmed by the maintainers** (by the time Sprint 4 is graded) earns up to **2 bonus points** per report, at the instructor's discretion.
 
 ---
 
@@ -329,7 +347,7 @@ Push the following to your team's GitHub repository **by Nov 19, 11:59 PM**:
 
 - Sprint 3 milestone with all selected issues attached, assigned, and scoped with justification (D1)
 - Issue bodies with user stories or bug reports, acceptance criteria, and design decisions with alternatives; spec review comments on each issue (D2, D3)
-- All PRs merged by someone other than the author; each PR description includes `Closes #N`, the Tech Debt section, and the Test Evidence section; code review rubric posted on each PR (D4)
+- All PRs merged after an approval on the latest commit; each PR description links its issue and includes the Tech Debt and Test Evidence sections; code review rubric posted on each PR (D4)
 - AI logs in `ai-logs/sprint3/<github-username>/`, named `YYYY-MM-DD_<tool>_<short-slug>.md`, linked from the issue or PR (D5)
 - `docs/sprint3/mutation/<issue#>-<username>.md` and the before/after reports in `docs/sprint3/mutation/reports/` (two of each for CSCI 535) (D6)
 - **`docs/sprint3/checkin/<username>.md` with a link to an open or merged code PR -- due Nov 12, 11:59 PM** (D7)
