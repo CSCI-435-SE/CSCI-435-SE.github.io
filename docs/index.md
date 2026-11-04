@@ -13,6 +13,9 @@ software engineering workflow: agile sprints, code review, CI, testing, and real
 ## Announcements
 
 
+<span class="wm-announcement-date">November 4, 2026</span> &mdash; **Sprint 3 is open.** All deliverables are due **November 19 at 11:59 PM**; the mid-sprint check-in (D7), with at least one code PR open or merged, is due **November 12 at 11:59 PM**. New this sprint: **mutation testing** (replaces the UML diagrams), a **Test Evidence** section in every PR, and a **suite health** section in the report. See the [Sprint 3 requirements](sprint3/) for full details.
+{: .wm-announcement }
+
 <span class="wm-announcement-date">October 30, 2026</span> &mdash; **Schedule update: New-Tech Showcase 2 and Sprint 2 quiz.** New-Tech Showcase 2 is moved to **Tuesday, November 10**. **Thursday, November 5** will include the second testing lecture and a **quiz on Sprint 2** material. See the [Schedule](schedule/) for details.
 {: .wm-announcement }
 
