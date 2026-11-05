@@ -13,6 +13,9 @@ software engineering workflow: agile sprints, code review, CI, testing, and real
 ## Announcements
 
 
+<span class="wm-announcement-date">November 5, 2026</span> &mdash; **New-Tech Showcase 2 is Tuesday, November 10.** Claim your team's tool by **Friday, November 6, at 12:00 PM (noon)** in the Zulip **#showcases** channel (topic `tool_claims_R2`); teams without a claim will be assigned a tool. The tutorial video and handout are due **after** the showcase, on **November 12**. New this round: explain **why this tool** (vs. alternatives), and make sure visitors can **read your screen and hear you**. See the [Showcase 2 requirements](showcase2/).
+{: .wm-announcement }
+
 <span class="wm-announcement-date">November 4, 2026</span> &mdash; **Sprint 3 is open.** All deliverables are due **November 19 at 11:59 PM**; the mid-sprint check-in (D7), with at least one code PR open or merged, is due **November 12 at 11:59 PM**. New this sprint: **mutation testing** (replaces the UML diagrams), a **Test Evidence** section in every PR, and a **suite health** section in the report. See the [Sprint 3 requirements](sprint3/) for full details.
 {: .wm-announcement }
 
@@ -83,7 +86,7 @@ Lightning talks and the final presentation.
 </div>
 
 <div class="wm-card">
-<h3><a href="showcase1/">Showcases</a></h3>
+<h3><a href="showcases/">Showcases</a></h3>
 New-tech showcases: requirements and the list of tools to choose from.
 </div>
 

@@ -23,7 +23,9 @@ nav:
     - LT2 — Oct 20: presentations/lt2.md
     - Final — Dec 1: presentations/final.md
   - Showcases:
+    - Overview: showcases.md
     - Showcase 1: showcase1.md
+    - Showcase 2: showcase2.md
     - Showcase Tools: showcase-tools.md
   - Resources: resources.md
   - Glossary: glossary.md

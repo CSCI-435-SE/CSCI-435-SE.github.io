@@ -5,22 +5,23 @@ hide:
 
 # Showcase Tools
 
-Pick your team's new-tech showcase tool from this list. Requirements, dates, and grading are on the [Showcase 1](showcase1.md) page.
+Pick your team's new-tech showcase tool from this list. Requirements, dates, and grading are on each showcase's page (see the [Showcases](showcases.md) overview).
 
 ## Selection rules
 
 1. **One tool per team, and one team per tool.**
-2. **Not already used in your project.** You cannot pick a tool that is already set up in your project's repository or that your team used in Sprints 0&ndash;1. Each tool below lists the teams it is **not available to**.
+2. **Not already used in your project.** You cannot pick a tool that is already set up in your project's repository or that your team has already used (including your Round 1 showcase tool). Each tool below lists the teams it is **not available to**.
 3. **One team per category**, so we don't get two near-identical demos.
 4. **Demo on your own project.** The live demo and the tutorial video must use your team's project codebase.
-5. **First come, first served.** Claim your tool in the Zulip **#showcases** channel, topic `tool_claims_R1`, by **Fri, Oct 2, 11:59 PM**. The instructor confirms each claim in the thread.
-6. **Off-list tools** are welcome, but need instructor approval in the same Zulip topic before you start.
+5. **No repeats across showcases.** A tool showcased in an earlier round is not available in later rounds (marked below).
+6. **First come, first served.** Claim your tool in the Zulip **#showcases** channel (topic `tool_claims_R1` for Showcase 1, `tool_claims_R2` for Showcase 2) by the deadline on that showcase's page. The instructor confirms each claim in the thread.
+7. **Off-list tools** are welcome, but need instructor approval in the same Zulip topic before you start.
 
 **Excluded tools:** Claude Code, GitHub Issues & Projects, and GitHub Actions (they are already part of the course workflow).
 
 !!! warning "Risks that apply to every tool"
-    - **Free plans have limits.** Quotas, seat caps, and rate limits can run out in the middle of a demo. Rehearse with the plan you will use, and keep your video ready as a backup.
-    - **Apps on the course GitHub organization need approval.** Tools that install as a GitHub App on `CSCI-435-SE` (e.g., CodeRabbit, SonarQube Cloud, Snyk, Semgrep) must be approved by the instructor. Request it in the **#showcases** channel (topic `app_install_requests`) by **Wed, Oct 7**.
+    - **Free plans have limits.** Quotas, seat caps, and rate limits can run out in the middle of a demo. Rehearse with the plan you will use, and have a backup ready (screenshots or a short recording).
+    - **Apps on the course GitHub organization need approval.** Tools that install as a GitHub App on `CSCI-435-SE` (e.g., CodeRabbit, SonarQube Cloud, Snyk, Semgrep) must be approved by the instructor. Request it in the **#showcases** channel (topic `app_install_requests`) by the date on that showcase's page.
     - **Install and sign in before class.** Download everything in advance. If your tool uses Docker, download the images before class and sign in to Docker Hub.
     - **Use your own accounts, not the project's real services.** Never paste secrets, API keys, or personal data into a tool, and only load-test or scan systems you run yourself.
     - **Pricing changes often.** The notes below were checked on **Sep 27, 2026**. If something changed, tell the instructor.
@@ -46,6 +47,7 @@ Pick your team's new-tech showcase tool from this list. Requirements, dates, and
 ## Code review & security
 
 - **CodeRabbit** &mdash; [coderabbit.ai](https://www.coderabbit.ai): AI bot that reviews pull requests with inline comments and summaries.
+    - **Showcased in Round 1** (by Gitea): not available for Showcase 2.
     - **Heads-up:** free on public repos but rate-limited (a new repo may get about one review per hour). Needs instructor approval to install on the org.
     - **Not available to:** **Actual Budget**
 
@@ -53,6 +55,7 @@ Pick your team's new-tech showcase tool from this list. Requirements, dates, and
     - **Heads-up:** the free plan allows 5 projects and 100 code tests per month. Create your own team account.
 
 - **Semgrep** &mdash; [semgrep.dev](https://semgrep.dev): Fast static analysis with readable rules; you can write rules for your own project's conventions.
+    - **Showcased in Round 1** (by Outline): not available for Showcase 2.
     - **Heads-up:** the free platform plan allows 10 contributors and 10 repos; secrets scanning is not included. The command-line tool is free with no limits.
 
 ## Code quality
@@ -74,6 +77,7 @@ Pick your team's new-tech showcase tool from this list. Requirements, dates, and
     - **Not available to:** **Actual Budget, Medusa**
 
 - **StrykerJS (mutation testing)** &mdash; [stryker-mutator.io](https://stryker-mutator.io): Changes your code on purpose to check whether your tests notice &mdash; a measure of test quality.
+    - **Showcased in Round 1** (by Actual Budget): not available for Showcase 2.
     - **Heads-up:** runs are slow, so demo it on one small module.
     - **Not a good fit for:** **Gitea** (Go backend)
 
@@ -87,6 +91,7 @@ Pick your team's new-tech showcase tool from this list. Requirements, dates, and
 ## Dev environment
 
 - **Dev Containers / GitHub Codespaces** &mdash; [containers.dev](https://containers.dev) &middot; [Codespaces](https://github.com/features/codespaces): A reproducible development environment defined in `devcontainer.json`, run locally (Docker + VS Code) or in the cloud (Codespaces). These count as **one tool**.
+    - **Showcased in Round 1** (by Medusa): not available for Showcase 2.
     - **Heads-up:** the first build is slow &mdash; build it before class. Codespaces uses your personal free hours (a 2-core machine uses 2 core-hours per hour).
     - **Not available to:** **Actual Budget, Gitea**
 
@@ -97,11 +102,13 @@ Pick your team's new-tech showcase tool from this list. Requirements, dates, and
 ## UI design
 
 - **Figma** &mdash; [figma.com](https://figma.com): Collaborative UI design with Dev Mode for handing designs to developers.
+    - **Showcased in Round 1** (by Excalidraw): not available for Showcase 2.
     - **Heads-up:** each teammate must verify Figma for Education with a W&M email &mdash; do it now, since approval can take time.
 
 ## Database
 
 - **DBeaver** &mdash; [dbeaver.io](https://dbeaver.io): Database client for browsing schemas, running queries, and viewing ER diagrams.
+    - **Showcased in Round 1** (by Cal.diy): not available for Showcase 2.
     - **Heads-up:** the free Community Edition is enough; Redis and other NoSQL databases need the paid version.
     - **Not a good fit for:** **Excalidraw** (no server database)
 
