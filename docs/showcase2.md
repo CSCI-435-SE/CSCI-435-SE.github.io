@@ -19,7 +19,7 @@ Think of your demo as a **teaser**. In 8 minutes, convince your classmates that 
     - **Explain why this tool.** Visitors' most common question was "why is this better than what I already use (e.g., an AI assistant or a similar tool)?" Your demo must answer it.
     - **Be readable and audible.** The most common complaints were small screens and low voices. See the [presenter checklist](#presenter-checklist).
     - **Be prepared.** Know the tool well enough to demo it without reading from your phone or notes and to answer questions. See [what "prepared" means](#grading-50-points).
-    - **Tight timeline:** claim your tool by **Friday noon**. The video and handout are due **after** the showcase, so focus your prep on the live demo.
+    - **Tight timeline:** claim your tool by **Friday noon**.
 
 ---
 
@@ -29,8 +29,8 @@ Think of your demo as a **teaser**. In 8 minutes, convince your classmates that 
 |---|---|
 | **Fri, Nov 6, 12:00 PM (noon)** | Claim your tool in Zulip (**#showcases** channel, topic `tool_claims_R2`). Teams without a claim by noon will be assigned a tool by the instructor. |
 | **Sat, Nov 7** | Request any GitHub App installs on the course org (topic `app_install_requests`). |
+| **Mon, Nov 9, 11:59 PM** | Tutorial video and handout due (in your team repo; see below). |
 | **Tue, Nov 10, 12:30 PM** | Showcase in class. |
-| **Thu, Nov 12, 11:59 PM** | Tutorial video and handout due (in your team repo; see below). |
 
 ---
 
@@ -75,7 +75,7 @@ Suggested structure:
 
 ## Deliverables
 
-Both are due **Thu, Nov 12, 11:59 PM**, after the showcase.
+Both are due **Mon, Nov 9, 11:59 PM**.
 
 ### D1 &mdash; Tutorial video (YouTube)
 
@@ -85,13 +85,14 @@ The video is a **key deliverable**. The live demo sparks interest; the video sho
 - **Assume the tool is already set up** on your project, and focus on showing it produce a real result. Setup steps go in the handout.
 - Clear audio and readable screen (zoom in, large fonts). Editing is welcome but not required.
 - Upload to YouTube as **public or unlisted** (your choice) and put the link in your handout. If public, make sure no secrets, personal data, or private accounts appear on screen.
+- It also serves as your **backup**: download a copy onto each presenter's laptop. If the live demo fails (Wi-Fi, quota, crash), play the video at your station and narrate over it.
 
 !!! tip "Extra credit: polished video (up to +3 points)"
     A polished video earns extra points: edited with no dead time, clear audio, callouts or zoom-ins on key moments, and captions or chapter markers. See [Grading](#grading-50-points).
 
 ### D2 &mdash; Handout (in your team repo)
 
-A short page at `docs/showcase2/README.md` in your team repository. Include:
+A short page at `docs/showcase2/README.md` in your team repository. Visitors scan a QR code at your station to open it on their phones. Include:
 
 - Tool name, version, and link
 - The problem it addresses (2&ndash;3 sentences)
@@ -143,7 +144,8 @@ Keep it to about **one phone screen or two**. Bullet points are fine.
 - A **fully charged laptop** and its charger. Outlets are limited, so plan to run on battery.
 - **Readable screens:** see the [presenter checklist](#presenter-checklist). A portable external monitor is welcome.
 - **Everything installed and signed in before class.** Pre-build containers, pre-download browsers and dependencies, and sign in to Docker Hub and your tool accounts.
-- A **station sign**, printed or on a tablet or phone: your station number, team name, and tool name.
+- A **station sign**, printed or on a tablet or phone: your station number, team name, tool name, and a QR code to your handout. Test the QR code on a phone (some browsers download PDFs instead of showing them).
+- Your **video downloaded locally** on each presenter's laptop.
 - Notifications muted, and other apps and tabs closed.
 
 ---
@@ -183,4 +185,4 @@ Keep it to about **one phone screen or two**. Bullet points are fine.
 
 - **Rehearse the 8 minutes** at least once per presenter, end to end, on the same laptop and free plan you will use in class.
 - **Prepare for "why not just use X?"** Try the alternative yourself (e.g., ask an AI assistant to do the same task) so you can show the difference.
-- **Plan for failure.** Have screenshots or a short recording ready in case the live demo breaks.
+- **Plan for failure.** Decide in advance at what point you switch to the video.

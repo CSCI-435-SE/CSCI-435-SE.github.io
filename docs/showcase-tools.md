@@ -20,7 +20,7 @@ Pick your team's new-tech showcase tool from this list. Requirements, dates, and
 **Excluded tools:** Claude Code, GitHub Issues & Projects, and GitHub Actions (they are already part of the course workflow).
 
 !!! warning "Risks that apply to every tool"
-    - **Free plans have limits.** Quotas, seat caps, and rate limits can run out in the middle of a demo. Rehearse with the plan you will use, and have a backup ready (screenshots or a short recording).
+    - **Free plans have limits.** Quotas, seat caps, and rate limits can run out in the middle of a demo. Rehearse with the plan you will use, and keep your video ready as a backup.
     - **Apps on the course GitHub organization need approval.** Tools that install as a GitHub App on `CSCI-435-SE` (e.g., CodeRabbit, SonarQube Cloud, Snyk, Semgrep) must be approved by the instructor. Request it in the **#showcases** channel (topic `app_install_requests`) by the date on that showcase's page.
     - **Install and sign in before class.** Download everything in advance. If your tool uses Docker, download the images before class and sign in to Docker Hub.
     - **Use your own accounts, not the project's real services.** Never paste secrets, API keys, or personal data into a tool, and only load-test or scan systems you run yourself.
