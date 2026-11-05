@@ -14,7 +14,7 @@ Pick your team's new-tech showcase tool from this list. Requirements, dates, and
 3. **One team per category**, so we don't get two near-identical demos.
 4. **Demo on your own project.** The live demo and the tutorial video must use your team's project codebase.
 5. **No repeats across showcases.** A tool showcased in an earlier round is not available in later rounds (marked below).
-6. **First come, first served.** Claim your tool in the Zulip **#showcases** channel (topic `tool_claims_R1` for Showcase 1, `tool_claims_R2` for Showcase 2) by the deadline on that showcase's page. The instructor confirms each claim in the thread.
+6. **First come, first served.** Claim your tool in the Zulip **#showcases** channel (topic `tool_claims`) by the deadline on that showcase's page. The instructor confirms each claim in the thread.
 7. **Off-list tools** are welcome, but need instructor approval in the same Zulip topic before you start.
 
 **Excluded tools:** Claude Code, GitHub Issues & Projects, and GitHub Actions (they are already part of the course workflow).

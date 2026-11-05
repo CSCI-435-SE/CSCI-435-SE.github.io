@@ -27,7 +27,7 @@ Think of your demo as a **teaser**. In 8 minutes, convince your classmates that 
 
 | Date | What |
 |---|---|
-| **Fri, Nov 6, 12:00 PM (noon)** | Claim your tool in Zulip (**#showcases** channel, topic `tool_claims_R2`). Teams without a claim by noon will be assigned a tool by the instructor. |
+| **Fri, Nov 6, 12:00 PM (noon)** | Claim your tool in Zulip (**#showcases** channel, topic `tool_claims`). Teams without a claim by noon will be assigned a tool by the instructor. |
 | **Sat, Nov 7** | Request any GitHub App installs on the course org (topic `app_install_requests`). |
 | **Mon, Nov 9, 11:59 PM** | Tutorial video and handout due (in your team repo; see below). |
 | **Tue, Nov 10, 12:30 PM** | Showcase in class. |
