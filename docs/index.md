@@ -13,14 +13,17 @@ software engineering workflow: agile sprints, code review, CI, testing, and real
 ## Announcements
 
 
-<span class="wm-announcement-date">November 5, 2026</span> &mdash; **New-Tech Showcase 2 is Tuesday, November 10.** Claim your team's tool by **Friday, November 6, at noon** in the Zulip **#showcases** channel. See the [Showcase 2 requirements](showcase2/).
+<span class="wm-announcement-date">November 12, 2026</span> &mdash; **Schedule update:** reading assignments on Blackboard are due **Nov 18, 20, and 30**, plus optional extra credit due **Dec 4**. See the [Schedule](schedule/).
 {: .wm-announcement }
+
+<!-- <span class="wm-announcement-date">November 5, 2026</span> &mdash; **New-Tech Showcase 2 is Tuesday, November 10.** Claim your team's tool by **Friday, November 6, at noon** in the Zulip **#showcases** channel. See the [Showcase 2 requirements](showcase2/).
+{: .wm-announcement } -->
 
 <span class="wm-announcement-date">November 4, 2026</span> &mdash; **Sprint 3 is open.** All deliverables are due **November 19 at 11:59 PM**; the mid-sprint check-in (D7), with at least one code PR open or merged, is due **November 12 at 11:59 PM**. New this sprint: **mutation testing** (replaces the UML diagrams), a **Test Evidence** section in every PR, and a **suite health** section in the report. See the [Sprint 3 requirements](sprint3/) for full details.
 {: .wm-announcement }
 
-<span class="wm-announcement-date">October 30, 2026</span> &mdash; **Schedule update: New-Tech Showcase 2 and Sprint 2 quiz.** New-Tech Showcase 2 is moved to **Tuesday, November 10**. **Thursday, November 5** will include the second testing lecture and a **quiz on Sprint 2** material. See the [Schedule](schedule/) for details.
-{: .wm-announcement }
+<!-- <span class="wm-announcement-date">October 30, 2026</span> &mdash; **Schedule update: New-Tech Showcase 2 and Sprint 2 quiz.** New-Tech Showcase 2 is moved to **Tuesday, November 10**. **Thursday, November 5** will include the second testing lecture and a **quiz on Sprint 2** material. See the [Schedule](schedule/) for details.
+{: .wm-announcement } -->
 
 <!-- <span class="wm-announcement-date">October 29, 2026</span> &mdash; **The course schedule has been updated.** See the [Schedule](schedule/) page for the latest dates and topics.
 {: .wm-announcement } -->
